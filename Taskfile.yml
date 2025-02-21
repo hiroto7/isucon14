@@ -6,11 +6,11 @@ tasks:
       - go install github.com/sqldef/sqldef/cmd/mysqldef@latest
   up:
     cmds:
-      - docker compose -f compose-local.yml up -d
+      - docker compose -f compose-go.yml up -d
     dir: ./development
   down:
     cmds:
-      - docker compose -f compose-local.yml down -v --remove-orphans
+      - docker compose -f compose-go.yml down -v --remove-orphans
     dir: ./development
   migrate:
     deps:
