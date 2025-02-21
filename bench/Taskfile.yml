@@ -3,7 +3,7 @@ version: "3"
 tasks:
   run-local:
     cmds:
-      - go run . run --target http://localhost:8080 -t 60 --payment-url http://host.docker.internal:12345 {{.CLI_ARGS}}
+      - go run . run --target http://localhost:8080 -t 30 --payment-url http://host.docker.internal:12345 {{.CLI_ARGS}}
   build:
     cmds:
       - go build -ldflags "-s -w"
