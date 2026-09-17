@@ -4,6 +4,7 @@
 
 Ubuntu 24.04 ARM64 / Multipass / 2 vCPU / 4 GiB RAM / 25 GiB disk。
 Goアプリと公式ベンチマーカーを同じVMで動かす。本大会の構成とは異なり、点数はこの環境内で比較する。
+構築対象はGo・matcher・payment mockのみ。不要な言語ランタイムのビルドを省略する。
 公式コードと構築設定のコミットは `environment.json` に記録する。
 
 ## 再構築
