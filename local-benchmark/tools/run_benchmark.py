@@ -42,10 +42,11 @@ def main():
         subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "systemctl", "restart", "isuride-go", "isuride-matcher"], check=True)
         time.sleep(20)
         subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"], check=True)
+        subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "truncate", "-s", "0", "/var/log/nginx/isucon-timing.log"], check=True)
         start = time.monotonic()
         print(f"START {run.name}", flush=True)
         with (run / "benchmark.log").open("w") as log:
-            proc = subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "-iu", "isucon", "bash", "-lc", BENCH], stdout=log, stderr=subprocess.STDOUT)
+            proc = subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "-iu", "isucon", "bash", "/home/isucon/guest-run.sh"], stdout=log, stderr=subprocess.STDOUT)
         raw = (run / "benchmark.log").read_text()
         matches = re.findall(r'msg=結果 pass=(true|false) スコア=(-?\d+)', raw)
         passed, raw_score = matches[-1] if matches else ("false", None)
@@ -54,6 +55,9 @@ def main():
                        "score": int(raw_score) if passed == "true" and proc.returncode == 0 else None,
                        "reported_score": int(raw_score) if raw_score is not None else None})
         (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
+        for remote, name in [("/tmp/isucon14-vmstat.log", "vmstat.log"), ("/tmp/isucon14-processes.log", "processes.log"), ("/var/log/nginx/isucon-timing.log", "http-timing.tsv")]:
+            with (run / name).open("w") as f:
+                subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "cat", remote], stdout=f, stderr=subprocess.STDOUT, check=True)
         sql = (ROOT / "local-benchmark/tools/profile.sql").read_text()
         with (run / "sql-profile.tsv").open("w") as f:
             subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "mysql", "--batch", "-e", sql], stdout=f, stderr=subprocess.STDOUT, check=True)
