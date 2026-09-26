@@ -770,7 +770,12 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	if err := tx.Commit(); err != nil {
+	if yetSentRideStatus.ID == "" {
+		err = tx.Rollback()
+	} else {
+		err = tx.Commit()
+	}
+	if err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
