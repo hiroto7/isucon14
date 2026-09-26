@@ -24,6 +24,11 @@ func internalGetMatching(w http.ResponseWriter, r *http.Request) {
 		matched := &Chair{}
 		if err := db.GetContext(ctx, matched, `
 SELECT c.* FROM chairs c
+LEFT JOIN chair_locations l ON l.id = (
+  SELECT l2.id FROM chair_locations l2
+  WHERE l2.chair_id = c.id
+  ORDER BY l2.created_at DESC LIMIT 1
+)
 WHERE c.is_active = TRUE
   AND NOT EXISTS (
     SELECT 1 FROM rides r
@@ -32,7 +37,10 @@ WHERE c.is_active = TRUE
     GROUP BY r.id
     HAVING COUNT(rs.chair_sent_at) <> 6
   )
-ORDER BY RAND() LIMIT 1`); err != nil {
+ORDER BY l.id IS NULL,
+         ABS(l.latitude - ?) + ABS(l.longitude - ?),
+         c.id
+LIMIT 1`, ride.PickupLatitude, ride.PickupLongitude); err != nil {
 			if errors.Is(err, sql.ErrNoRows) {
 				break
 			}
