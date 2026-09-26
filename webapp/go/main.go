@@ -66,6 +66,12 @@ func setup() http.Handler {
 	dbConfig.Net = "tcp"
 	dbConfig.DBName = dbname
 	dbConfig.ParseTime = true
+	if host == "127.0.0.1" && port == "3306" {
+		if _, err := os.Stat("/var/run/mysqld/mysqld.sock"); err == nil {
+			dbConfig.Net = "unix"
+			dbConfig.Addr = "/var/run/mysqld/mysqld.sock"
+		}
+	}
 
 	_db, err := sqlx.Connect("mysql", dbConfig.FormatDSN())
 	if err != nil {
