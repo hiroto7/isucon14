@@ -123,5 +123,10 @@
     "id": "matching-batch-pool-cap",
     "label": "Matching + pool cap",
     "decision": "accepted"
+  },
+  {
+    "id": "chair-stats-highload",
+    "label": "Chair stats at high load",
+    "decision": "rejected"
   }
 ]
