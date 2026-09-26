@@ -248,5 +248,10 @@
     "id": "rides-chair-updated-index",
     "label": "Rides chair updated index",
     "decision": "rejected"
+  },
+  {
+    "id": "notification-chair-cache",
+    "label": "Notification chair cache",
+    "decision": "rejected"
   }
 ]
