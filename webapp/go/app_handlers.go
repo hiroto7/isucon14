@@ -884,7 +884,6 @@ SELECT c.id, c.name, c.model, l.latitude, l.longitude
 FROM chairs c
 JOIN chair_latest_locations l ON l.chair_id = c.id
 WHERE c.is_active = TRUE
-  AND ABS(l.latitude - ?) + ABS(l.longitude - ?) <= ?
   AND NOT EXISTS (
     SELECT 1 FROM rides r
     WHERE r.chair_id = c.id
@@ -893,7 +892,7 @@ WHERE c.is_active = TRUE
         WHERE s.ride_id = r.id ORDER BY s.created_at DESC LIMIT 1
       ), '') <> 'COMPLETED'
   )
-ORDER BY c.id`, coordinate.Latitude, coordinate.Longitude, distance)
+ORDER BY c.id`)
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
