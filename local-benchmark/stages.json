@@ -213,5 +213,10 @@
     "id": "db-pool-32",
     "label": "DB pool 32",
     "decision": "rejected"
+  },
+  {
+    "id": "db-pool-96",
+    "label": "DB pool 96",
+    "decision": "rejected"
   }
 ]
