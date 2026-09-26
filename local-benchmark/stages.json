@@ -188,5 +188,10 @@
     "id": "matcher-100ms",
     "label": "Matcher 100 ms",
     "decision": "rejected"
+  },
+  {
+    "id": "materialized-chair-stats",
+    "label": "Materialized chair stats",
+    "decision": "accepted"
   }
 ]

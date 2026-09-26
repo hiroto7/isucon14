@@ -1,0 +1,262 @@
+time=00:21:34.981 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=00:21:34.981 level=INFO msg=負荷走行を開始します
+time=00:21:37.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=00:21:37.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=6 score="[0 0 0 3 3]" criteria="[6 3 6 6]"
+time=00:21:38.305 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:21:39.470 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:39.475 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:21:39.477 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:21:39.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=00:21:39.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[0 0 0 10 8]" criteria="[18 8 18 18]"
+time=00:21:40.799 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:21:41.271 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:21:41.273 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:41.280 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:41.286 level=INFO msg=これまでに地域内の評判によって7人、既存ユーザーの招待経由で31人が新規登録しました
+time=00:21:41.286 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、69.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=00:21:41.286 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=00:21:41.286 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=33 score="[0 0 0 23 10]" criteria="[33 10 33 33]"
+time=00:21:41.289 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:41.289 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:21:42.058 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:21:43.079 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:21:43.081 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:43.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=00:21:43.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=47 score="[0 0 2 32 13]" criteria="[47 13 47 45]"
+time=00:21:43.104 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:43.141 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:43.141 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:21:44.883 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:44.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=00:21:44.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=59 score="[0 1 8 36 14]" criteria="[59 15 58 49]"
+time=00:21:44.891 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:44.920 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:21:44.928 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:21:44.929 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:21:46.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=00:21:46.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=71 score="[0 3 13 41 14]" criteria="[71 19 67 51]"
+time=00:21:46.685 level=INFO msg=これまでに地域内の評判によって19人、既存ユーザーの招待経由で51人が新規登録しました
+time=00:21:46.685 level=INFO msg=これまでに低評価なライドによって1人が利用をやめました
+time=00:21:46.685 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、73.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、16.9%のライドは椅子の実移動時間に不満がありました
+time=00:21:46.705 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:21:46.713 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:46.724 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:46.747 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:21:48.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=00:21:48.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=90 score="[0 13 18 44 15]" criteria="[86 26 75 54]"
+time=00:21:48.521 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:48.533 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:48.533 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:21:48.573 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:21:50.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=00:21:50.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=103 score="[4 18 21 45 15]" criteria="[88 30 80 57]"
+time=00:21:50.349 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:50.360 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:21:50.363 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:21:50.363 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:52.086 level=INFO msg=これまでに地域内の評判によって31人、既存ユーザーの招待経由で58人が新規登録しました
+time=00:21:52.086 level=INFO msg=これまでに低評価なライドによって15人が利用をやめました
+time=00:21:52.086 level=INFO msg=25.4%のライドは椅子がマッチされるまでの時間、67.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、39.3%のライドは椅子の実移動時間に不満がありました
+time=00:21:52.086 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=00:21:52.086 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=122 score="[10 22 28 47 15]" criteria="[91 40 89 59]"
+time=00:21:52.110 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:52.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:21:52.125 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:52.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:21:52.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:21:53.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=00:21:53.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=140 score="[17 24 36 48 15]" criteria="[91 49 96 64]"
+time=00:21:53.957 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:21:53.964 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:53.981 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:54.009 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:21:54.051 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:21:55.686 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=00:21:55.686 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=159 score="[20 32 39 52 16]" criteria="[104 59 101 66]"
+time=00:21:55.754 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:55.780 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:55.780 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:21:55.824 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:55.835 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:21:57.485 level=INFO msg=これまでに地域内の評判によって43人、既存ユーザーの招待経由で66人が新規登録しました
+time=00:21:57.485 level=INFO msg=これまでに低評価なライドによって32人が利用をやめました
+time=00:21:57.485 level=INFO msg=34.4%のライドは椅子がマッチされるまでの時間、62.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、52.8%のライドは椅子の実移動時間に不満がありました
+time=00:21:57.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=00:21:57.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=180 score="[27 38 44 55 16]" criteria="[118 67 103 67]"
+time=00:21:57.564 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:21:57.617 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:21:57.628 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:21:59.285 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:21:59.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=00:21:59.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=208 score="[29 47 54 61 17]" criteria="[144 82 109 71]"
+time=00:21:59.347 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:21:59.367 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:21:59.382 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:21:59.415 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:01.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=00:22:01.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=222 score="[29 50 61 65 17]" criteria="[158 93 113 71]"
+time=00:22:01.227 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:01.236 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:01.236 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:01.238 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:01.288 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:02.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=00:22:02.885 level=INFO msg=これまでに地域内の評判によって55人、既存ユーザーの招待経由で78人が新規登録しました
+time=00:22:02.885 level=INFO msg=これまでに低評価なライドによって38人が利用をやめました
+time=00:22:02.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=247 score="[29 61 72 68 17]" criteria="[183 106 115 73]"
+time=00:22:02.885 level=INFO msg=25.9%のライドは椅子がマッチされるまでの時間、57.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、61.9%のライドは椅子の実移動時間に不満がありました
+time=00:22:02.926 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:03.021 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:03.039 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:03.045 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:04.686 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=00:22:04.686 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=276 score="[31 76 82 70 17]" criteria="[210 118 116 74]"
+time=00:22:04.727 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:04.841 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:22:04.842 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:04.862 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:04.917 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:06.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=00:22:06.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=301 score="[32 85 96 71 17]" criteria="[234 132 117 75]"
+time=00:22:06.564 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:06.672 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:06.676 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=2
+time=00:22:06.750 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:06.773 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:08.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=00:22:08.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=331 score="[32 96 112 74 17]" criteria="[264 150 120 76]"
+time=00:22:08.285 level=INFO msg=これまでに地域内の評判によって67人、既存ユーザーの招待経由で83人が新規登録しました
+time=00:22:08.285 level=INFO msg=これまでに低評価なライドによって52人が利用をやめました
+time=00:22:08.285 level=INFO msg=20.2%のライドは椅子がマッチされるまでの時間、54.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、70.4%のライドは椅子の実移動時間に不満がありました
+time=00:22:08.298 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:08.372 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:08.393 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:08.440 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:08.441 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:10.086 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=00:22:10.086 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=353 score="[32 103 123 78 17]" criteria="[286 165 123 77]"
+time=00:22:10.230 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:10.230 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:10.242 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:22:10.260 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:10.290 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:11.886 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=00:22:11.886 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=388 score="[32 114 141 84 17]" criteria="[321 189 129 77]"
+time=00:22:12.057 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:12.071 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:12.116 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=2
+time=00:22:12.167 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=3
+time=00:22:12.214 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:13.685 level=INFO msg=これまでに地域内の評判によって79人、既存ユーザーの招待経由で98人が新規登録しました
+time=00:22:13.685 level=INFO msg=これまでに低評価なライドによって57人が利用をやめました
+time=00:22:13.685 level=INFO msg=16.1%のライドは椅子がマッチされるまでの時間、48.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、74.1%のライドは椅子の実移動時間に不満がありました
+time=00:22:13.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=00:22:13.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=417 score="[32 119 156 92 18]" criteria="[350 213 137 79]"
+time=00:22:13.690 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:22:13.854 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:13.879 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:14.026 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:15.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=00:22:15.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=447 score="[32 123 175 99 18]" criteria="[380 239 142 81]"
+time=00:22:15.622 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:15.708 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:15.708 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:15.730 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=3
+time=00:22:15.792 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:16.495 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:22:17.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=00:22:17.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=479 score="[34 127 197 103 18]" criteria="[410 265 144 83]"
+time=00:22:17.516 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:17.521 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:17.523 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:17.553 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:17.592 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:19.085 level=INFO msg=これまでに地域内の評判によって91人、既存ユーザーの招待経由で112人が新規登録しました
+time=00:22:19.085 level=INFO msg=これまでに低評価なライドによって62人が利用をやめました
+time=00:22:19.085 level=INFO msg=13.8%のライドは椅子がマッチされるまでの時間、43.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、77.3%のライドは椅子の実移動時間に不満がありました
+time=00:22:19.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=00:22:19.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=509 score="[35 133 216 107 18]" criteria="[439 288 148 83]"
+time=00:22:19.355 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:19.368 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:19.376 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:19.420 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:19.514 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:20.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=00:22:20.885 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=539 score="[36 135 239 111 18]" criteria="[468 315 151 84]"
+time=00:22:21.014 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:21.015 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:21.117 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:21.117 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=2
+time=00:22:21.266 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:22.543 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:22:22.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=00:22:22.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=575 score="[37 141 264 115 18]" criteria="[503 344 153 86]"
+time=00:22:22.778 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:22.915 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:22.930 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=2
+time=00:22:23.148 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:24.485 level=INFO msg=これまでに地域内の評判によって103人、既存ユーザーの招待経由で122人が新規登録しました
+time=00:22:24.485 level=INFO msg=これまでに低評価なライドによって66人が利用をやめました
+time=00:22:24.485 level=INFO msg=11.8%のライドは椅子がマッチされるまでの時間、38.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.2%のライドは椅子の実移動時間に不満がありました
+time=00:22:24.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=00:22:24.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=608 score="[37 143 293 117 18]" criteria="[536 375 154 87]"
+time=00:22:24.753 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=3
+time=00:22:24.753 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:24.848 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:24.883 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:24.921 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:26.286 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=00:22:26.286 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=634 score="[37 146 315 117 19]" criteria="[562 398 155 88]"
+time=00:22:26.474 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:26.598 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:26.753 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:26.886 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:28.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=00:22:28.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=666 score="[37 148 345 117 19]" criteria="[594 428 155 88]"
+time=00:22:28.287 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:28.293 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:28.337 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:28.365 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:28.427 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:29.886 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=00:22:29.886 level=INFO msg=これまでに地域内の評判によって115人、既存ユーザーの招待経由で124人が新規登録しました
+time=00:22:29.886 level=INFO msg=これまでに低評価なライドによって68人が利用をやめました
+time=00:22:29.886 level=INFO msg=10.4%のライドは椅子がマッチされるまでの時間、34.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、82.5%のライドは椅子の実移動時間に不満がありました
+time=00:22:29.886 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=704 score="[37 152 377 119 19]" criteria="[631 462 157 89]"
+time=00:22:30.129 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:22:30.154 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:30.202 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:30.243 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:22:30.381 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:31.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=00:22:31.685 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=740 score="[37 159 405 120 19]" criteria="[666 492 157 90]"
+time=00:22:31.791 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:31.827 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:22:31.977 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:32.310 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=2
+time=00:22:33.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=00:22:33.485 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=780 score="[37 161 441 122 19]" criteria="[705 531 159 90]"
+time=00:22:33.659 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=3
+time=00:22:33.856 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=00:22:33.907 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:34.126 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:34.340 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:22:35.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=00:22:35.285 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=814 score="[37 167 467 124 19]" criteria="[739 559 159 92]"
+time=00:22:35.285 level=INFO msg=これまでに地域内の評判によって127人、既存ユーザーの招待経由で129人が新規登録しました
+time=00:22:35.285 level=INFO msg=これまでに低評価なライドによって76人が利用をやめました
+time=00:22:35.285 level=INFO msg=9.2%のライドは椅子がマッチされるまでの時間、31.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、84.6%のライドは椅子の実移動時間に不満がありました
+time=00:22:35.527 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ひまわり交通 増加数=1
+time=00:22:35.663 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:22:35.700 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:22:35.701 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=00:22:40.885 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=154 アクティブユーザー数=117
+time=00:22:40.885 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=117 アクティブユーザー数=78
+time=00:22:40.885 level=INFO msg=最終オーナー情報 名前="CraftChair Co., Ltd." 売上=923600 椅子数=43
+time=00:22:40.885 level=INFO msg=最終オーナー情報 名前=ひまわり交通 売上=808600 椅子数=39
+time=00:22:40.885 level=INFO msg=最終オーナー情報 名前=ゆったり号 売上=934600 椅子数=44
+time=00:22:40.885 level=INFO msg=最終オーナー情報 名前="Sit Second Life" 売上=1294600 椅子数=53
+time=00:22:40.885 level=INFO msg=最終オーナー情報 名前="LuxeLine Taxi" 売上=960300 椅子数=44
+time=00:22:40.885 level=INFO msg=8.9%のライドは椅子がマッチされるまでの時間、30.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、85.1%のライドは椅子の実移動時間に不満がありました
+time=00:22:40.886 level=INFO msg=結果 pass=true スコア=57204 種別エラー数=map[17:6]
+time=00:22:40.886 level=INFO msg=負荷走行が終了しました
