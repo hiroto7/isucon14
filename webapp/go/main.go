@@ -63,6 +63,8 @@ func setup() http.Handler {
 	if err != nil {
 		panic(err)
 	}
+	// Reuse MySQL connections across the frequent notification polls.
+	_db.SetMaxIdleConns(64)
 	db = _db
 
 	mux := chi.NewRouter()

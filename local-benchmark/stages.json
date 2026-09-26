@@ -18,5 +18,10 @@
     "id": "rebuilt-baseline",
     "label": "Rebuilt baseline",
     "decision": "baseline"
+  },
+  {
+    "id": "idle-pool-64",
+    "label": "Idle pool 64",
+    "decision": "candidate"
   }
 ]
