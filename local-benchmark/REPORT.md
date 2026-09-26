@@ -299,3 +299,7 @@ CPU pprofではMySQL `PrepareContext` が累積1.68秒/11.50秒サンプルだ�
 ## MySQLバイナリログ停止（不採用）
 
 単一VMで複製に使っていないMySQLバイナリログが `log_bin=ON`、`sync_binlog=1` で、試行前の `Binlog_cache_use` は67,080。`/etc/mysql/mysql.conf.d/99-isucon14-local-binlog.cnf` に `[mysqld]` と `skip-log-bin` を置いてMySQLを再起動した。`log_bin=OFF`、`innodb_flush_log_at_trx_commit=1`、slow query log ONを確認して公式検証成功。コミットの平均待ちは比較対象5.741→2.843msと減ったが、スコアは最良67,944→64,117。主なスコア律速はコミット同期だけではなく、総点改善を確認できなかったため設定ファイルを削除し `log_bin=ON` に復元した。MySQLの再起動操作はCLIの呼び出しが長時間戻らない挙動があったため、サービスの `active` と `log_bin` 値を別途確認した。再計測手順は通常の `run_benchmark.py` を用い、現在の設定ではバイナリログを有効のままにする。
+
+## MySQL復元後の再確認
+
+`log_bin=ON`、slow query log ON、InnoDBコミット同期1の元の設定で公式検証は成功し、スコア70,028。採用コードは同じで、再起動後の63,672やバイナリログOFFの64,117との差はベンチ負荷・タイミングのばらつきも含む。現時点の最高有効値は70,028（再構築初期中央値4,754比14.73倍）。直近のログではマッチ待ち不満15.0%、迎車待ち34.5%、実移動時間80.2%で、処理速度だけでなく椅子の割り当ても次の検証対象とする。
