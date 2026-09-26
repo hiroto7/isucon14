@@ -178,5 +178,10 @@
     "id": "nearby-sql-distance",
     "label": "Nearby SQL distance",
     "decision": "rejected"
+  },
+  {
+    "id": "app-notification-100ms",
+    "label": "App poll 100 ms",
+    "decision": "rejected"
   }
 ]
