@@ -17,6 +17,16 @@ BENCH = "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.ne
 def capture(args):
     return subprocess.check_output(args, cwd=ROOT, text=True)
 
+def database_snapshot(run, label):
+    query = "SHOW GLOBAL VARIABLES WHERE Variable_name IN ('innodb_buffer_pool_size','innodb_flush_log_at_trx_commit','sync_binlog');"
+    result = subprocess.run(
+        ["multipass", "exec", "isucon14", "--", "sudo", "mysql", "--batch", "--raw", "-e", query],
+        check=True, capture_output=True, text=True,
+    )
+    (run / f"database-variables-{label}.tsv").write_text(result.stdout)
+    lines = [line.split("\t", 1) for line in result.stdout.splitlines() if "\t" in line]
+    return {name: value for name, value in lines[1:]}
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("stage")
@@ -27,8 +37,8 @@ def main():
         stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         run = OUT / f"{stamp}-{args.stage}"
         run.mkdir()
-        patch = capture([GIT, "diff", "HEAD", "--", "webapp"])
-        (run / "webapp.patch").write_text(patch)
+        patch = capture([GIT, "diff", "HEAD"])
+        (run / "git-diff.patch").write_text(patch)
         record = {
             "stage": args.stage, "started_at": stamp,
             "commit": capture([GIT, "rev-parse", "HEAD"]).strip(),
@@ -43,6 +53,7 @@ def main():
         time.sleep(20)
         subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"], check=True)
         subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "truncate", "-s", "0", "/var/log/nginx/isucon-timing.log"], check=True)
+        record["database_settings_before"] = database_snapshot(run, "before")
         start = time.monotonic()
         print(f"START {run.name}", flush=True)
         with (run / "benchmark.log").open("w") as log:
@@ -54,6 +65,7 @@ def main():
                        "status": "passed" if passed == "true" and proc.returncode == 0 else "failed",
                        "score": int(raw_score) if passed == "true" and proc.returncode == 0 else None,
                        "reported_score": int(raw_score) if raw_score is not None else None})
+        record["database_settings_after"] = database_snapshot(run, "after")
         (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
         for remote, name in [("/tmp/isucon14-vmstat.log", "vmstat.log"), ("/tmp/isucon14-processes.log", "processes.log"), ("/var/log/nginx/isucon-timing.log", "http-timing.tsv")]:
             with (run / name).open("w") as f:

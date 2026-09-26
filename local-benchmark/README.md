@@ -37,6 +37,19 @@ local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 `scores.csv` と `score-history.png` は生データから再生成する。
 各回の点、中央値、最小最大を表示し、不採用・失敗も記録する。
 
+## 現在の候補: InnoDBログ同期
+
+`candidates/innodb-flush-log-at-trx-commit-2.cnf` は試験用設定です。現VMでは次の手順で一時設定ファイルを置き、動的変数を切り替えてから公式ベンチを3回実行します。MySQL自体は再起動せず、通常のアプリ再起動と待機条件を保ちます。
+
+```sh
+multipass transfer local-benchmark/candidates/innodb-flush-log-at-trx-commit-2.cnf isucon14:/tmp/local-benchmark.cnf
+multipass exec isucon14 -- sudo install -o root -g root -m 0644 /tmp/local-benchmark.cnf /etc/mysql/mysql.conf.d/99-local-benchmark.cnf
+multipass exec isucon14 -- sudo mysql -e "SET GLOBAL innodb_flush_log_at_trx_commit = 2"
+local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py flush-log-2 --runs 3
+```
+
+測定ログには各回の前後で `innodb_flush_log_at_trx_commit`、`innodb_buffer_pool_size`、`sync_binlog` を保存します。設定の採否は3回の公式検証と中央値で決め、再起動後にも結果を確認します。
+
 ## 改善の判断
 
 最大3サイクル。SQL・HTTP・CPUの実測から一つずつ仮説を選び、3回の公式検証成功と中央値の向上を確認する。
@@ -45,4 +58,4 @@ local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 
 ## 現在の状態
 
-構築中。スコアは未測定。
+初期3回はすべて成功し、中央値3,549を記録済み。MySQLログ同期候補 `flush-log-2` を次に測定する。

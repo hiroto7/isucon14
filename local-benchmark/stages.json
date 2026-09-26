@@ -3,5 +3,10 @@
     "id": "baseline",
     "label": "Initial baseline",
     "decision": "baseline"
+  },
+  {
+    "id": "flush-log-2",
+    "label": "InnoDB flush=2",
+    "decision": "candidate"
   }
 ]
