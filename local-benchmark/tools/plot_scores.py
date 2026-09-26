@@ -20,7 +20,8 @@ with (ROOT / "scores.csv").open("w") as f:
     writer.writerows({key: r.get(key) for key in fields} for r in records)
 
 fig, ax = plt.subplots(figsize=(12, 6.5), layout="constrained")
-baseline = [r["score"] for r in records if r["stage"] == "baseline" and r["status"] == "passed"]
+reference_stage = "rebuilt-baseline" if any(r["stage"] == "rebuilt-baseline" and r["status"] == "passed" for r in records) else "baseline"
+baseline = [r["score"] for r in records if r["stage"] == reference_stage and r["status"] == "passed"]
 base = statistics.median(baseline) if baseline else None
 max_score = max([r["score"] for r in records if r.get("score") is not None] or [1])
 for x, stage in enumerate(present):
@@ -46,8 +47,9 @@ for x, stage in enumerate(present):
         )
     failures = sum(r["status"] == "failed" for r in rows)
     if failures:
-        ax.scatter([x] * failures, [0] * failures, marker="x", color="#dc2626", s=45, zorder=5)
-        ax.text(x, .03, f"FAIL x{failures}\n(no score)", transform=ax.get_xaxis_transform(), ha="center", color="#dc2626", fontsize=9)
+        ax.annotate(f"FAIL x{failures} (no score)", (x, 0), xycoords=ax.get_xaxis_transform(),
+                    xytext=(0, -36), textcoords="offset points", ha="center",
+                    color="#dc2626", fontsize=9, annotation_clip=False)
 
 ax.set_xticks(range(len(present)), [stage["label"] + ("\n[rejected]" if stage["decision"] == "rejected" else "") for stage in present])
 ax.set_ylim(0, max_score * 1.3)
@@ -56,6 +58,6 @@ ax.set_ylabel("Official benchmark score")
 ax.set_title("ISUCON14 — local score progression", loc="left", fontweight="bold")
 ax.grid(axis="y", alpha=.2)
 ax.spines[["top", "right"]].set_visible(False)
-fig.text(.01, -.02, "ARM64 / Ubuntu 24.04 / 2 vCPU / 4 GiB / app + benchmark on one VM\nDots: individual scores and baseline ratio. Diamond: median. Whiskers and labels: min–max. Failed runs shown at zero without a score.", fontsize=9, color="#555555")
+fig.text(.01, -.02, "ARM64 / Ubuntu 24.04 / 2 vCPU / 4 GiB / app + benchmark on one VM\nDots: individual scores and baseline ratio. Diamond: median. Whiskers and labels: min–max. Failed runs shown below the axis without a numeric score.", fontsize=9, color="#555555")
 fig.savefig(ROOT / "score-history.png", dpi=180, bbox_inches="tight")
 print(ROOT / "score-history.png")

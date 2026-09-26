@@ -13,5 +13,10 @@
     "id": "baseline-repeat",
     "label": "Baseline repeat",
     "decision": "baseline"
+  },
+  {
+    "id": "rebuilt-baseline",
+    "label": "Rebuilt baseline",
+    "decision": "baseline"
   }
 ]
