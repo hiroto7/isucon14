@@ -30,7 +30,7 @@ def checked_multipass(args, **kwargs):
         time.sleep(5)
 
 def database_snapshot(run, label):
-    query = "SHOW GLOBAL VARIABLES WHERE Variable_name IN ('innodb_buffer_pool_size','innodb_flush_log_at_trx_commit','sync_binlog');"
+    query = "SHOW GLOBAL VARIABLES WHERE Variable_name IN ('innodb_buffer_pool_size','innodb_flush_log_at_trx_commit','sync_binlog','log_bin');"
     result = checked_multipass(
         ["exec", "isucon14", "--", "sudo", "mysql", "--batch", "--raw", "-e", query],
         capture_output=True, text=True,
