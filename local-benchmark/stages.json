@@ -23,5 +23,10 @@
     "id": "idle-pool-64",
     "label": "Idle pool 64",
     "decision": "accepted"
+  },
+  {
+    "id": "ride-status-index",
+    "label": "Ride status index",
+    "decision": "candidate"
   }
 ]
