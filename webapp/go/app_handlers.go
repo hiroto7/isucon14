@@ -743,16 +743,10 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if ride.ChairID.Valid {
-		var chair *Chair
-		if cached, ok := notificationChairs.Load(ride.ChairID.String); ok {
-			chair = cached.(*Chair)
-		} else {
-			chair = &Chair{}
-			if err := tx.GetContext(ctx, chair, `SELECT * FROM chairs WHERE id = ?`, ride.ChairID); err != nil {
-				writeError(w, http.StatusInternalServerError, err)
-				return
-			}
-			notificationChairs.Store(chair.ID, chair)
+		chair := &Chair{}
+		if err := tx.GetContext(ctx, chair, `SELECT * FROM chairs WHERE id = ?`, ride.ChairID); err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
 		}
 
 		stats, err := getChairStats(ctx, tx, chair.ID)
@@ -926,7 +920,6 @@ func calculateFare(pickupLatitude, pickupLongitude, destLatitude, destLongitude 
 
 // A ride's coupon is assigned on creation and never changes afterwards.
 var rideFares sync.Map
-var notificationChairs sync.Map
 
 func calculateDiscountedFare(ctx context.Context, tx *sqlx.Tx, userID string, ride *Ride, pickupLatitude, pickupLongitude, destLatitude, destLongitude int) (int, error) {
 	if ride != nil {
