@@ -113,5 +113,15 @@
     "id": "chair-stats-aggregate",
     "label": "Chair stats aggregate",
     "decision": "rejected"
+  },
+  {
+    "id": "matching-batch",
+    "label": "Matching batch",
+    "decision": "rejected"
+  },
+  {
+    "id": "matching-batch-pool-cap",
+    "label": "Matching + pool cap",
+    "decision": "accepted"
   }
 ]
