@@ -258,5 +258,10 @@
     "id": "coordinate-ride-status-query",
     "label": "Coordinate ride status query",
     "decision": "rejected"
+  },
+  {
+    "id": "idle-poll-50ms",
+    "label": "Idle poll 50ms",
+    "decision": "rejected"
   }
 ]
