@@ -58,3 +58,41 @@ ax.spines[["top", "right"]].set_visible(False)
 fig.text(.01, -.10, "ARM64 / Ubuntu 24.04 / 2 vCPU / 4 GiB / app + benchmark on one VM\nDots: individual scores. Diamond: median. Box: median, baseline ratio and min–max. Whiskers: min–max. Failed runs shown below the axis without a numeric score.", fontsize=9, color="#555555")
 fig.savefig(ROOT / "score-history.png", dpi=180, bbox_inches="tight")
 print(ROOT / "score-history.png")
+
+# A compact view for reading the major accepted milestones in a chat or report.
+focus_ids = [
+    "rebuilt-baseline", "ride-status-index", "rides-user-index",
+    "matching-batch-pool-cap", "nearest-batch-prefetch",
+    "matching-batch-update", "materialized-chair-stats",
+    "read-only-rollback-highload", "ride-fare-cache", "final-restart-stable",
+]
+focus_labels = [
+    "Rebuilt\nbaseline", "Status\nindex", "Ride\nindex",
+    "Batch\nmatching", "Nearest\nmatching", "Batch\nupdates",
+    "Chair\nstats", "Read-only\nrollback", "Best\naccepted", "After\nrestart",
+]
+fig2, ax2 = plt.subplots(figsize=(13, 5.5), layout="constrained")
+for x, (stage_id, label) in enumerate(zip(focus_ids, focus_labels)):
+    rows = [r for r in records if r["stage"] == stage_id]
+    scores = [r["score"] for r in rows if r["status"] == "passed" and r.get("score") is not None]
+    if not scores:
+        continue
+    median = statistics.median(scores)
+    color = "#d97706" if stage_id == "final-restart-stable" else "#2563eb"
+    ax2.errorbar(x, median, yerr=[[median-min(scores)], [max(scores)-median]], fmt="o", color=color, capsize=5, markersize=7, zorder=3)
+    for score in scores:
+        ax2.scatter(x, score, color=color, alpha=.5, s=28, zorder=3)
+    ax2.annotate(f"{median:,.0f}\n{median/base:.1f}x", (x, median), xytext=(0, 12), textcoords="offset points", ha="center", fontsize=9)
+ax2.plot(range(len(focus_ids)), [statistics.median([r["score"] for r in records if r["stage"] == sid and r["status"] == "passed" and r.get("score") is not None]) for sid in focus_ids], color="#93c5fd", linewidth=2, zorder=1)
+ax2.text(.99, .04, "Immediate restart attempt: FAILED (no score)", transform=ax2.transAxes,
+         ha="right", va="bottom", color="#dc2626", fontsize=9,
+         bbox={"boxstyle": "round,pad=0.3", "facecolor": "white", "edgecolor": "#dc2626"})
+ax2.set_xticks(range(len(focus_ids)), focus_labels)
+ax2.set_ylim(-2000, 80000)
+ax2.set_ylabel("Official benchmark score")
+ax2.set_title("ISUCON14 local score — major milestones", loc="left", fontweight="bold")
+ax2.grid(axis="y", alpha=.2)
+ax2.spines[["top", "right"]].set_visible(False)
+fig2.text(.01, -.04, "ARM64 / 2 vCPU / 4 GiB / single VM. Points: valid runs; labels: median and ratio to rebuilt baseline. All trials, including rejected candidates, are in score-history.png.", fontsize=9, color="#555555")
+fig2.savefig(ROOT / "score-focus.png", dpi=160, bbox_inches="tight")
+print(ROOT / "score-focus.png")

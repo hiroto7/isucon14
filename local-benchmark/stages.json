@@ -263,5 +263,15 @@
     "id": "idle-poll-50ms",
     "label": "Idle poll 50ms",
     "decision": "rejected"
+  },
+  {
+    "id": "final-restart-check",
+    "label": "Restart immediate check",
+    "decision": "verification"
+  },
+  {
+    "id": "final-restart-stable",
+    "label": "Restart stable check",
+    "decision": "verification"
   }
 ]
