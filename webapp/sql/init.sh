@@ -35,3 +35,18 @@ gzip -dkc 3-initial-data.sql.gz | mysql -u"$ISUCON_DB_USER" \
 		--host "$ISUCON_DB_HOST" \
 		--port "$ISUCON_DB_PORT" \
 		"$ISUCON_DB_NAME"
+
+mysql -u"$ISUCON_DB_USER" \
+		-p"$ISUCON_DB_PASSWORD" \
+		--host "$ISUCON_DB_HOST" \
+		--port "$ISUCON_DB_PORT" \
+		"$ISUCON_DB_NAME" <<'SQL'
+INSERT INTO chair_latest_locations (chair_id, latitude, longitude, created_at)
+SELECT chair_id, latitude, longitude, created_at
+FROM (
+  SELECT chair_id, latitude, longitude, created_at,
+         ROW_NUMBER() OVER (PARTITION BY chair_id ORDER BY created_at DESC, id DESC) AS rn
+  FROM chair_locations
+) AS ranked
+WHERE rn = 1;
+SQL

@@ -882,10 +882,7 @@ func appGetNearbyChairs(w http.ResponseWriter, r *http.Request) {
 	err = tx.SelectContext(ctx, &rows, `
 SELECT c.id, c.name, c.model, l.latitude, l.longitude
 FROM chairs c
-JOIN chair_locations l ON l.id = (
-    SELECT l2.id FROM chair_locations l2
-    WHERE l2.chair_id = c.id ORDER BY l2.created_at DESC LIMIT 1
-)
+JOIN chair_latest_locations l ON l.chair_id = c.id
 WHERE c.is_active = TRUE
   AND NOT EXISTS (
     SELECT 1 FROM rides r

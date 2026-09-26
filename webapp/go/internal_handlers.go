@@ -29,11 +29,7 @@ func internalGetMatching(w http.ResponseWriter, r *http.Request) {
 	if err := db.SelectContext(ctx, &chairs, `
 SELECT c.id, l.latitude, l.longitude
 FROM chairs c
-LEFT JOIN chair_locations l ON l.id = (
-  SELECT l2.id FROM chair_locations l2
-  WHERE l2.chair_id = c.id
-  ORDER BY l2.created_at DESC LIMIT 1
-)
+LEFT JOIN chair_latest_locations l ON l.chair_id = c.id
 WHERE c.is_active = TRUE
   AND NOT EXISTS (
     SELECT 1 FROM rides r
