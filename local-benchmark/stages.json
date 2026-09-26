@@ -223,5 +223,10 @@
     "id": "chair-notification-join",
     "label": "Chair notification join",
     "decision": "rejected"
+  },
+  {
+    "id": "coupon-used-by-index",
+    "label": "Coupon used_by index",
+    "decision": "accepted"
   }
 ]
