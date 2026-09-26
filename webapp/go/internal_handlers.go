@@ -3,6 +3,7 @@ package main
 import (
 	"database/sql"
 	"net/http"
+	"strings"
 )
 
 type matchingChair struct {
@@ -42,6 +43,10 @@ WHERE c.is_active = TRUE
 		return
 	}
 
+	var update strings.Builder
+	update.WriteString("UPDATE rides SET chair_id = CASE id")
+	args := make([]interface{}, 0, len(rides)*3)
+	matchedIDs := make([]string, 0, len(rides))
 	for _, ride := range rides {
 		if len(chairs) == 0 {
 			break
@@ -63,12 +68,26 @@ WHERE c.is_active = TRUE
 				bestHasLocation = hasLocation
 			}
 		}
-		if _, err := db.ExecContext(ctx, "UPDATE rides SET chair_id = ? WHERE id = ?", chairs[best].ID, ride.ID); err != nil {
+		update.WriteString(" WHEN ? THEN ?")
+		args = append(args, ride.ID, chairs[best].ID)
+		matchedIDs = append(matchedIDs, ride.ID)
+		chairs[best] = chairs[len(chairs)-1]
+		chairs = chairs[:len(chairs)-1]
+	}
+	if len(matchedIDs) > 0 {
+		update.WriteString(" END WHERE chair_id IS NULL AND id IN (")
+		for i, id := range matchedIDs {
+			if i > 0 {
+				update.WriteByte(',')
+			}
+			update.WriteByte('?')
+			args = append(args, id)
+		}
+		update.WriteByte(')')
+		if _, err := db.ExecContext(ctx, update.String(), args...); err != nil {
 			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
-		chairs[best] = chairs[len(chairs)-1]
-		chairs = chairs[:len(chairs)-1]
 	}
 
 	w.WriteHeader(http.StatusNoContent)
