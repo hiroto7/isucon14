@@ -201,77 +201,66 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	defer tx.Rollback()
-	ride := &Ride{}
-	yetSentRideStatus := RideStatus{}
-	status := ""
 
-	if err := tx.GetContext(ctx, ride, `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1`, chair.ID); err != nil {
-		if errors.Is(err, sql.ErrNoRows) {
-			writeJSON(w, http.StatusOK, &chairGetNotificationResponse{
-				RetryAfterMs: 30,
-			})
-			return
-		}
-		writeError(w, http.StatusInternalServerError, err)
-		return
+	var row struct {
+		RideID               string         `db:"ride_id"`
+		UserID               string         `db:"user_id"`
+		Firstname            string         `db:"firstname"`
+		Lastname             string         `db:"lastname"`
+		PickupLatitude       int            `db:"pickup_latitude"`
+		PickupLongitude      int            `db:"pickup_longitude"`
+		DestinationLatitude  int            `db:"destination_latitude"`
+		DestinationLongitude int            `db:"destination_longitude"`
+		UnsentStatusID       sql.NullString `db:"unsent_status_id"`
+		UnsentStatus         sql.NullString `db:"unsent_status"`
+		LatestStatus         sql.NullString `db:"latest_status"`
 	}
-
-	if err := tx.GetContext(ctx, &yetSentRideStatus, `SELECT * FROM ride_statuses WHERE ride_id = ? AND chair_sent_at IS NULL ORDER BY created_at ASC LIMIT 1`, ride.ID); err != nil {
-		if errors.Is(err, sql.ErrNoRows) {
-			status, err = getLatestRideStatus(ctx, tx, ride.ID)
-			if err != nil {
-				writeError(w, http.StatusInternalServerError, err)
-				return
-			}
-		} else {
-			writeError(w, http.StatusInternalServerError, err)
-			return
-		}
-	} else {
-		status = yetSentRideStatus.Status
-	}
-
-	user := &User{}
-	err = tx.GetContext(ctx, user, "SELECT * FROM users WHERE id = ? FOR SHARE", ride.UserID)
+	err = tx.GetContext(ctx, &row, `
+SELECT r.id AS ride_id, r.user_id, u.firstname, u.lastname,
+       r.pickup_latitude, r.pickup_longitude,
+       r.destination_latitude, r.destination_longitude,
+       (SELECT rs.id FROM ride_statuses rs WHERE rs.ride_id = r.id AND rs.chair_sent_at IS NULL ORDER BY rs.created_at ASC LIMIT 1) AS unsent_status_id,
+       (SELECT rs.status FROM ride_statuses rs WHERE rs.ride_id = r.id AND rs.chair_sent_at IS NULL ORDER BY rs.created_at ASC LIMIT 1) AS unsent_status,
+       (SELECT rs.status FROM ride_statuses rs WHERE rs.ride_id = r.id ORDER BY rs.created_at DESC LIMIT 1) AS latest_status
+FROM rides r
+JOIN users u ON u.id = r.user_id
+WHERE r.chair_id = ?
+ORDER BY r.updated_at DESC LIMIT 1`, chair.ID)
 	if err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			writeJSON(w, http.StatusOK, &chairGetNotificationResponse{RetryAfterMs: 30})
+			return
+		}
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
 
-	if yetSentRideStatus.ID != "" {
-		_, err := tx.ExecContext(ctx, `UPDATE ride_statuses SET chair_sent_at = CURRENT_TIMESTAMP(6) WHERE id = ?`, yetSentRideStatus.ID)
-		if err != nil {
+	status := row.LatestStatus.String
+	if row.UnsentStatusID.Valid {
+		status = row.UnsentStatus.String
+		if _, err := tx.ExecContext(ctx, `UPDATE ride_statuses SET chair_sent_at = CURRENT_TIMESTAMP(6) WHERE id = ?`, row.UnsentStatusID.String); err != nil {
 			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
-	}
-
-	if yetSentRideStatus.ID == "" {
-		err = tx.Rollback()
-	} else {
 		err = tx.Commit()
+	} else {
+		err = tx.Rollback()
 	}
-	if err != nil {
+	if !row.LatestStatus.Valid || err != nil {
+		if err == nil {
+			err = sql.ErrNoRows
+		}
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
 
 	writeJSON(w, http.StatusOK, &chairGetNotificationResponse{
 		Data: &chairGetNotificationResponseData{
-			RideID: ride.ID,
-			User: simpleUser{
-				ID:   user.ID,
-				Name: fmt.Sprintf("%s %s", user.Firstname, user.Lastname),
-			},
-			PickupCoordinate: Coordinate{
-				Latitude:  ride.PickupLatitude,
-				Longitude: ride.PickupLongitude,
-			},
-			DestinationCoordinate: Coordinate{
-				Latitude:  ride.DestinationLatitude,
-				Longitude: ride.DestinationLongitude,
-			},
-			Status: status,
+			RideID:                row.RideID,
+			User:                  simpleUser{ID: row.UserID, Name: fmt.Sprintf("%s %s", row.Firstname, row.Lastname)},
+			PickupCoordinate:      Coordinate{Latitude: row.PickupLatitude, Longitude: row.PickupLongitude},
+			DestinationCoordinate: Coordinate{Latitude: row.DestinationLatitude, Longitude: row.DestinationLongitude},
+			Status:                status,
 		},
 		RetryAfterMs: 30,
 	})
