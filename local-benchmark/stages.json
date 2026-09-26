@@ -218,5 +218,10 @@
     "id": "db-pool-96",
     "label": "DB pool 96",
     "decision": "rejected"
+  },
+  {
+    "id": "chair-notification-join",
+    "label": "Chair notification join",
+    "decision": "rejected"
   }
 ]
