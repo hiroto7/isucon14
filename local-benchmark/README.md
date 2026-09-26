@@ -37,7 +37,7 @@ local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 `scores.csv` と `score-history.png` は生データから再生成する。
 各回の点、中央値、最小最大を表示し、不採用・失敗も記録する。
 
-## 現在の候補: InnoDBログ同期
+## 過去の不採用候補: InnoDBログ同期
 
 `candidates/innodb-flush-log-at-trx-commit-2.cnf` は試験用設定です。現VMでは次の手順で一時設定ファイルを置き、動的変数を切り替えてから公式ベンチを3回実行します。MySQL自体は再起動せず、通常のアプリ再起動と待機条件を保ちます。
 
@@ -58,8 +58,15 @@ local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py flush-lo
 
 ## 現在の状態
 
-初期3回はすべて成功し、中央値3,549を記録済み。`flush-log-2` は有効な測定3回（中央値3,688）と準備段階の失敗1回を記録済み。初期値の範囲と重なり耐久性も下げるため、不採用。追加の初期設定測定は成功1回と準備失敗2回。PCクラッシュ後にqcow2破損が判明したため、VMを再作成して新たな初期3回を取る。詳細は `REPORT.md`。
+旧VMのMySQL同期候補は不採用。PCクラッシュ後のqcow2破損によりVMを再構築した。新VMの初期3回は中央値4,754、Go接続再利用候補は中央値5,267、ride_statusesインデックス候補は中央値7,271。再起動後の公式検証も成功。詳細は `REPORT.md`。
 
-再構築後の初期3回はすべて成功し、スコア4,754・4,612・4,977、中央値4,754。以後の候補はこの中央値と比較する。
+再構築後の初期3回はすべて成功し、スコア4,754・4,612・4,977、中央値4,754。候補との比較はこの中央値を基準にする。
 
 採用状態はGoの `SetMaxIdleConns(64)` と `ride_statuses(ride_id, created_at)` インデックス。初期中央値4,754からインデックス採用後中央値7,271へ改善。全測定と再起動後検証は `REPORT.md` を参照。
+
+採用状態を再測定する場合は以下を実行する。公式ベンチはVM内の `/home/isucon/bench` を使う。
+
+```sh
+local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py restart-check --runs 1
+local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
+```

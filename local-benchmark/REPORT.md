@@ -7,7 +7,7 @@
 - VM: Ubuntu 24.04 ARM64、2 vCPU、4 GiB RAM、25 GiB disk
 - Goアプリ、MySQL、nginx、matcher、公式ベンチマーカーを同じVMで実行
 - 公式ベンチの計測60秒、各回の前にGoとmatcherを再起動して20秒待機
-- 公式検証は3回とも成功。各回のログとプロファイルは `results/` に保存
+- 各段階の公式検証結果・ログ・プロファイルは `results/` に保存
 
 この値はローカルARM64の単一VM上での比較用であり、大会環境のスコアと直接比較しない。
 
@@ -41,12 +41,12 @@ SQLの他の上位digestは各回合計0.3秒未満で、総時間では `COMMIT
 
 ## 改善仮説
 
-MySQLの現在値 `innodb_flush_log_at_trx_commit=1` は、各トランザクションのcommit時にログを同期する設定。負荷中に多数のcommit待ちが記録されたため、値を `2` にして1秒ごとの同期にまとめる候補を試す。トランザクションの原子性や通常時の読み書き整合性は維持される一方、OSクラッシュ時に直近約1秒のcommitが失われる可能性があるため、変更の採否と再起動後の検証結果を記録する。
+MySQLの初期値 `innodb_flush_log_at_trx_commit=1` は、各トランザクションのcommit時にログを同期する設定。負荷中に多数のcommit待ちが記録されたため、値を `2` にして1秒ごとの同期にまとめる候補を試す。トランザクションの原子性や通常時の読み書き整合性は維持される一方、OSクラッシュ時に直近約1秒のcommitが失われる可能性があるため、この候補は採用しなかった。
 
 ## 再計測・グラフ再生成
 
 ```sh
-local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py baseline --runs 3
+local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py restart-check --runs 1
 local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 ```
 
@@ -101,3 +101,9 @@ VMディスク破損後、同じ公式コミット・cloud-init設定でVMを再
 | 最小–最大 | 7,110–7,508 | 直前状態5,093–5,568と重ならない |
 
 この変更を採用する。旧VMの不採用MySQL同期設定を含めて計3候補を試したため、計画の最大3サイクルに達した。最終状態をVM再起動後にも公式ベンチで確認する。
+
+## 最終検証
+
+採用状態でISUCON14 VMを停止し、対象QEMUが消えたことを確認してから起動した。起動後はGo・matcher・MySQL・nginxがすべてactive、公式ベンチバイナリと計測runnerが存在し、MySQLの `innodb_flush_log_at_trx_commit=1` を確認。公式ベンチは初期化・整合性検証に成功し、スコアは**7,766**。この1回の値は再起動後の動作確認であり、3回中央値の代わりには使わない。
+
+最終採用状態はGoの `SetMaxIdleConns(64)` と `ride_statuses(ride_id, created_at)` インデックス。新VMの初期中央値4,754から最終候補中央値7,271へ**約53%改善**した。計測はローカルARM64・単一VMの値であり、本大会環境とは直接比較できない。
