@@ -15,7 +15,7 @@ stages = json.loads((ROOT / "stages.json").read_text())
 present = [stage for stage in stages if any(r["stage"] == stage["id"] for r in records)]
 with (ROOT / "scores.csv").open("w") as f:
     fields = ["run", "stage", "status", "score", "reported_score", "commit", "diff_sha256"]
-    writer = csv.DictWriter(f, fieldnames=fields)
+    writer = csv.DictWriter(f, fieldnames=fields, lineterminator="\n")
     writer.writeheader()
     writer.writerows({key: r.get(key) for key in fields} for r in records)
 
