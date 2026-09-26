@@ -173,5 +173,10 @@
     "id": "interpolate-highload",
     "label": "Interpolate at high load",
     "decision": "rejected"
+  },
+  {
+    "id": "nearby-sql-distance",
+    "label": "Nearby SQL distance",
+    "decision": "rejected"
   }
 ]
