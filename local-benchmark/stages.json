@@ -253,5 +253,10 @@
     "id": "notification-chair-cache",
     "label": "Notification chair cache",
     "decision": "rejected"
+  },
+  {
+    "id": "coordinate-ride-status-query",
+    "label": "Coordinate ride status query",
+    "decision": "rejected"
   }
 ]
