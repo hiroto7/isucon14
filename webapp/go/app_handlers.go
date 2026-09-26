@@ -869,10 +869,10 @@ WHERE c.is_active = TRUE
   AND NOT EXISTS (
     SELECT 1 FROM rides r
     WHERE r.chair_id = c.id
-      AND COALESCE((
-        SELECT s.status FROM ride_statuses s
-        WHERE s.ride_id = r.id ORDER BY s.created_at DESC LIMIT 1
-      ), '') <> 'COMPLETED'
+      AND NOT EXISTS (
+        SELECT 1 FROM ride_statuses s
+        WHERE s.ride_id = r.id AND s.status = 'COMPLETED'
+      )
   )
 ORDER BY c.id`)
 	if err != nil {
