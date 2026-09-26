@@ -158,5 +158,10 @@
     "id": "matching-batch-update",
     "label": "Batch ride assignment",
     "decision": "accepted"
+  },
+  {
+    "id": "speed-aware-matching",
+    "label": "Speed-aware matching",
+    "decision": "rejected"
   }
 ]
