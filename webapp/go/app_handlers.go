@@ -692,7 +692,7 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 	if err := tx.GetContext(ctx, ride, `SELECT * FROM rides WHERE user_id = ? ORDER BY created_at DESC LIMIT 1`, user.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			writeJSON(w, http.StatusOK, &appGetNotificationResponse{
-				RetryAfterMs: 30,
+				RetryAfterMs: 50,
 			})
 			return
 		}
@@ -723,6 +723,11 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	retryAfterMs := 30
+	if yetSentRideStatus.ID == "" {
+		retryAfterMs = 50
+	}
+
 	response := &appGetNotificationResponse{
 		Data: &appGetNotificationResponseData{
 			RideID: ride.ID,
@@ -739,7 +744,7 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 			CreatedAt: ride.CreatedAt.UnixMilli(),
 			UpdateAt:  ride.UpdatedAt.UnixMilli(),
 		},
-		RetryAfterMs: 30,
+		RetryAfterMs: retryAfterMs,
 	}
 
 	if ride.ChairID.Valid {
