@@ -24,7 +24,7 @@ python3 local-benchmark/tools/run_benchmark.py baseline --runs 3
 
 各回でGo・matcherを再起動して20秒待ち、60秒の公式負荷走行を行う。静的ファイル検証は省略しない。
 `results/<UTC日時>-<段階>/` に生ログ、公式結果の成否・スコア、コードのコミット・差分、SQL集計、リソース情報を保存する。
-失敗は `score: null` とし、ベンチが出力した数値があれば `reported_score` に別途保持する。
+失敗は `score: null` とし、ベンチが出力した数値があれば `reported_score` に別途保持する。Multipassの一時的な接続失敗は最大3回再試行し、準備失敗は公式ベンチ未実行の失敗として記録して次の試行へ進む。
 
 ## グラフ再生成
 
@@ -58,4 +58,4 @@ local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py flush-lo
 
 ## 現在の状態
 
-初期3回はすべて成功し、中央値3,549を記録済み。MySQLログ同期候補 `flush-log-2` を次に測定する。
+初期3回はすべて成功し、中央値3,549を記録済み。`flush-log-2` は有効な測定2回と準備段階の失敗1回を記録済み。有効な3回目を追加して採否を判断する。

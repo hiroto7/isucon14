@@ -1,0 +1,18 @@
+{
+  "stage": "flush-log-2",
+  "started_at": "20260926T081615Z",
+  "commit": "8fa033ced297c42d5d40999dd6f5257b0b62eb1e",
+  "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.net --payment-url http://127.0.0.1:12346 --payment-bind-port 12346 -t 60",
+  "vm": "isucon14",
+  "cpus": 2,
+  "memory_gib": 4,
+  "cooldown_seconds": 20,
+  "duration_seconds": 60,
+  "status": "failed",
+  "score": null,
+  "reported_score": null,
+  "exit_code": null,
+  "failure_stage": "setup",
+  "error": "multipass exec failed while truncating performance_schema.events_statements_summary_by_digest: SSH timeout connecting to 192.168.2.3; official benchmark did not start"
+}

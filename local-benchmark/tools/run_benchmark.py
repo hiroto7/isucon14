@@ -17,11 +17,23 @@ BENCH = "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.ne
 def capture(args):
     return subprocess.check_output(args, cwd=ROOT, text=True)
 
+def checked_multipass(args, **kwargs):
+    for attempt in range(3):
+        result = subprocess.run(["multipass", *args], **kwargs)
+        if result.returncode == 0:
+            return result
+        if attempt == 2:
+            raise subprocess.CalledProcessError(
+                result.returncode, result.args, output=result.stdout, stderr=result.stderr,
+            )
+        print(f"Multipass command failed; retrying in 5s ({attempt + 1}/3)", flush=True)
+        time.sleep(5)
+
 def database_snapshot(run, label):
     query = "SHOW GLOBAL VARIABLES WHERE Variable_name IN ('innodb_buffer_pool_size','innodb_flush_log_at_trx_commit','sync_binlog');"
-    result = subprocess.run(
-        ["multipass", "exec", "isucon14", "--", "sudo", "mysql", "--batch", "--raw", "-e", query],
-        check=True, capture_output=True, text=True,
+    result = checked_multipass(
+        ["exec", "isucon14", "--", "sudo", "mysql", "--batch", "--raw", "-e", query],
+        capture_output=True, text=True,
     )
     (run / f"database-variables-{label}.tsv").write_text(result.stdout)
     lines = [line.split("\t", 1) for line in result.stdout.splitlines() if "\t" in line]
@@ -49,11 +61,20 @@ def main():
         }
         (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
         # Same restart and cooldown for every scored attempt. No database tuning here.
-        subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "systemctl", "restart", "isuride-go", "isuride-matcher"], check=True)
-        time.sleep(20)
-        subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"], check=True)
-        subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "truncate", "-s", "0", "/var/log/nginx/isucon-timing.log"], check=True)
-        record["database_settings_before"] = database_snapshot(run, "before")
+        try:
+            checked_multipass(["exec", "isucon14", "--", "sudo", "systemctl", "restart", "isuride-go", "isuride-matcher"])
+            time.sleep(20)
+            checked_multipass(["exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"])
+            checked_multipass(["exec", "isucon14", "--", "sudo", "truncate", "-s", "0", "/var/log/nginx/isucon-timing.log"])
+            record["database_settings_before"] = database_snapshot(run, "before")
+        except subprocess.CalledProcessError as exc:
+            record.update({"status": "failed", "score": None, "reported_score": None,
+                           "failure_stage": "setup", "error": str(exc)})
+            if exc.stderr:
+                (run / "setup-error.log").write_text(exc.stderr)
+            (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
+            print(f"END {run.name}: failed during setup", flush=True)
+            continue
         start = time.monotonic()
         print(f"START {run.name}", flush=True)
         with (run / "benchmark.log").open("w") as log:
@@ -69,12 +90,12 @@ def main():
         (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
         for remote, name in [("/tmp/isucon14-vmstat.log", "vmstat.log"), ("/tmp/isucon14-processes.log", "processes.log"), ("/var/log/nginx/isucon-timing.log", "http-timing.tsv")]:
             with (run / name).open("w") as f:
-                subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "cat", remote], stdout=f, stderr=subprocess.STDOUT, check=True)
+                checked_multipass(["exec", "isucon14", "--", "sudo", "cat", remote], stdout=f, stderr=subprocess.STDOUT)
         sql = (ROOT / "local-benchmark/tools/profile.sql").read_text()
         with (run / "sql-profile.tsv").open("w") as f:
-            subprocess.run(["multipass", "exec", "isucon14", "--", "sudo", "mysql", "--batch", "-e", sql], stdout=f, stderr=subprocess.STDOUT, check=True)
+            checked_multipass(["exec", "isucon14", "--", "sudo", "mysql", "--batch", "-e", sql], stdout=f, stderr=subprocess.STDOUT)
         with (run / "resources.txt").open("w") as f:
-            subprocess.run(["multipass", "exec", "isucon14", "--", "bash", "-lc", "free -m; uptime; ps -eo comm,pcpu,rss --sort=-pcpu | head -12; df -h /"], stdout=f, stderr=subprocess.STDOUT, check=True)
+            checked_multipass(["exec", "isucon14", "--", "bash", "-lc", "free -m; uptime; ps -eo comm,pcpu,rss --sort=-pcpu | head -12; df -h /"], stdout=f, stderr=subprocess.STDOUT)
         print(f"END {run.name}: {record['status']} score={record['score']}", flush=True)
         if record["status"] != "passed":
             print(raw[-5000:], flush=True)
