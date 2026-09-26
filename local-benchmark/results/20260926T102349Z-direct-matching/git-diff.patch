@@ -1,0 +1,62 @@
+diff --git a/local-benchmark/REPORT.md b/local-benchmark/REPORT.md
+index f10e7429..6f315124 100644
+--- a/local-benchmark/REPORT.md
++++ b/local-benchmark/REPORT.md
+@@ -151,3 +151,7 @@ A/B変更前の追加3回は4,538・6,246・6,783、中央値6,246。旧3回の
+ ## 近傍検索一括化の候補（不採用）
+ 
+ 椅子ごとのライド状態・最新位置検索を1件のSQLへ統合した。公式検証は成功し、`/api/app/nearby-chairs` の平均HTTP時間は239msから48msへ短縮したが、総スコアは直前の8,508から8,234へ低下した。単発の差はばらつきを含むものの、総スコアの大きな改善は観測できず、実装の複雑さも増すため戻した。生ログは `results/20260926T101428Z-nearby-batch-query/` に保存。以後はCPU pprofで累積時間の長い認証時DB照会を調べる。
++
++## 認証セッションのDB照会削減（初回失敗）
++
++CPU pprofで `appAuth` と `chairAuth` の累積がそれぞれ約1.95秒・2.23秒/CPUサンプル6.39秒。認証成功トークンをプロセス内に保持し、初期化時に消す候補を試した。公式ベンチ初回は報告点7,644だが、ライドのマッチング遅延エラー（CODE=32）で検証失敗のため有効スコアは **なし**。失敗を0点とは扱わない。通知数は利用者約4.1万→6.0万、椅子約4.1万→4.2万で、椅子通知の平均HTTP時間は21.8→15.7ms。ただし比較対象は近傍検索候補の試行であり、負荷の変動もある。次はマッチャーの空き椅子探索を直して再測定する。
+diff --git a/local-benchmark/deployed-source.json b/local-benchmark/deployed-source.json
+index 7412310d..d01b13c4 100644
+--- a/local-benchmark/deployed-source.json
++++ b/local-benchmark/deployed-source.json
+@@ -4,14 +4,14 @@
+   "go/chair_handlers.go": "5feadfefadf36d0670e01548a8ba8ff8d86b2d03296ab781a870c3d19f04e9ac",
+   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
+   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
+-  "go/internal_handlers.go": "18c7d156e427847b799dce3674803a67561b662f3b0f933c3e94977e29da626e",
+-  "go/main.go": "524b48c80bd3dd15c77ed56e4ce50400412c39f61ce54b45386e5b77efde5ca0",
+-  "go/middlewares.go": "da74973653071cd626a7254a8a89ed0033594c49f7a814f2a8647f4b7ea4f390",
++  "go/internal_handlers.go": "c587ff5e70d1fb91499d3d40adbe7bcedff1ae14487d19dd521e3d859fc4bff6",
++  "go/main.go": "64c3d14028cd3297227cf04315a84f1edd5c5b7a4569da248b6ad10e289204b1",
++  "go/middlewares.go": "f6e2c742f61495341ead99c0d0bf3bca17d2e9852a98516ddd51d980b390f16e",
+   "go/models.go": "7eded81484544956b8cf35f913bb3e15557a85b40b0cfd0ceff48ba9c17ae83c",
+   "go/owner_handlers.go": "ab8a04897dba957f7f793a959f0083ccd6110b5a789b0e2aa5988d40c1ee0d12",
+   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
+   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
+-  "sql/1-schema.sql": "d595cff1c70dcc83828d2f2881f7823dcb119681405f298713ff521095fde938",
++  "sql/1-schema.sql": "e155ee8cdca3da154edab932fdc2ab63d1c81b52a03254e4fca96ce488359bc2",
+   "sql/2-master-data.sql": "6ce8b7bdcbb163eb9d35a0067c0a9264115868b4df738a00a12d8ecb24bc193e",
+   "sql/3-initial-data.sql.gz": "2b45537b2e546377cca72ddf8feda271ed4a58fded88b1ee41c1e5cce497dc9c",
+   "sql/init.sh": "e72631f21edbbf587c373ff966f1b6a19319dadeb4159f10cda48083757d899f"
+diff --git a/local-benchmark/score-history.png b/local-benchmark/score-history.png
+index 09235c71..01ee0ece 100644
+Binary files a/local-benchmark/score-history.png and b/local-benchmark/score-history.png differ
+diff --git a/local-benchmark/scores.csv b/local-benchmark/scores.csv
+index 2f0459af..9e9fd83d 100644
+--- a/local-benchmark/scores.csv
++++ b/local-benchmark/scores.csv
+@@ -45,3 +45,4 @@ run,stage,status,score,reported_score,commit,diff_sha256
+ 20260926T100901Z-interpolate-params,interpolate-params,passed,8061,8061,9dd513c130511ad5b42b8ac675ce21f5d4ee3a54,f5b62dd99814e383dfa2ba290b6af14e5d8a71389f9b356c42b9243adfec5634
+ 20260926T101106Z-chair-location-index,chair-location-index,passed,8508,8508,ca0e76befa28a8ba9e02bb59f733cb966cee6a2a,0d0ea7916d39dbedfba8f64fb3b93ad8c4d9ef8e0727004e318b45dfedbae8ae
+ 20260926T101428Z-nearby-batch-query,nearby-batch-query,passed,8234,8234,e4922f9cd9bf9ccd8398feea3680c608efac8c7f,2497aef68ed02f982fb4a3a06883566f6625a6dee312a7929eb04c6baa0f2aaf
++20260926T102007Z-auth-session-cache,auth-session-cache,failed,,7644,10cd6e034928def9fe0f70abbf7f3f454ceb82a1,0022367de06480f2ebf5dab72bd1abf42928d56bec8d1326177e4619dfc1d7cd
+diff --git a/local-benchmark/stages.json b/local-benchmark/stages.json
+index cb8d04e5..5f76a184 100644
+--- a/local-benchmark/stages.json
++++ b/local-benchmark/stages.json
+@@ -88,5 +88,10 @@
+     "id": "chair-location-index",
+     "label": "Chair location index",
+     "decision": "accepted"
++  },
++  {
++    "id": "auth-session-cache",
++    "label": "Auth session cache",
++    "decision": "candidate"
+   }
+ ]

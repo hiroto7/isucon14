@@ -88,5 +88,15 @@
     "id": "chair-location-index",
     "label": "Chair location index",
     "decision": "accepted"
+  },
+  {
+    "id": "auth-session-cache",
+    "label": "Auth session cache",
+    "decision": "candidate"
+  },
+  {
+    "id": "direct-matching",
+    "label": "Direct matching",
+    "decision": "accepted"
   }
 ]
