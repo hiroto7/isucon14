@@ -70,3 +70,7 @@ local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py flush-lo
 local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py restart-check --runs 1
 local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 ```
+
+## 継続的な診断設定
+
+`tools/pprof.service.conf` を `/etc/systemd/system/isuride-go.service.d/pprof.conf`、`tools/mysql-profile.cnf` を `/etc/mysql/mysql.conf.d/99-profile.cnf` に置く。pprofはVM内の127.0.0.1:6060のみで待ち受け、MySQL slow query logは50ms閾値で常時有効にする。`/var/lib/mysql/isucon14-slow.log` とCPUプロファイルを定期的にホストへ保全する。この設定はベンチ負荷に影響するため、変更前に `profiled-baseline` の公式ベンチ3回を基準にし、それ以前の段階とスコアを直接比較しない。

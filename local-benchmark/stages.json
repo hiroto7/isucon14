@@ -73,5 +73,10 @@
     "id": "owner-filter-repeat",
     "label": "Owner filter repeat",
     "decision": "accepted"
+  },
+  {
+    "id": "profiled-baseline",
+    "label": "Profiled baseline",
+    "decision": "baseline"
   }
 ]
