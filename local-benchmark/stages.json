@@ -98,5 +98,10 @@
     "id": "direct-matching",
     "label": "Direct matching",
     "decision": "accepted"
+  },
+  {
+    "id": "notification-autocommit",
+    "label": "Notification autocommit",
+    "decision": "rejected"
   }
 ]
