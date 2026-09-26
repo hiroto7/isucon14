@@ -48,5 +48,10 @@
     "id": "pre-rides-chair-repeat",
     "label": "Before rides index repeat",
     "decision": "baseline"
+  },
+  {
+    "id": "rides-chair-repeat",
+    "label": "Rides index repeat",
+    "decision": "candidate"
   }
 ]
