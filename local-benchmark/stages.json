@@ -283,5 +283,10 @@
     "id": "final-restored",
     "label": "After MySQL restore",
     "decision": "verification"
+  },
+  {
+    "id": "trip-time-matching",
+    "label": "Trip time matching",
+    "decision": "rejected"
   }
 ]
