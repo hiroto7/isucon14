@@ -213,3 +213,7 @@ Go接続プールの最大同時接続を64に設定した次の公式ベンチ�
 ## 高負荷pprof・slow query log診断
 
 採用状態で30秒のCPU pprofを公式ベンチ中に採取。公式検証成功・報告点43,995だが採取負荷があるためスコア比較に使わない。CPUサンプル11.50秒中、`internal/runtime/syscall.Syscall6` 自身が5.95秒（51.7%）。累積ではMySQLドライバの `PrepareContext` が1.68秒、`writePacket` が3.93秒。DBへの準備・送信がGo側の主要なCPU費用。slow log（50ms閾値、当該時間帯のみ）では近傍検索225件・累積18.458秒・調査約113万行、オーナー椅子一覧93件・累積10.262秒。次は準備往復を除く `InterpolateParams` を高負荷条件で再試行する。生データは `profiles/20260926T150500Z-highload/`。
+
+## MySQLパラメータ補間の高負荷再試行（不採用）
+
+CPU pprofではMySQL `PrepareContext` が累積1.68秒/11.50秒サンプルだったため、`InterpolateParams=true` を高負荷で再試行。公式検証成功だがスコア49,702で直前50,215を下回る。準備費用を減らしても総スコア上昇は確認できず、設定を戻した。次はslow logで近傍検索225件・累積18.458秒だったクエリの距離条件をSQLに押し込む。

@@ -168,5 +168,10 @@
     "id": "highload-diagnostics",
     "label": "High-load diagnostics",
     "decision": "diagnostic"
+  },
+  {
+    "id": "interpolate-highload",
+    "label": "Interpolate at high load",
+    "decision": "rejected"
   }
 ]
