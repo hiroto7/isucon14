@@ -78,9 +78,9 @@ func setup() http.Handler {
 		panic(err)
 	}
 	// Reuse MySQL connections across the frequent notification polls.
-	_db.SetMaxIdleConns(32)
+	_db.SetMaxIdleConns(64)
 	// The burst after matching several rides must stay below MySQL's 151-connection limit.
-	_db.SetMaxOpenConns(32)
+	_db.SetMaxOpenConns(64)
 	db = _db
 
 	mux := chi.NewRouter()
