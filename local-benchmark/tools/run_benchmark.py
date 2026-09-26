@@ -39,6 +39,16 @@ def database_snapshot(run, label):
     lines = [line.split("\t", 1) for line in result.stdout.splitlines() if "\t" in line]
     return {name: value for name, value in lines[1:]}
 
+def connection_snapshot(run, label):
+    query = "SHOW GLOBAL STATUS WHERE Variable_name IN ('Connections','Threads_created','Threads_connected','Threads_running');"
+    result = checked_multipass(
+        ["exec", "isucon14", "--", "sudo", "mysql", "--batch", "--raw", "-e", query],
+        capture_output=True, text=True,
+    )
+    (run / f"connection-status-{label}.tsv").write_text(result.stdout)
+    lines = [line.split("\t", 1) for line in result.stdout.splitlines() if "\t" in line]
+    return {name: value for name, value in lines[1:]}
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("stage")
@@ -67,6 +77,7 @@ def main():
             checked_multipass(["exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"])
             checked_multipass(["exec", "isucon14", "--", "sudo", "truncate", "-s", "0", "/var/log/nginx/isucon-timing.log"])
             record["database_settings_before"] = database_snapshot(run, "before")
+            record["connection_status_before"] = connection_snapshot(run, "before")
         except subprocess.CalledProcessError as exc:
             record.update({"status": "failed", "score": None, "reported_score": None,
                            "failure_stage": "setup", "error": str(exc)})
@@ -87,6 +98,7 @@ def main():
                        "score": int(raw_score) if passed == "true" and proc.returncode == 0 else None,
                        "reported_score": int(raw_score) if raw_score is not None else None})
         record["database_settings_after"] = database_snapshot(run, "after")
+        record["connection_status_after"] = connection_snapshot(run, "after")
         (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
         for remote, name in [("/tmp/isucon14-vmstat.log", "vmstat.log"), ("/tmp/isucon14-processes.log", "processes.log"), ("/var/log/nginx/isucon-timing.log", "http-timing.tsv")]:
             with (run / name).open("w") as f:
