@@ -208,7 +208,7 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 	if err := tx.GetContext(ctx, ride, `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1`, chair.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
 			writeJSON(w, http.StatusOK, &chairGetNotificationResponse{
-				RetryAfterMs: 50,
+				RetryAfterMs: 30,
 			})
 			return
 		}
@@ -246,10 +246,6 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	retryAfterMs := 30
-	if yetSentRideStatus.ID == "" {
-		retryAfterMs = 50
-	}
 	if yetSentRideStatus.ID == "" {
 		err = tx.Rollback()
 	} else {
@@ -277,7 +273,7 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 			},
 			Status: status,
 		},
-		RetryAfterMs: retryAfterMs,
+		RetryAfterMs: 30,
 	})
 }
 
