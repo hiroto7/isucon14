@@ -6,6 +6,7 @@ import (
 	"errors"
 	"net/http"
 	"strconv"
+	"sync"
 	"time"
 
 	"github.com/jmoiron/sqlx"
@@ -917,7 +918,15 @@ func calculateFare(pickupLatitude, pickupLongitude, destLatitude, destLongitude 
 	return initialFare + meteredFare
 }
 
+// A ride's coupon is assigned on creation and never changes afterwards.
+var rideFares sync.Map
+
 func calculateDiscountedFare(ctx context.Context, tx *sqlx.Tx, userID string, ride *Ride, pickupLatitude, pickupLongitude, destLatitude, destLongitude int) (int, error) {
+	if ride != nil {
+		if fare, ok := rideFares.Load(ride.ID); ok {
+			return fare.(int), nil
+		}
+	}
 	var coupon Coupon
 	discount := 0
 	if ride != nil {
@@ -957,5 +966,9 @@ func calculateDiscountedFare(ctx context.Context, tx *sqlx.Tx, userID string, ri
 	meteredFare := farePerDistance * calculateDistance(pickupLatitude, pickupLongitude, destLatitude, destLongitude)
 	discountedMeteredFare := max(meteredFare-discount, 0)
 
-	return initialFare + discountedMeteredFare, nil
+	fare := initialFare + discountedMeteredFare
+	if ride != nil {
+		rideFares.Store(ride.ID, fare)
+	}
+	return fare, nil
 }
