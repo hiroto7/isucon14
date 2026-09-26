@@ -134,24 +134,16 @@ ON DUPLICATE KEY UPDATE
 		return
 	}
 
-	ride := &struct {
-		Ride
-		LatestStatus string `db:"latest_status"`
-	}{}
-	if err := tx.GetContext(ctx, ride, `
-SELECT r.*, (
-  SELECT s.status FROM ride_statuses s
-  WHERE s.ride_id = r.id ORDER BY s.created_at DESC LIMIT 1
-) AS latest_status
-FROM rides r WHERE r.chair_id = ? ORDER BY r.updated_at DESC LIMIT 1`, chair.ID); err != nil {
+	ride := &Ride{}
+	if err := tx.GetContext(ctx, ride, `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1`, chair.ID); err != nil {
 		if !errors.Is(err, sql.ErrNoRows) {
 			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
 	} else {
-		status := ride.LatestStatus
-		if status == "" {
-			writeError(w, http.StatusInternalServerError, sql.ErrNoRows)
+		status, err := getLatestRideStatus(ctx, tx, ride.ID)
+		if err != nil {
+			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
 		if status != "COMPLETED" && status != "CANCELED" {
