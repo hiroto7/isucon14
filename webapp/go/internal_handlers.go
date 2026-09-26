@@ -9,7 +9,6 @@ import (
 // このAPIをインスタンス内から一定間隔で叩かせることで、椅子とライドをマッチングさせる
 func internalGetMatching(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
-	// MEMO: 一旦最も待たせているリクエストに適当な空いている椅子マッチさせる実装とする。おそらくもっといい方法があるはず…
 	ride := &Ride{}
 	if err := db.GetContext(ctx, ride, `SELECT * FROM rides WHERE chair_id IS NULL ORDER BY created_at LIMIT 1`); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
@@ -21,26 +20,24 @@ func internalGetMatching(w http.ResponseWriter, r *http.Request) {
 	}
 
 	matched := &Chair{}
-	empty := false
-	for i := 0; i < 10; i++ {
-		if err := db.GetContext(ctx, matched, "SELECT * FROM chairs INNER JOIN (SELECT id FROM chairs WHERE is_active = TRUE ORDER BY RAND() LIMIT 1) AS tmp ON chairs.id = tmp.id LIMIT 1"); err != nil {
-			if errors.Is(err, sql.ErrNoRows) {
-				w.WriteHeader(http.StatusNoContent)
-				return
-			}
-			writeError(w, http.StatusInternalServerError, err)
-		}
-
-		if err := db.GetContext(ctx, &empty, "SELECT COUNT(*) = 0 FROM (SELECT COUNT(chair_sent_at) = 6 AS completed FROM ride_statuses WHERE ride_id IN (SELECT id FROM rides WHERE chair_id = ?) GROUP BY ride_id) is_completed WHERE completed = FALSE", matched.ID); err != nil {
-			writeError(w, http.StatusInternalServerError, err)
+	// A random active chair may be busy. Choose directly from eligible chairs,
+	// preserving the existing rule that all ride statuses must be sent to the chair.
+	if err := db.GetContext(ctx, matched, `
+SELECT c.* FROM chairs c
+WHERE c.is_active = TRUE
+  AND NOT EXISTS (
+    SELECT 1 FROM rides r
+    JOIN ride_statuses rs ON rs.ride_id = r.id
+    WHERE r.chair_id = c.id
+    GROUP BY r.id
+    HAVING COUNT(rs.chair_sent_at) <> 6
+  )
+ORDER BY RAND() LIMIT 1`); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			w.WriteHeader(http.StatusNoContent)
 			return
 		}
-		if empty {
-			break
-		}
-	}
-	if !empty {
-		w.WriteHeader(http.StatusNoContent)
+		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
 
