@@ -128,5 +128,10 @@
     "id": "chair-stats-highload",
     "label": "Chair stats at high load",
     "decision": "rejected"
+  },
+  {
+    "id": "nearby-highload",
+    "label": "Nearby batch at high load",
+    "decision": "accepted"
   }
 ]
