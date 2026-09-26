@@ -28,5 +28,10 @@
     "id": "ride-status-index",
     "label": "Ride status index",
     "decision": "accepted"
+  },
+  {
+    "id": "restart-check",
+    "label": "After VM restart",
+    "decision": "verification"
   }
 ]
