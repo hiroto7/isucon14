@@ -122,6 +122,16 @@ CREATE TABLE ride_statuses
 )
   COMMENT = 'ライドステータスの変更履歴テーブル';
 
+DROP TABLE IF EXISTS chair_stats;
+CREATE TABLE chair_stats
+(
+  chair_id VARCHAR(26) NOT NULL,
+  total_rides_count INTEGER NOT NULL,
+  total_evaluation_sum INTEGER NOT NULL,
+  PRIMARY KEY (chair_id)
+)
+  COMMENT = '椅子の完了ライド統計';
+
 DROP TABLE IF EXISTS owners;
 CREATE TABLE owners
 (

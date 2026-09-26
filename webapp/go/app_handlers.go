@@ -619,6 +619,24 @@ func appPostRideEvaluatation(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
+	if ride.ChairID.Valid {
+		var carried bool
+		if err := tx.GetContext(ctx, &carried, `SELECT EXISTS(SELECT 1 FROM ride_statuses WHERE ride_id = ? AND status = 'CARRYING')`, ride.ID); err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+		if carried {
+			if _, err := tx.ExecContext(ctx, `
+INSERT INTO chair_stats (chair_id, total_rides_count, total_evaluation_sum)
+VALUES (?, 1, ?)
+ON DUPLICATE KEY UPDATE total_rides_count = total_rides_count + 1,
+                        total_evaluation_sum = total_evaluation_sum + VALUES(total_evaluation_sum)`,
+				ride.ChairID.String, req.Evaluation); err != nil {
+				writeError(w, http.StatusInternalServerError, err)
+				return
+			}
+		}
+	}
 
 	if err := tx.Commit(); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
@@ -761,61 +779,20 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 }
 
 func getChairStats(ctx context.Context, tx *sqlx.Tx, chairID string) (appGetNotificationResponseChairStats, error) {
-	stats := appGetNotificationResponseChairStats{}
-
-	rides := []Ride{}
-	err := tx.SelectContext(
-		ctx,
-		&rides,
-		`SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC`,
-		chairID,
-	)
-	if err != nil {
-		return stats, err
+	var counts struct {
+		TotalRidesCount    int `db:"total_rides_count"`
+		TotalEvaluationSum int `db:"total_evaluation_sum"`
 	}
-
-	totalRideCount := 0
-	totalEvaluation := 0.0
-	for _, ride := range rides {
-		rideStatuses := []RideStatus{}
-		err = tx.SelectContext(
-			ctx,
-			&rideStatuses,
-			`SELECT * FROM ride_statuses WHERE ride_id = ? ORDER BY created_at`,
-			ride.ID,
-		)
-		if err != nil {
-			return stats, err
+	if err := tx.GetContext(ctx, &counts, `SELECT total_rides_count, total_evaluation_sum FROM chair_stats WHERE chair_id = ?`, chairID); err != nil {
+		if errors.Is(err, sql.ErrNoRows) {
+			return appGetNotificationResponseChairStats{}, nil
 		}
-
-		var arrivedAt, pickupedAt *time.Time
-		var isCompleted bool
-		for _, status := range rideStatuses {
-			if status.Status == "ARRIVED" {
-				arrivedAt = &status.CreatedAt
-			} else if status.Status == "CARRYING" {
-				pickupedAt = &status.CreatedAt
-			}
-			if status.Status == "COMPLETED" {
-				isCompleted = true
-			}
-		}
-		if arrivedAt == nil || pickupedAt == nil {
-			continue
-		}
-		if !isCompleted {
-			continue
-		}
-
-		totalRideCount++
-		totalEvaluation += float64(*ride.Evaluation)
+		return appGetNotificationResponseChairStats{}, err
 	}
-
-	stats.TotalRidesCount = totalRideCount
-	if totalRideCount > 0 {
-		stats.TotalEvaluationAvg = totalEvaluation / float64(totalRideCount)
+	stats := appGetNotificationResponseChairStats{TotalRidesCount: counts.TotalRidesCount}
+	if counts.TotalRidesCount > 0 {
+		stats.TotalEvaluationAvg = float64(counts.TotalEvaluationSum) / float64(counts.TotalRidesCount)
 	}
-
 	return stats, nil
 }
 
