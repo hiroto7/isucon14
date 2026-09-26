@@ -53,5 +53,10 @@
     "id": "rides-chair-repeat",
     "label": "Rides index repeat",
     "decision": "rejected"
+  },
+  {
+    "id": "diagnostics",
+    "label": "Diagnostic profile",
+    "decision": "diagnostic"
   }
 ]

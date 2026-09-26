@@ -19,7 +19,7 @@ with (ROOT / "scores.csv").open("w") as f:
     writer.writeheader()
     writer.writerows({key: r.get(key) for key in fields} for r in records)
 
-fig, ax = plt.subplots(figsize=(12, 6.5), layout="constrained")
+fig, ax = plt.subplots(figsize=(max(12, 1.8 * len(present)), 6.5), layout="constrained")
 reference_stage = "rebuilt-baseline" if any(r["stage"] == "rebuilt-baseline" and r["status"] == "passed" for r in records) else "baseline"
 baseline = [r["score"] for r in records if r["stage"] == reference_stage and r["status"] == "passed"]
 base = statistics.median(baseline) if baseline else None
@@ -27,7 +27,7 @@ max_score = max([r["score"] for r in records if r.get("score") is not None] or [
 for x, stage in enumerate(present):
     rows = [r for r in records if r["stage"] == stage["id"]]
     scores = [r["score"] for r in rows if r["status"] == "passed" and r.get("score") is not None]
-    color = "#2563eb" if stage["decision"] != "rejected" else "#9ca3af"
+    color = "#9ca3af" if stage["decision"] == "rejected" else "#d97706" if stage["decision"] == "diagnostic" else "#2563eb"
     if scores:
         median = statistics.median(scores)
         ax.errorbar(x, median, yerr=[[median - min(scores)], [max(scores) - median]], fmt="D", color=color, capsize=7, markersize=8, zorder=3)
@@ -48,7 +48,7 @@ for x, stage in enumerate(present):
                     xytext=(0, -36), textcoords="offset points", ha="center",
                     color="#dc2626", fontsize=9, annotation_clip=False)
 
-ax.set_xticks(range(len(present)), [stage["label"] + ("\n[rejected]" if stage["decision"] == "rejected" else "") for stage in present])
+ax.set_xticks(range(len(present)), [stage["label"] + ("\n[rejected]" if stage["decision"] == "rejected" else "\n[profile overhead]" if stage["decision"] == "diagnostic" else "") for stage in present])
 ax.set_ylim(0, max_score * 1.3)
 ax.set_xlim(-.6, max(len(present) - .4, .6))
 ax.set_ylabel("Official benchmark score")
