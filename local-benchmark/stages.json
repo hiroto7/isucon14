@@ -63,5 +63,15 @@
     "id": "owner-distance-filter",
     "label": "Owner distance filter",
     "decision": "candidate"
+  },
+  {
+    "id": "pre-owner-filter-repeat",
+    "label": "Before owner filter repeat",
+    "decision": "baseline"
+  },
+  {
+    "id": "owner-filter-repeat",
+    "label": "Owner filter repeat",
+    "decision": "candidate"
   }
 ]
