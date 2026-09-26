@@ -288,5 +288,10 @@
     "id": "trip-time-matching",
     "label": "Trip time matching",
     "decision": "rejected"
+  },
+  {
+    "id": "nginx-log-buffer",
+    "label": "Nginx log buffer",
+    "decision": "rejected"
   }
 ]
