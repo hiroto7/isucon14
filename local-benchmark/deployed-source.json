@@ -11,7 +11,7 @@
   "go/owner_handlers.go": "5bcef83b4e0ffd4f3351c24c8b3d5a4a68936b59c8a31702d206fd845f705013",
   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
-  "sql/1-schema.sql": "ddfcfcbfc0e76c3d552622facd967ea85e766ad6d4861922282f93fd3c73d3fa",
+  "sql/1-schema.sql": "7878f9c7d2adc8abdfba70651a940a6cc05ea14ee3b47f6d73b04fd8c3ef8b11",
   "sql/2-master-data.sql": "6ce8b7bdcbb163eb9d35a0067c0a9264115868b4df738a00a12d8ecb24bc193e",
   "sql/3-initial-data.sql.gz": "2b45537b2e546377cca72ddf8feda271ed4a58fded88b1ee41c1e5cce497dc9c",
   "sql/init.sh": "e72631f21edbbf587c373ff966f1b6a19319dadeb4159f10cda48083757d899f"
