@@ -163,5 +163,10 @@
     "id": "speed-aware-matching",
     "label": "Speed-aware matching",
     "decision": "rejected"
+  },
+  {
+    "id": "highload-diagnostics",
+    "label": "High-load diagnostics",
+    "decision": "diagnostic"
   }
 ]
