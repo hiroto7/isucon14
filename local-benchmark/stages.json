@@ -153,5 +153,10 @@
     "id": "latest-location-table",
     "label": "Latest location table",
     "decision": "accepted"
+  },
+  {
+    "id": "matching-batch-update",
+    "label": "Batch ride assignment",
+    "decision": "accepted"
   }
 ]
