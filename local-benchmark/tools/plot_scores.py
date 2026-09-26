@@ -34,9 +34,8 @@ for x, stage in enumerate(present):
         offsets = [(i - (len(scores) - 1) / 2) * 0.07 for i in range(len(scores))]
         for index, (offset, score) in enumerate(zip(offsets, scores)):
             ax.scatter(x + offset, score, color=color, alpha=.75, s=30, zorder=4)
-            ratio = f" ({score / base:.0%})" if base else ""
             vertical = [15, -22, 43][index % 3]
-            ax.annotate(f"{score:,}{ratio}", (x + offset, score), xytext=(0, vertical), textcoords="offset points", ha="center", fontsize=8, color="#333333")
+            ax.annotate(f"{score:,}", (x + offset, score), xytext=(0, vertical), textcoords="offset points", ha="center", fontsize=8, color="#333333")
         base_ratio = f" ({median / base:.0%})" if base else ""
         ax.annotate(
             f"median {median:,.0f}{base_ratio}\n{min(scores):,}–{max(scores):,}",
@@ -56,6 +55,6 @@ ax.set_ylabel("Official benchmark score")
 ax.set_title("ISUCON14 — local score progression", loc="left", fontweight="bold")
 ax.grid(axis="y", alpha=.2)
 ax.spines[["top", "right"]].set_visible(False)
-fig.text(.01, -.10, "ARM64 / Ubuntu 24.04 / 2 vCPU / 4 GiB / app + benchmark on one VM\nDots: individual scores and baseline ratio. Diamond: median. Whiskers and labels: min–max. Failed runs shown below the axis without a numeric score.", fontsize=9, color="#555555")
+fig.text(.01, -.10, "ARM64 / Ubuntu 24.04 / 2 vCPU / 4 GiB / app + benchmark on one VM\nDots: individual scores. Diamond: median. Box: median, baseline ratio and min–max. Whiskers: min–max. Failed runs shown below the axis without a numeric score.", fontsize=9, color="#555555")
 fig.savefig(ROOT / "score-history.png", dpi=180, bbox_inches="tight")
 print(ROOT / "score-history.png")
