@@ -1,18 +1,18 @@
 {
   "go/.gitignore": "2568a79097dd80db87574459dd10e9de9ee37580eb2c0a4abf1dfcd0250c4245",
-  "go/app_handlers.go": "d8f541ed2f7112aa5ede502e61a81bed56fa1d1bbaf57f5c6d62dd1d6db72a90",
-  "go/chair_handlers.go": "7c97b92bb31481dae2fab16b14b5f0c0a65d80222931546dda1123553a3e6473",
+  "go/app_handlers.go": "1c2ae4960b4a63ff0ae895b95bf13d748d663b7cbe626b882576ab5a04119561",
+  "go/chair_handlers.go": "fd56de775c0537430881663f8048bccd27d94a4c7bcccd6a0479de1cd6b99dc6",
   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
-  "go/internal_handlers.go": "1e70c728145fb1dccb35e9142d5d7b356e4b49eac34b67f3840950233a782e37",
+  "go/internal_handlers.go": "c8aa99cd613d03a602e8a3de442730c5a1483d425afb38c69a4eaa65f553a56f",
   "go/main.go": "ba25ecfe558d9bd91a15b0bc62866f27aa1446a4c78fdf33b81eddfbe92be6f7",
   "go/middlewares.go": "f6e2c742f61495341ead99c0d0bf3bca17d2e9852a98516ddd51d980b390f16e",
   "go/models.go": "7eded81484544956b8cf35f913bb3e15557a85b40b0cfd0ceff48ba9c17ae83c",
   "go/owner_handlers.go": "ab8a04897dba957f7f793a959f0083ccd6110b5a789b0e2aa5988d40c1ee0d12",
   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
-  "sql/1-schema.sql": "2db19d18747b0b353e18f91d8b2fc518a41226333b30f6ef44fc6a05636ad012",
+  "sql/1-schema.sql": "69d580b4a531329b3a2db47c602ace881bf98dda04c81bd1957408f5c4114db3",
   "sql/2-master-data.sql": "6ce8b7bdcbb163eb9d35a0067c0a9264115868b4df738a00a12d8ecb24bc193e",
   "sql/3-initial-data.sql.gz": "2b45537b2e546377cca72ddf8feda271ed4a58fded88b1ee41c1e5cce497dc9c",
-  "sql/init.sh": "e72631f21edbbf587c373ff966f1b6a19319dadeb4159f10cda48083757d899f"
+  "sql/init.sh": "1ab67406f866920f0d23f5700544c64c373685b7e4b2eac794e2592d9a72adc3"
 }

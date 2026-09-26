@@ -148,5 +148,10 @@
     "id": "nearest-batch-prefetch",
     "label": "Nearest batch prefetch",
     "decision": "accepted"
+  },
+  {
+    "id": "latest-location-table",
+    "label": "Latest location table",
+    "decision": "accepted"
   }
 ]
