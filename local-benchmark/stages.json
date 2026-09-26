@@ -62,7 +62,7 @@
   {
     "id": "owner-distance-filter",
     "label": "Owner distance filter",
-    "decision": "candidate"
+    "decision": "accepted"
   },
   {
     "id": "pre-owner-filter-repeat",
@@ -72,6 +72,6 @@
   {
     "id": "owner-filter-repeat",
     "label": "Owner filter repeat",
-    "decision": "candidate"
+    "decision": "accepted"
   }
 ]
