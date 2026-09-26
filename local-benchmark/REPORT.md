@@ -311,3 +311,17 @@ CPU pprofではMySQL `PrepareContext` が累積1.68秒/11.50秒サンプルだ�
 ## nginxアクセスログのバッファ書き込み（不採用）
 
 nginxは標準アクセスログとHTTP時間の診断ログを両方出力し、標準ログは累計1.2GB。両ログを有効のまま64KiBバッファ・1秒フラッシュにした。公式検証成功、スコアは採用状態70,028に対して63,639。改善を確認できず元の即時書き込みへ戻した。診断用ログとpprof、slow query logは引き続き有効。
+
+## 最終採用状態と再計測
+
+不採用候補をすべて戻した状態で公式検証は成功し、最終試行69,744。採用状態の最高は70,028（再構築初期中央値4,754比14.73倍）、同一採用コードの再起動後・設定復元後・最終試行は63,672・70,028・69,744。試行差があるため、微小な候補差を性能改善と断定しない。目標の約100倍には届かなかった。直近の計測ではCPUがほぼ飽和し、通知・座標送信が各数万回、マッチング・運賃・ログ・DB同期の個別改善では大幅な上昇が再現しなかった。APIの即時整合性を守る範囲での次の手軽な一手は見えておらず、ここで探索を止める。100倍に近づけるには通知状態と座標履歴の保持方法を設計し直し、並行更新と再起動時の整合性を含めて検証する必要がある。
+
+再計測はホストの `~/dev/isucon14` から以下を実行する。計測ツールはMySQL・nginxの起動を待ち、Goとmatcherを再起動して20秒待機し、VM内の既存の公式ベンチバイナリを60秒実行する。pprof、MySQL slow query log、nginx時間ログは有効のまま。VM内のアプリがホストの採用コードと一致しない場合は先に配置する。
+
+```sh
+local-benchmark/.venv/bin/python local-benchmark/tools/deploy.py
+local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py manual-check --runs 1
+local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
+```
+
+`score-focus.png` は主要な採用段階を読みやすく示し、`score-history.png` は不採用・失敗を含む全試行を示す。`results/*/result.json` と生ログから再生成できる。ローカルARM64単一VMの結果であり、本大会環境のスコアとは直接比較しない。

@@ -59,10 +59,22 @@ def matcher_interval():
         raise ValueError("ISUCON_MATCHING_INTERVAL is missing")
     return match.group(1)
 
+def wait_for_services():
+    """A restarted VM can answer Multipass before MySQL and nginx are ready."""
+    for _ in range(60):
+        result = subprocess.run(
+            ["multipass", "exec", "isucon14", "--", "systemctl", "is-active", "mysql", "nginx"],
+            capture_output=True, text=True,
+        )
+        if result.returncode == 0 and result.stdout.splitlines() == ["active", "active"]:
+            return
+        time.sleep(2)
+    raise subprocess.CalledProcessError(1, ["systemctl", "is-active", "mysql", "nginx"], stderr="VM services did not become active within 120 seconds")
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("stage")
-    parser.add_argument("--runs", type=int, default=3)
+    parser.add_argument("--runs", type=int, default=1)
     args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     for _ in range(args.runs):
@@ -82,6 +94,7 @@ def main():
         (run / "result.json").write_text(json.dumps(record, ensure_ascii=False, indent=2))
         # Same restart and cooldown for every scored attempt. No database tuning here.
         try:
+            wait_for_services()
             checked_multipass(["exec", "isucon14", "--", "sudo", "systemctl", "restart", "isuride-go", "isuride-matcher"])
             time.sleep(20)
             checked_multipass(["exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"])

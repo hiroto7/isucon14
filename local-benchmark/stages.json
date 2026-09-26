@@ -293,5 +293,10 @@
     "id": "nginx-log-buffer",
     "label": "Nginx log buffer",
     "decision": "rejected"
+  },
+  {
+    "id": "final-adopted-check",
+    "label": "Final adopted check",
+    "decision": "verification"
   }
 ]

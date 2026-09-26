@@ -64,12 +64,12 @@ focus_ids = [
     "rebuilt-baseline", "ride-status-index", "rides-user-index",
     "matching-batch-pool-cap", "nearest-batch-prefetch",
     "matching-batch-update", "materialized-chair-stats",
-    "read-only-rollback-highload", "ride-fare-cache", "final-restart-stable", "final-restored",
+    "read-only-rollback-highload", "ride-fare-cache", "final-restart-stable", "final-restored", "final-adopted-check",
 ]
 focus_labels = [
     "Rebuilt\nbaseline", "Status\nindex", "Ride\nindex",
     "Batch\nmatching", "Nearest\nmatching", "Batch\nupdates",
-    "Chair\nstats", "Read-only\nrollback", "Best\naccepted", "After\nrestart", "MySQL\nrestored",
+    "Chair\nstats", "Read-only\nrollback", "Best\naccepted", "After\nrestart", "MySQL\nrestored", "Final\nadopted",
 ]
 fig2, ax2 = plt.subplots(figsize=(13, 5.5), layout="constrained")
 for x, (stage_id, label) in enumerate(zip(focus_ids, focus_labels)):
@@ -78,7 +78,7 @@ for x, (stage_id, label) in enumerate(zip(focus_ids, focus_labels)):
     if not scores:
         continue
     median = statistics.median(scores)
-    color = "#d97706" if stage_id in {"final-restart-stable", "final-restored"} else "#2563eb"
+    color = "#d97706" if stage_id in {"final-restart-stable", "final-restored", "final-adopted-check"} else "#2563eb"
     ax2.errorbar(x, median, yerr=[[median-min(scores)], [max(scores)-median]], fmt="o", color=color, capsize=5, markersize=7, zorder=3)
     for score in scores:
         ax2.scatter(x, score, color=color, alpha=.5, s=28, zorder=3)
