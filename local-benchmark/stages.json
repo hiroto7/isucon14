@@ -198,5 +198,10 @@
     "id": "chair-user-cache",
     "label": "Chair user cache",
     "decision": "rejected"
+  },
+  {
+    "id": "mysql-unix-socket",
+    "label": "MySQL Unix socket",
+    "decision": "accepted"
   }
 ]
