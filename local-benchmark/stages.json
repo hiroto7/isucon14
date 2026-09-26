@@ -273,5 +273,10 @@
     "id": "final-restart-stable",
     "label": "Restart stable check",
     "decision": "verification"
+  },
+  {
+    "id": "mysql-no-binlog",
+    "label": "MySQL binlog off",
+    "decision": "rejected"
   }
 ]
