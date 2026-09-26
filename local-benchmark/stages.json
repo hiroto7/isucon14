@@ -183,5 +183,10 @@
     "id": "app-notification-100ms",
     "label": "App poll 100 ms",
     "decision": "rejected"
+  },
+  {
+    "id": "matcher-100ms",
+    "label": "Matcher 100 ms",
+    "decision": "rejected"
   }
 ]
