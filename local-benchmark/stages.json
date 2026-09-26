@@ -78,5 +78,10 @@
     "id": "profiled-baseline",
     "label": "Profiled baseline",
     "decision": "baseline"
+  },
+  {
+    "id": "interpolate-params",
+    "label": "Interpolate params",
+    "decision": "candidate"
   }
 ]
