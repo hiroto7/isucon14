@@ -1,0 +1,122 @@
+time=17:52:44.616 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=17:52:44.616 level=INFO msg=負荷走行を開始します
+time=17:52:47.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=17:52:47.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=0 score="[0 0 0 0 0]" criteria="[0 0 0 0]"
+time=17:52:49.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=17:52:49.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=0 score="[0 0 0 0 0]" criteria="[0 0 0 0]"
+time=17:52:50.969 level=INFO msg=これまでに地域内の評判によって0人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:52:50.969 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、50.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、25.0%のライドは椅子の実移動時間に不満がありました
+time=17:52:50.969 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=17:52:50.969 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=2 score="[0 0 1 0 1]" criteria="[2 1 2 1]"
+time=17:52:52.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=17:52:52.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=3 score="[0 0 2 0 1]" criteria="[2 1 3 2]"
+time=17:52:52.789 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=17:52:54.569 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=17:52:54.569 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=4 score="[1 0 2 0 1]" criteria="[2 1 3 2]"
+time=17:52:56.370 level=INFO msg=これまでに地域内の評判によって6人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:52:56.370 level=INFO msg=50.0%のライドは椅子がマッチされるまでの時間、75.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、37.5%のライドは椅子の実移動時間に不満がありました
+time=17:52:56.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=17:52:56.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=4 score="[1 0 2 0 1]" criteria="[2 1 3 2]"
+time=17:52:58.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=17:52:58.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=7 score="[3 0 3 0 1]" criteria="[3 1 3 3]"
+time=17:52:59.969 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=17:52:59.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=8 score="[4 0 3 0 1]" criteria="[3 1 3 3]"
+time=17:53:01.770 level=INFO msg=これまでに地域内の評判によって12人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:01.770 level=INFO msg=これまでに低評価なライドによって3人が利用をやめました
+time=17:53:01.770 level=INFO msg=72.7%のライドは椅子がマッチされるまでの時間、90.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、72.7%のライドは椅子の実移動時間に不満がありました
+time=17:53:01.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=17:53:01.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=11 score="[7 0 3 0 1]" criteria="[3 1 3 3]"
+time=17:53:03.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=17:53:03.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=13 score="[8 1 3 0 1]" criteria="[4 1 3 3]"
+time=17:53:05.368 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=17:53:05.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=17:53:05.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=15 score="[10 1 3 0 1]" criteria="[4 1 3 3]"
+time=17:53:05.393 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=17:53:05.504 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=17:53:07.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=17:53:07.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[12 2 3 0 1]" criteria="[5 1 3 3]"
+time=17:53:07.170 level=INFO msg=これまでに地域内の評判によって18人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:07.170 level=INFO msg=これまでに低評価なライドによって9人が利用をやめました
+time=17:53:07.170 level=INFO msg=72.2%のライドは椅子がマッチされるまでの時間、94.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、83.3%のライドは椅子の実移動時間に不満がありました
+time=17:53:08.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=17:53:08.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[12 2 3 0 1]" criteria="[5 1 3 3]"
+time=17:53:10.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=17:53:10.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[12 2 3 0 1]" criteria="[5 1 3 3]"
+time=17:53:12.570 level=INFO msg=これまでに地域内の評判によって24人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:12.570 level=INFO msg=これまでに低評価なライドによって11人が利用をやめました
+time=17:53:12.570 level=INFO msg=75.0%のライドは椅子がマッチされるまでの時間、95.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、85.0%のライドは椅子の実移動時間に不満がありました
+time=17:53:12.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=17:53:12.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=20 score="[14 2 3 0 1]" criteria="[5 1 3 3]"
+time=17:53:12.643 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=17:53:12.666 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=17:53:14.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=17:53:14.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=22 score="[15 3 3 0 1]" criteria="[5 2 3 3]"
+time=17:53:16.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=17:53:16.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=23 score="[15 4 3 0 1]" criteria="[6 2 3 3]"
+time=17:53:17.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=17:53:17.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=25 score="[17 4 3 0 1]" criteria="[6 2 3 3]"
+time=17:53:17.970 level=INFO msg=これまでに地域内の評判によって30人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:17.970 level=INFO msg=これまでに低評価なライドによって15人が利用をやめました
+time=17:53:17.970 level=INFO msg=76.0%のライドは椅子がマッチされるまでの時間、92.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、88.0%のライドは椅子の実移動時間に不満がありました
+time=17:53:19.769 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=17:53:19.769 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=28 score="[20 4 3 0 1]" criteria="[6 2 3 3]"
+time=17:53:21.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=17:53:21.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=30 score="[21 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:23.370 level=INFO msg=これまでに地域内の評判によって36人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:23.370 level=INFO msg=これまでに低評価なライドによって20人が利用をやめました
+time=17:53:23.370 level=INFO msg=80.6%のライドは椅子がマッチされるまでの時間、90.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、90.3%のライドは椅子の実移動時間に不満がありました
+time=17:53:23.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=17:53:23.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=31 score="[22 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:25.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=17:53:25.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=32 score="[23 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:26.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=17:53:26.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=33 score="[24 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:26.975 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=17:53:28.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=17:53:28.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=34 score="[25 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:28.771 level=INFO msg=これまでに地域内の評判によって42人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:28.771 level=INFO msg=これまでに低評価なライドによって23人が利用をやめました
+time=17:53:28.771 level=INFO msg=82.4%のライドは椅子がマッチされるまでの時間、91.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、91.2%のライドは椅子の実移動時間に不満がありました
+time=17:53:30.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=17:53:30.570 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=35 score="[26 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:30.586 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=17:53:32.369 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=17:53:32.369 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=35 score="[26 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:34.169 level=INFO msg=これまでに地域内の評判によって48人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:34.169 level=INFO msg=これまでに低評価なライドによって25人が利用をやめました
+time=17:53:34.169 level=INFO msg=83.3%のライドは椅子がマッチされるまでの時間、91.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、91.7%のライドは椅子の実移動時間に不満がありました
+time=17:53:34.169 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=17:53:34.169 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=36 score="[27 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:34.226 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=17:53:35.969 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=17:53:35.969 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=39 score="[30 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:36.170 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=17:53:37.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=17:53:37.770 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=41 score="[32 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:39.569 level=INFO msg=これまでに地域内の評判によって54人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:39.569 level=INFO msg=これまでに低評価なライドによって30人が利用をやめました
+time=17:53:39.569 level=INFO msg=85.4%のライドは椅子がマッチされるまでの時間、92.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、92.7%のライドは椅子の実移動時間に不満がありました
+time=17:53:39.569 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=17:53:39.569 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=41 score="[32 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:41.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=17:53:41.370 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=42 score="[33 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:43.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=17:53:43.170 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=45 score="[36 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:43.400 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=17:53:43.400 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=17:53:44.969 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=17:53:44.970 level=INFO msg=これまでに地域内の評判によって60人、既存ユーザーの招待経由で1人が新規登録しました
+time=17:53:44.970 level=INFO msg=これまでに低評価なライドによって37人が利用をやめました
+time=17:53:44.970 level=INFO msg=87.5%のライドは椅子がマッチされるまでの時間、93.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、93.8%のライドは椅子の実移動時間に不満がありました
+time=17:53:44.970 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=48 score="[39 5 3 0 1]" criteria="[6 3 3 3]"
+time=17:53:45.196 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=17:53:50.571 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=37 アクティブユーザー数=15
+time=17:53:50.571 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=36 アクティブユーザー数=20
+time=17:53:50.571 level=INFO msg=最終オーナー情報 名前="Chair Charm" 売上=35200 椅子数=5
+time=17:53:50.571 level=INFO msg=最終オーナー情報 名前=ComfortWorks 売上=49700 椅子数=7
+time=17:53:50.571 level=INFO msg=最終オーナー情報 名前=SwiftCab 売上=41000 椅子数=6
+time=17:53:50.571 level=INFO msg=最終オーナー情報 名前=暮らしの椅子研究所 売上=73200 椅子数=8
+time=17:53:50.571 level=INFO msg=最終オーナー情報 名前=EcoChairs 売上=60000 椅子数=7
+time=17:53:50.571 level=INFO msg=87.8%のライドは椅子がマッチされるまでの時間、93.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、93.9%のライドは椅子の実移動時間に不満がありました
+time=17:53:50.571 level=INFO msg=結果 pass=true スコア=4612 種別エラー数=map[]
+time=17:53:50.571 level=INFO msg=負荷走行が終了しました

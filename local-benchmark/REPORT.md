@@ -59,3 +59,17 @@ local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 その後の初期設定での再測定は成功1回（3,222）と準備時のSSH失敗2回だった。初期3回の中央値を汚さないよう、元の `stage=baseline` を `original_stage` に残し、別段階 `baseline-repeat` に分類した。失敗のスコアは `null`。
 
 PC再起動後、ISUCON14の孤立QEMUプロセスは消えていたが、VMを起動すると `qcow2: Image is corrupt; cannot be opened read/write` となった。後の停止・起動操作で同一ディスクを使うISUCON14 QEMUが二重起動したことは確認済み。ただし、それ以前のSSH不調やスコア変動の原因が二重起動だったとは証明できない。破損ディスクは再利用せず、固定した構築設定からVMだけ再作成し、新しい初期3回を計測する。
+
+## 再構築VMの初期スコア（2026-09-26）
+
+VMディスク破損後、同じ公式コミット・cloud-init設定でVMを再作成した。QEMUはISUCON14が1台、private-isuが1台。Go/SQLの16ファイルはホストとVMでSHA-256一致。公式ベンチバイナリはcloud-initで作成済みの `/home/isucon/bench` を使用。主要4サービスはactive、MySQLの `innodb_flush_log_at_trx_commit` は全回の前後で1。
+
+| 回 | スコア | 公式検証 |
+|---|---:|---|
+| 1 | 4,754 | 成功 |
+| 2 | 4,612 | 成功 |
+| 3 | 4,977 | 成功 |
+| 中央値 | **4,754** | 3回成功 |
+| 最小–最大 | 4,612–4,977 | 幅365 |
+
+旧VMの初期中央値3,549との差はコード変更による改善ではない。VMとホストの状態が異なるため、以後の性能変更は再構築VMの中央値4,754と比較する。HTTP時間の合計では `/api/app/notification` と `/api/chair/notification` が各回約1,000–1,200秒（並列リクエストの合計）で上位。MySQLの `COMMIT` 累積待ち時間は約60–68秒、約33,500–35,100回。次の候補はこの高頻度通信におけるDB接続再利用を検証する。

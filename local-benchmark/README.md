@@ -14,12 +14,12 @@ multipass launch 24.04 --name isucon14 --cpus 2 --memory 4G --disk 25G --cloud-i
 multipass exec isucon14 -- cloud-init status --wait
 ```
 
-アプリの性能変更前に構築が正常終了したこと、Go・MySQL・nginx・matcherの起動、ホストとVMのコード一致を確認する。
+アプリの性能変更前に構築が正常終了したこと、Go・MySQL・nginx・matcherの起動、ホストとVMのコード一致を確認する。`python3 local-benchmark/tools/deploy.py` で公式Go/SQLを配備・照合する。計測前に `tools/guest-run.sh` を `/home/isucon/guest-run.sh`、`tools/diagnostics.conf` を `/etc/nginx/conf.d/diagnostics.conf` に配置し、nginx設定をテストしてreloadする。
 
 ## 計測
 
 ```sh
-python3 local-benchmark/tools/run_benchmark.py baseline --runs 3
+python3 local-benchmark/tools/run_benchmark.py rebuilt-baseline --runs 3
 ```
 
 各回でGo・matcherを再起動して20秒待ち、60秒の公式負荷走行を行う。静的ファイル検証は省略しない。
@@ -59,3 +59,5 @@ local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py flush-lo
 ## 現在の状態
 
 初期3回はすべて成功し、中央値3,549を記録済み。`flush-log-2` は有効な測定3回（中央値3,688）と準備段階の失敗1回を記録済み。初期値の範囲と重なり耐久性も下げるため、不採用。追加の初期設定測定は成功1回と準備失敗2回。PCクラッシュ後にqcow2破損が判明したため、VMを再作成して新たな初期3回を取る。詳細は `REPORT.md`。
+
+再構築後の初期3回はすべて成功し、スコア4,754・4,612・4,977、中央値4,754。以後の候補はこの中央値と比較する。
