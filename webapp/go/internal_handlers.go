@@ -10,7 +10,6 @@ type matchingChair struct {
 	ID        string        `db:"id"`
 	Latitude  sql.NullInt64 `db:"latitude"`
 	Longitude sql.NullInt64 `db:"longitude"`
-	Speed     int           `db:"speed"`
 }
 
 // このAPIをインスタンス内から一定間隔で叩かせることで、椅子とライドをマッチングさせる
@@ -29,10 +28,9 @@ func internalGetMatching(w http.ResponseWriter, r *http.Request) {
 	// Fetch availability and current locations once for the entire matcher tick.
 	var chairs []matchingChair
 	if err := db.SelectContext(ctx, &chairs, `
-SELECT c.id, l.latitude, l.longitude, COALESCE(m.speed, 1) AS speed
+SELECT c.id, l.latitude, l.longitude
 FROM chairs c
 LEFT JOIN chair_latest_locations l ON l.chair_id = c.id
-LEFT JOIN chair_models m ON m.name = c.model
 WHERE c.is_active = TRUE
   AND NOT EXISTS (
     SELECT 1 FROM rides r
@@ -63,11 +61,8 @@ WHERE c.is_active = TRUE
 				distance = calculateDistance(ride.PickupLatitude, ride.PickupLongitude, int(chair.Latitude.Int64), int(chair.Longitude.Int64))
 			}
 			if best == -1 || (hasLocation && !bestHasLocation) ||
-				(hasLocation == bestHasLocation &&
-					(distance*chairs[best].Speed < bestDistance*chair.Speed ||
-						(distance*chairs[best].Speed == bestDistance*chair.Speed &&
-							(distance < bestDistance ||
-								(distance == bestDistance && chair.ID < chairs[best].ID))))) {
+				(hasLocation == bestHasLocation && (distance < bestDistance ||
+					(distance == bestDistance && chair.ID < chairs[best].ID))) {
 				best = i
 				bestDistance = distance
 				bestHasLocation = hasLocation
