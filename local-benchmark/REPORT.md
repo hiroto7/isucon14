@@ -115,3 +115,7 @@ VMディスク破損後、同じ公式コミット・cloud-init設定でVMを再
 ## 次の候補の事前計測
 
 通知APIと座標更新で繰り返し呼ばれる `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1` に対し、現DBのEXPLAINは `type=ALL`、推定走査860行、`Using where; Using filesort`。そのため `(chair_id, updated_at)` の複合インデックス1本を候補とする。
+
+## 椅子ライドインデックスの初回3回とA/B再測定
+
+事前EXPLAINは `rides` 860行全走査とfilesort。候補の `(chair_id, updated_at)` 追加後は同じSQLが `type=ref`、推定1行の逆順インデックス走査になった。初回3回は8,083・7,255・7,581、中央値7,581。直前状態中央値7,271より4.3%高いが範囲が重なる。HTTPログでは椅子通知の平均26.0→22.1ms、座標更新36.4→29.1ms。スコア効果の確認のため、変更前の再測定と候補の追加測定を行う。
