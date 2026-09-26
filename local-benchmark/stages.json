@@ -82,6 +82,11 @@
   {
     "id": "interpolate-params",
     "label": "Interpolate params",
+    "decision": "rejected"
+  },
+  {
+    "id": "chair-location-index",
+    "label": "Chair location index",
     "decision": "candidate"
   }
 ]
