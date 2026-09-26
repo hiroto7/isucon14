@@ -208,5 +208,10 @@
     "id": "read-only-rollback-highload",
     "label": "Read-only rollback high load",
     "decision": "accepted"
+  },
+  {
+    "id": "db-pool-32",
+    "label": "DB pool 32",
+    "decision": "rejected"
   }
 ]

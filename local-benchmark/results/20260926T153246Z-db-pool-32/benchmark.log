@@ -1,0 +1,241 @@
+time=00:33:06.784 level=INFO msg=負荷走行を開始します
+time=00:33:06.784 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=00:33:09.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=00:33:09.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=3 score="[0 0 0 3 0]" criteria="[3 0 3 3]"
+time=00:33:11.319 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:11.340 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:11.343 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=00:33:11.343 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=16 score="[0 0 0 11 5]" criteria="[16 5 16 16]"
+time=00:33:12.752 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:33:13.126 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:13.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=00:33:13.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=29 score="[0 0 0 22 7]" criteria="[29 7 29 29]"
+time=00:33:13.144 level=INFO msg=これまでに地域内の評判によって5人、既存ユーザーの招待経由で28人が新規登録しました
+time=00:33:13.144 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、75.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=00:33:13.894 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:33:13.909 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:33:13.909 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:33:14.935 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:14.935 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:14.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=00:33:14.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=43 score="[0 0 1 33 9]" criteria="[43 9 43 42]"
+time=00:33:14.948 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:14.949 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:16.743 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=00:33:16.743 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=52 score="[0 0 2 38 12]" criteria="[52 13 52 49]"
+time=00:33:16.752 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:16.754 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:16.762 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:16.771 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:18.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=00:33:18.544 level=INFO msg=これまでに地域内の評判によって17人、既存ユーザーの招待経由で52人が新規登録しました
+time=00:33:18.544 level=INFO msg=2.9%のライドは椅子がマッチされるまでの時間、75.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、12.1%のライドは椅子の実移動時間に不満がありました
+time=00:33:18.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=70 score="[0 0 14 44 12]" criteria="[68 17 70 53]"
+time=00:33:18.551 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:18.551 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:18.563 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:18.584 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:20.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=00:33:20.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=81 score="[0 6 18 45 12]" criteria="[70 21 80 54]"
+time=00:33:20.376 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:20.381 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:20.385 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:20.387 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:22.143 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=00:33:22.143 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=97 score="[3 11 25 46 12]" criteria="[74 27 88 58]"
+time=00:33:22.148 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:22.165 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:22.177 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:22.186 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:23.943 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=00:33:23.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=116 score="[14 15 29 46 12]" criteria="[75 32 93 59]"
+time=00:33:23.944 level=INFO msg=これまでに地域内の評判によって29人、既存ユーザーの招待経由で54人が新規登録しました
+time=00:33:23.944 level=INFO msg=これまでに低評価なライドによって15人が利用をやめました
+time=00:33:23.944 level=INFO msg=35.3%のライドは椅子がマッチされるまでの時間、72.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、34.5%のライドは椅子の実移動時間に不満がありました
+time=00:33:23.960 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:23.963 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:23.971 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=3
+time=00:33:23.990 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:25.743 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=00:33:25.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=131 score="[20 19 32 47 13]" criteria="[76 40 98 62]"
+time=00:33:25.785 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:25.802 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:25.840 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:27.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=00:33:27.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=149 score="[26 24 37 48 14]" criteria="[80 48 105 65]"
+time=00:33:27.587 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:27.595 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:27.602 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=3
+time=00:33:29.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=00:33:29.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=168 score="[33 29 41 51 14]" criteria="[89 56 110 65]"
+time=00:33:29.344 level=INFO msg=これまでに地域内の評判によって41人、既存ユーザーの招待経由で61人が新規登録しました
+time=00:33:29.344 level=INFO msg=これまでに低評価なライドによって31人が利用をやめました
+time=00:33:29.344 level=INFO msg=47.0%のライドは椅子がマッチされるまでの時間、66.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、47.9%のライドは椅子の実移動時間に不満がありました
+time=00:33:29.387 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:29.400 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=3
+time=00:33:29.401 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:29.403 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:29.436 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:31.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=00:33:31.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=185 score="[36 32 44 59 14]" criteria="[103 66 118 66]"
+time=00:33:31.162 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:31.196 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:31.218 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:31.271 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:32.943 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=00:33:32.943 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=204 score="[36 38 54 61 15]" criteria="[122 78 121 68]"
+time=00:33:33.018 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:33.075 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:33.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:33.102 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:34.744 level=INFO msg=これまでに地域内の評判によって53人、既存ユーザーの招待経由で75人が新規登録しました
+time=00:33:34.744 level=INFO msg=これまでに低評価なライドによって37人が利用をやめました
+time=00:33:34.744 level=INFO msg=36.7%のライドは椅子がマッチされるまでの時間、61.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、57.5%のライドは椅子の実移動時間に不満がありました
+time=00:33:34.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=00:33:34.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=226 score="[37 51 59 64 15]" criteria="[143 86 123 69]"
+time=00:33:34.782 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:34.786 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=00:33:34.801 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:34.850 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:34.862 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:36.543 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=00:33:36.543 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=249 score="[37 61 67 69 15]" criteria="[166 97 125 74]"
+time=00:33:36.605 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:36.617 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=3
+time=00:33:36.655 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:38.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=00:33:38.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=276 score="[37 76 78 70 15]" criteria="[193 109 126 74]"
+time=00:33:38.362 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:38.367 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=3
+time=00:33:38.379 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:38.450 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:40.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=00:33:40.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=298 score="[37 83 87 75 16]" criteria="[214 124 131 77]"
+time=00:33:40.144 level=INFO msg=これまでに地域内の評判によって65人、既存ユーザーの招待経由で86人が新規登録しました
+time=00:33:40.144 level=INFO msg=これまでに低評価なライドによって52人が利用をやめました
+time=00:33:40.144 level=INFO msg=28.2%のライドは椅子がマッチされるまでの時間、58.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、65.1%のライドは椅子の実移動時間に不満がありました
+time=00:33:40.280 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:40.400 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:40.401 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:41.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=00:33:41.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=316 score="[37 90 93 80 16]" criteria="[232 135 134 79]"
+time=00:33:42.126 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:42.141 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:42.203 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:42.351 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:43.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=00:33:43.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=337 score="[37 102 101 81 16]" criteria="[253 144 134 80]"
+time=00:33:43.865 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:43.947 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:44.022 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:44.092 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:45.544 level=INFO msg=これまでに地域内の評判によって77人、既存ユーザーの招待経由で94人が新規登録しました
+time=00:33:45.544 level=INFO msg=これまでに低評価なライドによって59人が利用をやめました
+time=00:33:45.544 level=INFO msg=23.3%のライドは椅子がマッチされるまでの時間、55.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、69.9%のライドは椅子の実移動時間に不満がありました
+time=00:33:45.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=00:33:45.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=360 score="[37 109 114 84 16]" criteria="[276 160 137 80]"
+time=00:33:45.616 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:45.621 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:45.629 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:45.825 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:47.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=00:33:47.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=393 score="[38 115 131 93 16]" criteria="[307 187 145 81]"
+time=00:33:47.427 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:47.567 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:47.570 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:47.596 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:48.051 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:49.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=00:33:49.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=415 score="[38 118 146 97 16]" criteria="[329 206 149 81]"
+time=00:33:49.176 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:49.230 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:49.236 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:49.305 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:50.115 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:50.944 level=INFO msg=これまでに地域内の評判によって89人、既存ユーザーの招待経由で107人が新規登録しました
+time=00:33:50.944 level=INFO msg=これまでに低評価なライドによって64人が利用をやめました
+time=00:33:50.944 level=INFO msg=19.8%のライドは椅子がマッチされるまでの時間、49.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、73.8%のライドは椅子の実移動時間に不満がありました
+time=00:33:50.943 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=00:33:50.943 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=440 score="[39 126 161 98 16]" criteria="[353 222 150 81]"
+time=00:33:51.090 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:51.178 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:51.404 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:51.412 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:52.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=00:33:52.744 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=469 score="[39 135 179 100 16]" criteria="[382 242 152 81]"
+time=00:33:52.845 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:52.859 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:52.860 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:52.923 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:53.015 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:54.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=00:33:54.544 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=500 score="[39 145 198 101 17]" criteria="[413 263 153 83]"
+time=00:33:54.575 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:54.649 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:33:54.691 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:54.727 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:54.825 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:56.344 level=INFO msg=これまでに地域内の評判によって101人、既存ユーザーの招待経由で112人が新規登録しました
+time=00:33:56.344 level=INFO msg=これまでに低評価なライドによって72人が利用をやめました
+time=00:33:56.344 level=INFO msg=16.4%のライドは椅子がマッチされるまでの時間、46.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、77.7%のライドは椅子の実移動時間に不満がありました
+time=00:33:56.343 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=00:33:56.344 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=531 score="[39 157 216 102 17]" criteria="[444 282 153 84]"
+time=00:33:56.569 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:33:56.634 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:33:56.676 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:33:56.701 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:33:56.762 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:33:58.143 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=00:33:58.143 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=557 score="[39 163 235 103 17]" criteria="[470 302 154 84]"
+time=00:33:58.170 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:33:58.354 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:33:58.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:33:59.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=00:33:59.944 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=585 score="[40 171 253 104 17]" criteria="[497 320 155 85]"
+time=00:33:59.993 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:34:00.035 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:34:00.056 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:34:00.057 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:34:00.351 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:34:01.745 level=INFO msg=これまでに地域内の評判によって113人、既存ユーザーの招待経由で117人が新規登録しました
+time=00:34:01.745 level=INFO msg=これまでに低評価なライドによって75人が利用をやめました
+time=00:34:01.745 level=INFO msg=14.3%のライドは椅子がマッチされるまでの時間、44.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.2%のライドは椅子の実移動時間に不満がありました
+time=00:34:01.745 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=00:34:01.745 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=614 score="[40 180 270 107 17]" criteria="[526 340 158 85]"
+time=00:34:01.868 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:34:01.873 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:34:01.923 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:34:02.078 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:34:02.094 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:34:03.543 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=00:34:03.543 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=650 score="[41 186 296 110 17]" criteria="[559 370 160 87]"
+time=00:34:03.593 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=00:34:03.760 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=00:34:03.959 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=00:34:04.213 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:34:04.292 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:34:05.343 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=00:34:05.343 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=672 score="[41 191 313 110 17]" criteria="[581 387 160 87]"
+time=00:34:05.514 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:34:05.551 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:34:05.738 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:34:07.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=00:34:07.144 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=707 score="[41 196 343 110 17]" criteria="[616 417 160 87]"
+time=00:34:07.144 level=INFO msg=これまでに地域内の評判によって125人、既存ユーザーの招待経由で120人が新規登録しました
+time=00:34:07.144 level=INFO msg=これまでに低評価なライドによって80人が利用をやめました
+time=00:34:07.144 level=INFO msg=12.9%のライドは椅子がマッチされるまでの時間、41.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、82.5%のライドは椅子の実移動時間に不満がありました
+time=00:34:07.201 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=00:34:07.223 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Vintage Vibe Seats" 増加数=1
+time=00:34:07.243 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=00:34:07.613 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=00:34:07.847 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:34:12.745 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=142 アクティブユーザー数=95
+time=00:34:12.745 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=117 アクティブユーザー数=82
+time=00:34:12.745 level=INFO msg=最終オーナー情報 名前=ZenSeat 売上=908400 椅子数=42
+time=00:34:12.745 level=INFO msg=最終オーナー情報 名前=和やか交通 売上=1188900 椅子数=50
+time=00:34:12.745 level=INFO msg=最終オーナー情報 名前=椅子のふるさと 売上=827200 椅子数=41
+time=00:34:12.745 level=INFO msg=最終オーナー情報 名前="Vintage Vibe Seats" 売上=345500 椅子数=22
+time=00:34:12.745 level=INFO msg=最終オーナー情報 名前="PreLoved Chairs" 売上=1043400 椅子数=46
+time=00:34:12.745 level=INFO msg=12.6%のライドは椅子がマッチされるまでの時間、39.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、83.2%のライドは椅子の実移動時間に不満がありました
+time=00:34:12.745 level=INFO msg=結果 pass=true スコア=50752 種別エラー数=map[17:4]
+time=00:34:12.745 level=INFO msg=負荷走行が終了しました
