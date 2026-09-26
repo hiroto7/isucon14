@@ -33,5 +33,10 @@
     "id": "restart-check",
     "label": "After VM restart",
     "decision": "verification"
+  },
+  {
+    "id": "read-only-rollback",
+    "label": "Read-only rollback",
+    "decision": "candidate"
   }
 ]
