@@ -1,11 +1,11 @@
 {
   "go/.gitignore": "2568a79097dd80db87574459dd10e9de9ee37580eb2c0a4abf1dfcd0250c4245",
-  "go/app_handlers.go": "8dfa285860bd5aca27b328d0fb35086031848b6bc1d88d57728292c576b46cff",
+  "go/app_handlers.go": "f3f740929524f95dcde9d92bfa81a0ef2a45d3a1e6110a98de28a20fbb4a0016",
   "go/chair_handlers.go": "28a51641bc2e3a28d5cb9766f911ffe4e607579bdffa70185640267a30fccd70",
   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
   "go/internal_handlers.go": "2a37419d7c9979c71425c566593cbddf626ea4dc0ba16c3ae2bc1c57f2623cdb",
-  "go/main.go": "4321f76f8a35c808f41804ad6879505e2876b5069b743c85ebc9b7c0479fca86",
+  "go/main.go": "69852cd62b746ae779cdcefe7b6fd7a55dc39abd67d25d20df897b80c94ddc39",
   "go/middlewares.go": "f6e2c742f61495341ead99c0d0bf3bca17d2e9852a98516ddd51d980b390f16e",
   "go/models.go": "7eded81484544956b8cf35f913bb3e15557a85b40b0cfd0ceff48ba9c17ae83c",
   "go/owner_handlers.go": "ab8a04897dba957f7f793a959f0083ccd6110b5a789b0e2aa5988d40c1ee0d12",

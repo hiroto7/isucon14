@@ -238,5 +238,10 @@
     "id": "no-go-request-log",
     "label": "No Go request log",
     "decision": "accepted"
+  },
+  {
+    "id": "ride-fare-cache",
+    "label": "Ride fare cache",
+    "decision": "accepted"
   }
 ]
