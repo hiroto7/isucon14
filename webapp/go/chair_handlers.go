@@ -231,11 +231,18 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 		status = yetSentRideStatus.Status
 	}
 
-	user := &User{}
-	err = tx.GetContext(ctx, user, "SELECT * FROM users WHERE id = ? FOR SHARE", ride.UserID)
-	if err != nil {
-		writeError(w, http.StatusInternalServerError, err)
-		return
+	var rider simpleUser
+	if cached, ok := chairNotificationUsers.Load(ride.UserID); ok {
+		rider = cached.(simpleUser)
+	} else {
+		user := &User{}
+		if err := tx.GetContext(ctx, user, "SELECT * FROM users WHERE id = ?", ride.UserID); err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+		rider = simpleUser{ID: user.ID, Name: fmt.Sprintf("%s %s", user.Firstname, user.Lastname)}
+		cached, _ := chairNotificationUsers.LoadOrStore(ride.UserID, rider)
+		rider = cached.(simpleUser)
 	}
 
 	if yetSentRideStatus.ID != "" {
@@ -254,10 +261,7 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, http.StatusOK, &chairGetNotificationResponse{
 		Data: &chairGetNotificationResponseData{
 			RideID: ride.ID,
-			User: simpleUser{
-				ID:   user.ID,
-				Name: fmt.Sprintf("%s %s", user.Firstname, user.Lastname),
-			},
+			User:   rider,
 			PickupCoordinate: Coordinate{
 				Latitude:  ride.PickupLatitude,
 				Longitude: ride.PickupLongitude,

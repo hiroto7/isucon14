@@ -13,6 +13,7 @@ import (
 var userSessions sync.Map
 var ownerSessions sync.Map
 var chairSessions sync.Map
+var chairNotificationUsers sync.Map
 
 func appAuthMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -36,6 +37,9 @@ func appAuthMiddleware(next http.Handler) http.Handler {
 				return
 			}
 			cached, _ = userSessions.LoadOrStore(accessToken, user)
+			chairNotificationUsers.LoadOrStore(user.ID, simpleUser{
+				ID: user.ID, Name: user.Firstname + " " + user.Lastname,
+			})
 		}
 
 		ctx = context.WithValue(ctx, "user", cached.(*User))
