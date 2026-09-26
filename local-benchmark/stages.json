@@ -138,5 +138,10 @@
     "id": "coordinate-no-reread",
     "label": "Coordinate no reread",
     "decision": "accepted"
+  },
+  {
+    "id": "nearest-chair",
+    "label": "Nearest chair per ride",
+    "decision": "rejected"
   }
 ]
