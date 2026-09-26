@@ -1,0 +1,39 @@
+{
+  "stage": "rides-user-index",
+  "started_at": "20260926T102957Z",
+  "commit": "400696666eb723188e702618bd0869faf11e9b98",
+  "diff_sha256": "7d184d7f6fbc13876b58769cb111f1f8d051ed70e05e2df151ea0112ce7078f6",
+  "command": "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.net --payment-url http://127.0.0.1:12346 --payment-bind-port 12346 -t 60",
+  "vm": "isucon14",
+  "cpus": 2,
+  "memory_gib": 4,
+  "cooldown_seconds": 20,
+  "duration_seconds": 60,
+  "status": "passed",
+  "score": 9127,
+  "database_settings_before": {
+    "innodb_buffer_pool_size": "134217728",
+    "innodb_flush_log_at_trx_commit": "1",
+    "sync_binlog": "1"
+  },
+  "connection_status_before": {
+    "Connections": "12540",
+    "Threads_connected": "2",
+    "Threads_created": "6241",
+    "Threads_running": "2"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 66.34,
+  "reported_score": 9127,
+  "database_settings_after": {
+    "innodb_buffer_pool_size": "134217728",
+    "innodb_flush_log_at_trx_commit": "1",
+    "sync_binlog": "1"
+  },
+  "connection_status_after": {
+    "Connections": "14207",
+    "Threads_connected": "50",
+    "Threads_created": "7194",
+    "Threads_running": "2"
+  }
+}

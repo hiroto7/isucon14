@@ -103,5 +103,10 @@
     "id": "notification-autocommit",
     "label": "Notification autocommit",
     "decision": "rejected"
+  },
+  {
+    "id": "rides-user-index",
+    "label": "User ride index",
+    "decision": "accepted"
   }
 ]
