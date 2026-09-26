@@ -42,7 +42,7 @@
   {
     "id": "rides-chair-index",
     "label": "Rides chair index",
-    "decision": "candidate"
+    "decision": "rejected"
   },
   {
     "id": "pre-rides-chair-repeat",
@@ -52,6 +52,6 @@
   {
     "id": "rides-chair-repeat",
     "label": "Rides index repeat",
-    "decision": "candidate"
+    "decision": "rejected"
   }
 ]
