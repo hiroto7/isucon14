@@ -133,5 +133,10 @@
     "id": "nearby-highload",
     "label": "Nearby batch at high load",
     "decision": "accepted"
+  },
+  {
+    "id": "coordinate-no-reread",
+    "label": "Coordinate no reread",
+    "decision": "accepted"
   }
 ]
