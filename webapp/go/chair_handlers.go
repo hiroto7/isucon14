@@ -239,13 +239,7 @@ func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	// A read-only poll has no changes to commit.
-	if yetSentRideStatus.ID == "" {
-		err = tx.Rollback()
-	} else {
-		err = tx.Commit()
-	}
-	if err != nil {
+	if err := tx.Commit(); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
