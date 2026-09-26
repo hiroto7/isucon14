@@ -34,8 +34,10 @@ for x, stage in enumerate(present):
         for index, (offset, score) in enumerate(zip(offsets, scores)):
             ax.scatter(x + offset, score, color=color, alpha=.75, s=30, zorder=4)
             ratio = f" ({score / base:.0%})" if base else ""
-            vertical = 9 if index % 2 == 0 else -17
-            ax.annotate(f"{score:,}{ratio}", (x + offset, score), xytext=(0, vertical), textcoords="offset points", ha="center", fontsize=8, color="#333333")
+            vertical = 12 if index % 2 == 0 else -18
+            horizontal = (index - (len(scores) - 1) / 2) * 10
+            align = "right" if index < (len(scores) - 1) / 2 else "left" if index > (len(scores) - 1) / 2 else "center"
+            ax.annotate(f"{score:,}{ratio}", (x + offset, score), xytext=(horizontal, vertical), textcoords="offset points", ha=align, fontsize=8, color="#333333")
         base_ratio = f" | {median / base:.0%} of baseline" if base else ""
         ax.annotate(
             f"median {median:,.0f}{base_ratio}\nrange {min(scores):,}–{max(scores):,}",
