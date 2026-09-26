@@ -193,5 +193,10 @@
     "id": "materialized-chair-stats",
     "label": "Materialized chair stats",
     "decision": "accepted"
+  },
+  {
+    "id": "chair-user-cache",
+    "label": "Chair user cache",
+    "decision": "rejected"
   }
 ]
