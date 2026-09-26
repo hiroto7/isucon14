@@ -143,5 +143,10 @@
     "id": "nearest-chair",
     "label": "Nearest chair per ride",
     "decision": "rejected"
+  },
+  {
+    "id": "nearest-batch-prefetch",
+    "label": "Nearest batch prefetch",
+    "decision": "accepted"
   }
 ]
