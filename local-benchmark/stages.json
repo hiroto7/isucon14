@@ -228,5 +228,10 @@
     "id": "coupon-used-by-index",
     "label": "Coupon used_by index",
     "decision": "accepted"
+  },
+  {
+    "id": "nearby-completed-index",
+    "label": "Nearby completed index",
+    "decision": "accepted"
   }
 ]

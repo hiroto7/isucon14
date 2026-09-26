@@ -1,0 +1,21 @@
+diff --git a/local-benchmark/deployed-source.json b/local-benchmark/deployed-source.json
+index 112db1f8..ae7da1cd 100644
+--- a/local-benchmark/deployed-source.json
++++ b/local-benchmark/deployed-source.json
+@@ -1,6 +1,6 @@
+ {
+   "go/.gitignore": "2568a79097dd80db87574459dd10e9de9ee37580eb2c0a4abf1dfcd0250c4245",
+-  "go/app_handlers.go": "20c7ee293cb79d74800dd5761e66d620996d6001b0b4b5b01fa11516e74c5ca7",
++  "go/app_handlers.go": "8dfa285860bd5aca27b328d0fb35086031848b6bc1d88d57728292c576b46cff",
+   "go/chair_handlers.go": "28a51641bc2e3a28d5cb9766f911ffe4e607579bdffa70185640267a30fccd70",
+   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
+   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
+@@ -11,7 +11,7 @@
+   "go/owner_handlers.go": "ab8a04897dba957f7f793a959f0083ccd6110b5a789b0e2aa5988d40c1ee0d12",
+   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
+   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
+-  "sql/1-schema.sql": "16dbac30502b9b116250c8ce9b9764bafcdcc7e01d73af3c3ecba5d2376ec599",
++  "sql/1-schema.sql": "b09ae8d75718c716730e10c1bf1993cb07eb44efb872cd0ce52462ce0956ccba",
+   "sql/2-master-data.sql": "6ce8b7bdcbb163eb9d35a0067c0a9264115868b4df738a00a12d8ecb24bc193e",
+   "sql/3-initial-data.sql.gz": "2b45537b2e546377cca72ddf8feda271ed4a58fded88b1ee41c1e5cce497dc9c",
+   "sql/init.sh": "49c466cf9416fa2543044bb69a952c798733caff03fd60dbf8ba61ab7eba710d"
