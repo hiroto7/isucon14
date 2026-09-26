@@ -8,7 +8,7 @@
   "go/main.go": "524b48c80bd3dd15c77ed56e4ce50400412c39f61ce54b45386e5b77efde5ca0",
   "go/middlewares.go": "da74973653071cd626a7254a8a89ed0033594c49f7a814f2a8647f4b7ea4f390",
   "go/models.go": "7eded81484544956b8cf35f913bb3e15557a85b40b0cfd0ceff48ba9c17ae83c",
-  "go/owner_handlers.go": "5bcef83b4e0ffd4f3351c24c8b3d5a4a68936b59c8a31702d206fd845f705013",
+  "go/owner_handlers.go": "ab8a04897dba957f7f793a959f0083ccd6110b5a789b0e2aa5988d40c1ee0d12",
   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
   "sql/1-schema.sql": "7878f9c7d2adc8abdfba70651a940a6cc05ea14ee3b47f6d73b04fd8c3ef8b11",
