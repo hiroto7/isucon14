@@ -203,5 +203,10 @@
     "id": "mysql-unix-socket",
     "label": "MySQL Unix socket",
     "decision": "accepted"
+  },
+  {
+    "id": "read-only-rollback-highload",
+    "label": "Read-only rollback high load",
+    "decision": "accepted"
   }
 ]
