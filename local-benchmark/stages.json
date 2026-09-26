@@ -7,6 +7,11 @@
   {
     "id": "flush-log-2",
     "label": "InnoDB flush=2",
-    "decision": "candidate"
+    "decision": "rejected"
+  },
+  {
+    "id": "baseline-repeat",
+    "label": "Baseline repeat",
+    "decision": "baseline"
   }
 ]
