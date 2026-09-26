@@ -88,5 +88,10 @@
     "id": "chair-location-index",
     "label": "Chair location index",
     "decision": "accepted"
+  },
+  {
+    "id": "nearby-batch-query",
+    "label": "Nearby batch query",
+    "decision": "candidate"
   }
 ]
