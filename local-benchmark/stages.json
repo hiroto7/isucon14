@@ -58,5 +58,10 @@
     "id": "diagnostics",
     "label": "Diagnostic profile",
     "decision": "diagnostic"
+  },
+  {
+    "id": "owner-distance-filter",
+    "label": "Owner distance filter",
+    "decision": "candidate"
   }
 ]
