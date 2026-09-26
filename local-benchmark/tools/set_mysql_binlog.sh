@@ -14,7 +14,7 @@ case "$mode" in
     exit 2
     ;;
 esac
-multipass exec isucon14 -- sudo systemctl restart mysql
+multipass exec isucon14 -- sudo systemctl restart --no-block mysql
 for attempt in $(seq 1 60); do
   if multipass exec isucon14 -- sudo mysqladmin ping --silent >/dev/null 2>&1; then
     break
