@@ -38,5 +38,10 @@
     "id": "read-only-rollback",
     "label": "Read-only rollback",
     "decision": "rejected"
+  },
+  {
+    "id": "rides-chair-index",
+    "label": "Rides chair index",
+    "decision": "candidate"
   }
 ]

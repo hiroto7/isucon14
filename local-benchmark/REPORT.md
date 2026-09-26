@@ -111,3 +111,7 @@ VMディスク破損後、同じ公式コミット・cloud-init設定でVMを再
 ## 追加候補: 読み取り専用通知のrollback (`read-only-rollback`)
 
 通知APIの読み取り専用トランザクションをcommitせずrollbackで終了する候補を試した。採用済み状態の3回で `COMMIT` は61,665–75,411回だったが、候補では14,813–17,527回に減少した。`ROLLBACK` は8,030–11,111回から52,106–64,949回に増えた。狙ったSQL操作の回数は変わったが、スコアは7,677・7,104・6,873（中央値7,104）で、直前の中央値7,271を下回る。通知APIの平均HTTP時間も改善せず、検証は全回成功したものの不採用。コードは戻した。
+
+## 次の候補の事前計測
+
+通知APIと座標更新で繰り返し呼ばれる `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1` に対し、現DBのEXPLAINは `type=ALL`、推定走査860行、`Using where; Using filesort`。そのため `(chair_id, updated_at)` の複合インデックス1本を候補とする。
