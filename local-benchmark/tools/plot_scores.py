@@ -39,7 +39,7 @@ for x, stage in enumerate(present):
         base_ratio = f" | {median / base:.0%} of baseline" if base else ""
         ax.annotate(
             f"median {median:,.0f}{base_ratio}\nrange {min(scores):,}–{max(scores):,}",
-            (x, median), xytext=(26, -24), textcoords="offset points", ha="left", va="top", fontsize=9,
+            (x, median), xytext=(32, -58), textcoords="offset points", ha="left", va="top", fontsize=9,
             bbox={"boxstyle": "round,pad=0.25", "facecolor": "white", "edgecolor": "#d1d5db", "alpha": .9},
         )
     failures = sum(r["status"] == "failed" for r in rows)
