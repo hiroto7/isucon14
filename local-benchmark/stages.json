@@ -233,5 +233,10 @@
     "id": "nearby-completed-index",
     "label": "Nearby completed index",
     "decision": "accepted"
+  },
+  {
+    "id": "no-go-request-log",
+    "label": "No Go request log",
+    "decision": "accepted"
   }
 ]
