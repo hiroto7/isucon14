@@ -761,62 +761,27 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 }
 
 func getChairStats(ctx context.Context, tx *sqlx.Tx, chairID string) (appGetNotificationResponseChairStats, error) {
-	stats := appGetNotificationResponseChairStats{}
-
-	rides := []Ride{}
-	err := tx.SelectContext(
-		ctx,
-		&rides,
-		`SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC`,
-		chairID,
-	)
+	var stats struct {
+		TotalRidesCount    int     `db:"total_rides_count"`
+		TotalEvaluationAvg float64 `db:"total_evaluation_avg"`
+	}
+	err := tx.GetContext(ctx, &stats, `
+SELECT COUNT(*) AS total_rides_count,
+       COALESCE(AVG(completed.evaluation), 0) AS total_evaluation_avg
+FROM (
+  SELECT r.id, r.evaluation
+  FROM rides r
+  JOIN ride_statuses rs ON rs.ride_id = r.id
+  WHERE r.chair_id = ?
+  GROUP BY r.id, r.evaluation
+  HAVING SUM(rs.status = 'ARRIVED') > 0
+     AND SUM(rs.status = 'CARRYING') > 0
+     AND SUM(rs.status = 'COMPLETED') > 0
+) AS completed`, chairID)
 	if err != nil {
-		return stats, err
+		return appGetNotificationResponseChairStats{}, err
 	}
-
-	totalRideCount := 0
-	totalEvaluation := 0.0
-	for _, ride := range rides {
-		rideStatuses := []RideStatus{}
-		err = tx.SelectContext(
-			ctx,
-			&rideStatuses,
-			`SELECT * FROM ride_statuses WHERE ride_id = ? ORDER BY created_at`,
-			ride.ID,
-		)
-		if err != nil {
-			return stats, err
-		}
-
-		var arrivedAt, pickupedAt *time.Time
-		var isCompleted bool
-		for _, status := range rideStatuses {
-			if status.Status == "ARRIVED" {
-				arrivedAt = &status.CreatedAt
-			} else if status.Status == "CARRYING" {
-				pickupedAt = &status.CreatedAt
-			}
-			if status.Status == "COMPLETED" {
-				isCompleted = true
-			}
-		}
-		if arrivedAt == nil || pickupedAt == nil {
-			continue
-		}
-		if !isCompleted {
-			continue
-		}
-
-		totalRideCount++
-		totalEvaluation += float64(*ride.Evaluation)
-	}
-
-	stats.TotalRidesCount = totalRideCount
-	if totalRideCount > 0 {
-		stats.TotalEvaluationAvg = totalEvaluation / float64(totalRideCount)
-	}
-
-	return stats, nil
+	return appGetNotificationResponseChairStats(stats), nil
 }
 
 type appGetNearbyChairsResponse struct {
