@@ -432,6 +432,7 @@ func appPostRides(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
+	invalidateAppNotification(user.ID)
 
 	writeJSON(w, http.StatusAccepted, &appPostRidesResponse{
 		RideID: rideID,
@@ -646,6 +647,7 @@ ON DUPLICATE KEY UPDATE total_rides_count = total_rides_count + 1,
 	if ride.ChairID.Valid {
 		invalidateChairNotification(ride.ChairID.String)
 	}
+	clearAppNotifications()
 
 	writeJSON(w, http.StatusOK, &appPostRideEvaluationResponse{
 		CompletedAt: ride.UpdatedAt.UnixMilli(),
@@ -683,6 +685,11 @@ type appGetNotificationResponseChairStats struct {
 func appGetNotification(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	user := ctx.Value("user").(*User)
+	cached, stamp := cachedAppNotification(user.ID)
+	if cached != nil {
+		writeJSON(w, http.StatusOK, cached)
+		return
+	}
 
 	tx, err := db.Beginx()
 	if err != nil {
@@ -694,9 +701,13 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 	ride := &Ride{}
 	if err := tx.GetContext(ctx, ride, `SELECT * FROM rides WHERE user_id = ? ORDER BY created_at DESC LIMIT 1`, user.ID); err != nil {
 		if errors.Is(err, sql.ErrNoRows) {
-			writeJSON(w, http.StatusOK, &appGetNotificationResponse{
-				RetryAfterMs: 30,
-			})
+			response := &appGetNotificationResponse{RetryAfterMs: 30}
+			if err := tx.Rollback(); err != nil {
+				writeError(w, http.StatusInternalServerError, err)
+				return
+			}
+			storeAppNotification(user.ID, stamp, response)
+			writeJSON(w, http.StatusOK, response)
 			return
 		}
 		writeError(w, http.StatusInternalServerError, err)
@@ -782,6 +793,11 @@ func appGetNotification(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
+	}
+	if yetSentRideStatus.ID == "" {
+		storeAppNotification(user.ID, stamp, response)
+	} else {
+		invalidateAppNotification(user.ID)
 	}
 
 	writeJSON(w, http.StatusOK, response)

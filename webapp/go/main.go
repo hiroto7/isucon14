@@ -159,6 +159,7 @@ func postInitialize(w http.ResponseWriter, r *http.Request) {
 	chairSessions.Clear()
 	rideFares.Clear()
 	clearChairNotifications()
+	clearAppNotifications()
 
 	writeJSON(w, http.StatusOK, postInitializeResponse{Language: "go"})
 }

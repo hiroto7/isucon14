@@ -174,6 +174,7 @@ ON DUPLICATE KEY UPDATE
 	}
 	if statusChanged {
 		invalidateChairNotification(chair.ID)
+		invalidateAppNotification(ride.UserID)
 	}
 
 	writeJSON(w, http.StatusOK, &chairPostCoordinateResponse{
@@ -369,6 +370,7 @@ func chairPostRideStatus(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	invalidateChairNotification(chair.ID)
+	invalidateAppNotification(ride.UserID)
 
 	w.WriteHeader(http.StatusNoContent)
 }
