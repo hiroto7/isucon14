@@ -96,3 +96,42 @@ ax2.spines[["top", "right"]].set_visible(False)
 fig2.text(.01, -.04, "ARM64 / 2 vCPU / 4 GiB / single VM. Points: valid runs; labels: median and ratio to rebuilt baseline. All trials, including rejected candidates, are in score-history.png.", fontsize=9, color="#555555")
 fig2.savefig(ROOT / "score-focus.png", dpi=160, bbox_inches="tight")
 print(ROOT / "score-focus.png")
+
+# Compact comparison of the scoring-manual follow-up. Failed validation is
+# deliberately drawn as FAIL rather than a zero score.
+review_ids = [
+    "rebuilt-baseline", "final-restored", "manual-score-review",
+    "notification-read-autocommit", "chair-notification-autocommit",
+    "coordinate-batch-10ms", "coordinate-async-50ms",
+    "manual-review-restored",
+]
+review_labels = [
+    "Initial\nbaseline", "Best adopted\nbefore review", "Review\nbaseline",
+    "Both\nnotifications", "Chair\nnotification", "Sync\ncoordinate", "Async\ncoordinate",
+    "Restored\ncode",
+]
+fig3, ax3 = plt.subplots(figsize=(12, 5.4), layout="constrained")
+for x, (stage_id, label) in enumerate(zip(review_ids, review_labels)):
+    rows = [r for r in records if r["stage"] == stage_id]
+    scores = [r["score"] for r in rows if r["status"] == "passed" and r.get("score") is not None]
+    rejected = stage_id in {"notification-read-autocommit", "chair-notification-autocommit", "coordinate-batch-10ms", "coordinate-async-50ms"}
+    if scores:
+        score = statistics.median(scores)
+        color = "#d97706" if rejected else "#2563eb"
+        ax3.bar(x, score, color=color, width=.65, alpha=.78)
+        ax3.text(x, score + 1400, f"{score:,.0f}", ha="center", fontsize=9, fontweight="bold")
+    if any(r["status"] == "failed" for r in rows):
+        ax3.text(x, 2000, "FAIL\n(no score)", ha="center", va="bottom", color="#dc2626", fontsize=10, fontweight="bold")
+    if rejected:
+        review_labels[x] += "\n[rejected]"
+ax3.axhline(70028, color="#64748b", linestyle="--", linewidth=1, label="Best adopted: 70,028")
+ax3.set_xticks(range(len(review_ids)), review_labels)
+ax3.set_ylim(0, 81000)
+ax3.set_ylabel("Official benchmark score")
+ax3.set_title("ISUCON14 — scoring manual follow-up", loc="left", fontweight="bold")
+ax3.grid(axis="y", alpha=.2)
+ax3.legend(loc="upper right", frameon=False)
+ax3.spines[["top", "right"]].set_visible(False)
+fig3.text(.01, -.04, "ARM64 / 2 vCPU / 4 GiB / one VM. Orange: rejected candidate. FAIL has no numeric score. All runs and logs are retained under results/.", fontsize=9, color="#555555")
+fig3.savefig(ROOT / "score-manual-review.png", dpi=170, bbox_inches="tight")
+print(ROOT / "score-manual-review.png")
