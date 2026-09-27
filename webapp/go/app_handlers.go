@@ -643,6 +643,9 @@ ON DUPLICATE KEY UPDATE total_rides_count = total_rides_count + 1,
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
+	if ride.ChairID.Valid {
+		invalidateChairNotification(ride.ChairID.String)
+	}
 
 	writeJSON(w, http.StatusOK, &appPostRideEvaluationResponse{
 		CompletedAt: ride.UpdatedAt.UnixMilli(),

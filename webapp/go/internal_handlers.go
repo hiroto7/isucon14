@@ -47,6 +47,7 @@ WHERE c.is_active = TRUE
 	update.WriteString("UPDATE rides SET chair_id = CASE id")
 	args := make([]interface{}, 0, len(rides)*3)
 	matchedIDs := make([]string, 0, len(rides))
+	matchedChairIDs := make([]string, 0, len(rides))
 	for _, ride := range rides {
 		if len(chairs) == 0 {
 			break
@@ -69,6 +70,7 @@ WHERE c.is_active = TRUE
 		update.WriteString(" WHEN ? THEN ?")
 		args = append(args, ride.ID, chairs[best].ID)
 		matchedIDs = append(matchedIDs, ride.ID)
+		matchedChairIDs = append(matchedChairIDs, chairs[best].ID)
 		chairs[best] = chairs[len(chairs)-1]
 		chairs = chairs[:len(chairs)-1]
 	}
@@ -85,6 +87,9 @@ WHERE c.is_active = TRUE
 		if _, err := db.ExecContext(ctx, update.String(), args...); err != nil {
 			writeError(w, http.StatusInternalServerError, err)
 			return
+		}
+		for _, chairID := range matchedChairIDs {
+			invalidateChairNotification(chairID)
 		}
 	}
 
