@@ -50,6 +50,19 @@ FROM (
 ) AS ranked
 WHERE rn = 1;
 
+UPDATE chair_latest_locations l
+JOIN (
+  SELECT chair_id, SUM(step_distance) AS total_distance
+  FROM (
+    SELECT chair_id,
+           COALESCE(ABS(latitude - LAG(latitude) OVER (PARTITION BY chair_id ORDER BY created_at)) +
+                    ABS(longitude - LAG(longitude) OVER (PARTITION BY chair_id ORDER BY created_at)), 0) AS step_distance
+    FROM chair_locations
+  ) AS steps
+  GROUP BY chair_id
+) AS distances ON distances.chair_id = l.chair_id
+SET l.total_distance = distances.total_distance;
+
 INSERT INTO chair_stats (chair_id, total_rides_count, total_evaluation_sum)
 SELECT r.chair_id, COUNT(*), SUM(r.evaluation)
 FROM rides r

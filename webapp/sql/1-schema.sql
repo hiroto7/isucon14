@@ -56,6 +56,7 @@ CREATE TABLE chair_latest_locations
   latitude   INTEGER NOT NULL,
   longitude  INTEGER NOT NULL,
   created_at DATETIME(6) NOT NULL,
+  total_distance INTEGER NOT NULL DEFAULT 0,
   PRIMARY KEY (chair_id)
 )
   COMMENT = '椅子ごとの最新位置';

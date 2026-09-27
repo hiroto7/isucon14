@@ -123,9 +123,11 @@ func chairPostCoordinate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	if _, err := tx.ExecContext(ctx, `
-INSERT INTO chair_latest_locations (chair_id, latitude, longitude, created_at)
-VALUES (?, ?, ?, ?)
+INSERT INTO chair_latest_locations (chair_id, latitude, longitude, created_at, total_distance)
+VALUES (?, ?, ?, ?, 0)
 ON DUPLICATE KEY UPDATE
+  total_distance = total_distance + IF(VALUES(created_at) >= created_at,
+    ABS(VALUES(latitude) - latitude) + ABS(VALUES(longitude) - longitude), 0),
   latitude = IF(VALUES(created_at) >= created_at, VALUES(latitude), latitude),
   longitude = IF(VALUES(created_at) >= created_at, VALUES(longitude), longitude),
   created_at = GREATEST(created_at, VALUES(created_at))`,
