@@ -328,5 +328,20 @@
     "id": "manual-review-restored",
     "label": "Restored after review",
     "decision": "verification"
+  },
+  {
+    "id": "materialized-distance",
+    "label": "Materialized owner distance",
+    "decision": "candidate"
+  },
+  {
+    "id": "materialized-distance-repeat",
+    "label": "Materialized distance repeat",
+    "decision": "candidate"
+  },
+  {
+    "id": "regional-matching",
+    "label": "Regional matching limit",
+    "decision": "candidate"
   }
 ]

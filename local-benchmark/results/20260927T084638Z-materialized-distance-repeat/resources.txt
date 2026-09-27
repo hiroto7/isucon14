@@ -1,0 +1,18 @@
+               total        used        free      shared  buff/cache   available
+Mem:            3901        1269         698           1        2121        2631
+Swap:              0           0           0
+ 08:48:05 up 16:44,  2 users,  load average: 22.56, 9.25, 3.65
+COMMAND         %CPU   RSS
+isuride         31.3 33116
+mysqld           1.5 921732
+nginx            0.3 17324
+nginx            0.3 17360
+kworker/u4:5-ev  0.0     0
+kworker/u4:2-ev  0.0     0
+rcu_preempt      0.0     0
+jbd2/sda1-8      0.0     0
+kworker/u4:0-ex  0.0     0
+ksoftirqd/0      0.0     0
+ksoftirqd/1      0.0     0
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        24G   12G   12G  50% /
