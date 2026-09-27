@@ -107,18 +107,8 @@ func chairPostCoordinate(w http.ResponseWriter, r *http.Request) {
 
 	chairLocationID := ulid.Make().String()
 	recordedAt := time.Now().UTC().Truncate(time.Microsecond)
-	done := make(chan error, 1)
 	select {
-	case coordinateWrites <- coordinateWrite{chairLocationID, chair.ID, req.Latitude, req.Longitude, recordedAt, done}:
-	case <-ctx.Done():
-		return
-	}
-	select {
-	case err := <-done:
-		if err != nil {
-			writeError(w, http.StatusInternalServerError, err)
-			return
-		}
+	case coordinateWrites <- coordinateWrite{chairLocationID, chair.ID, req.Latitude, req.Longitude, recordedAt}:
 	case <-ctx.Done():
 		return
 	}

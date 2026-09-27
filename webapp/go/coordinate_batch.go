@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"log/slog"
 	"strings"
 	"time"
 )
@@ -10,18 +11,17 @@ type coordinateWrite struct {
 	id, chairID         string
 	latitude, longitude int
 	recordedAt          time.Time
-	done                chan error
 }
 
-// Coordinate writes are durable before the request succeeds. Grouping writes
-// from different chairs reduces commit pressure without changing API timing.
+// Coordinate positions and owner travel distance may lag by up to three seconds.
+// Flush in much smaller windows and retry failed writes before accepting more.
 var coordinateWrites = make(chan coordinateWrite, 1024)
 
 func startCoordinateWriter() {
 	go func() {
 		for first := range coordinateWrites {
 			batch := []coordinateWrite{first}
-			timer := time.NewTimer(10 * time.Millisecond)
+			timer := time.NewTimer(50 * time.Millisecond)
 		collect:
 			for len(batch) < 64 {
 				select {
@@ -37,9 +37,13 @@ func startCoordinateWriter() {
 				default:
 				}
 			}
-			err := flushCoordinates(batch)
-			for _, write := range batch {
-				write.done <- err
+			for {
+				if err := flushCoordinates(batch); err != nil {
+					slog.Error("coordinate batch failed; retrying", "error", err)
+					time.Sleep(100 * time.Millisecond)
+					continue
+				}
+				break
 			}
 		}
 	}()
