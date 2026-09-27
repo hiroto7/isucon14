@@ -332,16 +332,26 @@
   {
     "id": "materialized-distance",
     "label": "Materialized owner distance",
-    "decision": "candidate"
+    "decision": "accepted"
   },
   {
     "id": "materialized-distance-repeat",
     "label": "Materialized distance repeat",
-    "decision": "candidate"
+    "decision": "accepted"
   },
   {
     "id": "regional-matching",
     "label": "Regional matching limit",
+    "decision": "accepted"
+  },
+  {
+    "id": "regional-matching-repeat",
+    "label": "Regional matching repeat",
+    "decision": "accepted"
+  },
+  {
+    "id": "chair-notification-cache",
+    "label": "Chair notification cache",
     "decision": "candidate"
   }
 ]
