@@ -82,6 +82,7 @@ func setup() http.Handler {
 	// The burst after matching several rides must stay below MySQL's 151-connection limit.
 	_db.SetMaxOpenConns(64)
 	db = _db
+	startCoordinateWriter()
 
 	mux := chi.NewRouter()
 	mux.Use(middleware.Recoverer)

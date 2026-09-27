@@ -105,67 +105,51 @@ func chairPostCoordinate(w http.ResponseWriter, r *http.Request) {
 
 	chair := ctx.Value("chair").(*Chair)
 
-	tx, err := db.Beginx()
-	if err != nil {
-		writeError(w, http.StatusInternalServerError, err)
-		return
-	}
-	defer tx.Rollback()
-
 	chairLocationID := ulid.Make().String()
 	recordedAt := time.Now().UTC().Truncate(time.Microsecond)
-	if _, err := tx.ExecContext(
-		ctx,
-		`INSERT INTO chair_locations (id, chair_id, latitude, longitude, created_at) VALUES (?, ?, ?, ?, ?)`,
-		chairLocationID, chair.ID, req.Latitude, req.Longitude, recordedAt,
-	); err != nil {
-		writeError(w, http.StatusInternalServerError, err)
+	done := make(chan error, 1)
+	select {
+	case coordinateWrites <- coordinateWrite{chairLocationID, chair.ID, req.Latitude, req.Longitude, recordedAt, done}:
+	case <-ctx.Done():
 		return
 	}
-	if _, err := tx.ExecContext(ctx, `
-INSERT INTO chair_latest_locations (chair_id, latitude, longitude, created_at)
-VALUES (?, ?, ?, ?)
-ON DUPLICATE KEY UPDATE
-  latitude = IF(VALUES(created_at) >= created_at, VALUES(latitude), latitude),
-  longitude = IF(VALUES(created_at) >= created_at, VALUES(longitude), longitude),
-  created_at = GREATEST(created_at, VALUES(created_at))`,
-		chair.ID, req.Latitude, req.Longitude, recordedAt); err != nil {
-		writeError(w, http.StatusInternalServerError, err)
+	select {
+	case err := <-done:
+		if err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+	case <-ctx.Done():
 		return
 	}
 
 	ride := &Ride{}
-	if err := tx.GetContext(ctx, ride, `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1`, chair.ID); err != nil {
+	if err := db.GetContext(ctx, ride, `SELECT * FROM rides WHERE chair_id = ? ORDER BY updated_at DESC LIMIT 1`, chair.ID); err != nil {
 		if !errors.Is(err, sql.ErrNoRows) {
 			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
 	} else {
-		status, err := getLatestRideStatus(ctx, tx, ride.ID)
+		status, err := getLatestRideStatus(ctx, db, ride.ID)
 		if err != nil {
 			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
 		if status != "COMPLETED" && status != "CANCELED" {
 			if req.Latitude == ride.PickupLatitude && req.Longitude == ride.PickupLongitude && status == "ENROUTE" {
-				if _, err := tx.ExecContext(ctx, "INSERT INTO ride_statuses (id, ride_id, status) VALUES (?, ?, ?)", ulid.Make().String(), ride.ID, "PICKUP"); err != nil {
+				if _, err := db.ExecContext(ctx, "INSERT INTO ride_statuses (id, ride_id, status) VALUES (?, ?, ?)", ulid.Make().String(), ride.ID, "PICKUP"); err != nil {
 					writeError(w, http.StatusInternalServerError, err)
 					return
 				}
 			}
 
 			if req.Latitude == ride.DestinationLatitude && req.Longitude == ride.DestinationLongitude && status == "CARRYING" {
-				if _, err := tx.ExecContext(ctx, "INSERT INTO ride_statuses (id, ride_id, status) VALUES (?, ?, ?)", ulid.Make().String(), ride.ID, "ARRIVED"); err != nil {
+				if _, err := db.ExecContext(ctx, "INSERT INTO ride_statuses (id, ride_id, status) VALUES (?, ?, ?)", ulid.Make().String(), ride.ID, "ARRIVED"); err != nil {
 					writeError(w, http.StatusInternalServerError, err)
 					return
 				}
 			}
 		}
-	}
-
-	if err := tx.Commit(); err != nil {
-		writeError(w, http.StatusInternalServerError, err)
-		return
 	}
 
 	writeJSON(w, http.StatusOK, &chairPostCoordinateResponse{
