@@ -191,6 +191,12 @@ type chairGetNotificationResponseData struct {
 	Status                string     `json:"status"`
 }
 
+type notificationRideStatus struct {
+	ID      string `db:"id"`
+	Status  string `db:"status"`
+	Pending bool   `db:"pending"`
+}
+
 func chairGetNotification(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	chair := ctx.Value("chair").(*Chair)
