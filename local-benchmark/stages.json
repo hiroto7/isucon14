@@ -318,5 +318,15 @@
     "id": "coordinate-batch-10ms",
     "label": "Synchronous coordinate batch",
     "decision": "rejected"
+  },
+  {
+    "id": "coordinate-async-50ms",
+    "label": "Async coordinate batch",
+    "decision": "rejected"
+  },
+  {
+    "id": "manual-review-restored",
+    "label": "Restored after review",
+    "decision": "verification"
   }
 ]
