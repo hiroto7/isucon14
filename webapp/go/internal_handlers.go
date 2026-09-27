@@ -48,7 +48,6 @@ WHERE c.is_active = TRUE
 	args := make([]interface{}, 0, len(rides)*3)
 	matchedIDs := make([]string, 0, len(rides))
 	matchedChairIDs := make([]string, 0, len(rides))
-	matchedUserIDs := make([]string, 0, len(rides))
 	for _, ride := range rides {
 		if len(chairs) == 0 {
 			break
@@ -72,7 +71,6 @@ WHERE c.is_active = TRUE
 		args = append(args, ride.ID, chairs[best].ID)
 		matchedIDs = append(matchedIDs, ride.ID)
 		matchedChairIDs = append(matchedChairIDs, chairs[best].ID)
-		matchedUserIDs = append(matchedUserIDs, ride.UserID)
 		chairs[best] = chairs[len(chairs)-1]
 		chairs = chairs[:len(chairs)-1]
 	}
@@ -92,9 +90,6 @@ WHERE c.is_active = TRUE
 		}
 		for _, chairID := range matchedChairIDs {
 			invalidateChairNotification(chairID)
-		}
-		for _, userID := range matchedUserIDs {
-			invalidateAppNotification(userID)
 		}
 	}
 

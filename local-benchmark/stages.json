@@ -362,6 +362,11 @@
   {
     "id": "app-notification-cache",
     "label": "App notification cache",
-    "decision": "candidate"
+    "decision": "rejected"
+  },
+  {
+    "id": "article-followup-restored",
+    "label": "Follow-up adopted state",
+    "decision": "verification"
   }
 ]
