@@ -1,0 +1,14 @@
+diff --git a/local-benchmark/deployed-source.json b/local-benchmark/deployed-source.json
+index 364aadac..a0757831 100644
+--- a/local-benchmark/deployed-source.json
++++ b/local-benchmark/deployed-source.json
+@@ -1,7 +1,7 @@
+ {
+   "go/.gitignore": "2568a79097dd80db87574459dd10e9de9ee37580eb2c0a4abf1dfcd0250c4245",
+-  "go/app_handlers.go": "f3f740929524f95dcde9d92bfa81a0ef2a45d3a1e6110a98de28a20fbb4a0016",
+-  "go/chair_handlers.go": "28a51641bc2e3a28d5cb9766f911ffe4e607579bdffa70185640267a30fccd70",
++  "go/app_handlers.go": "292f6331be44d2c3613dedcefba62b566aa262182c9da1a4e34653ac2ebc0600",
++  "go/chair_handlers.go": "09004193b9f25663b318221cf4fa71acdb66f401a3afb9bf629bdba4166f2d95",
+   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
+   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
+   "go/internal_handlers.go": "2a37419d7c9979c71425c566593cbddf626ea4dc0ba16c3ae2bc1c57f2623cdb",

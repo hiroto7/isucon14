@@ -298,5 +298,20 @@
     "id": "final-adopted-check",
     "label": "Final adopted check",
     "decision": "verification"
+  },
+  {
+    "id": "manual-score-review",
+    "label": "Scoring review baseline",
+    "decision": "verification"
+  },
+  {
+    "id": "notification-read-autocommit",
+    "label": "Notification autocommit",
+    "decision": "rejected"
+  },
+  {
+    "id": "chair-notification-autocommit",
+    "label": "Chair notification autocommit",
+    "decision": "rejected"
   }
 ]
