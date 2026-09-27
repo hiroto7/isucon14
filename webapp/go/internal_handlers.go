@@ -16,7 +16,7 @@ type matchingChair struct {
 func internalGetMatching(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	var rides []Ride
-	if err := db.SelectContext(ctx, &rides, `SELECT * FROM rides WHERE chair_id IS NULL ORDER BY created_at LIMIT 64`); err != nil {
+	if err := db.SelectContext(ctx, &rides, `SELECT * FROM rides WHERE chair_id IS NULL ORDER BY created_at LIMIT 256`); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
@@ -52,21 +52,19 @@ WHERE c.is_active = TRUE
 			break
 		}
 		best := -1
-		bestDistance := 0
-		bestHasLocation := false
+		bestDistance := 400
 		for i, chair := range chairs {
-			hasLocation := chair.Latitude.Valid && chair.Longitude.Valid
-			distance := 0
-			if hasLocation {
-				distance = calculateDistance(ride.PickupLatitude, ride.PickupLongitude, int(chair.Latitude.Int64), int(chair.Longitude.Int64))
+			if !chair.Latitude.Valid || !chair.Longitude.Valid {
+				continue
 			}
-			if best == -1 || (hasLocation && !bestHasLocation) ||
-				(hasLocation == bestHasLocation && (distance < bestDistance ||
-					(distance == bestDistance && chair.ID < chairs[best].ID))) {
+			distance := calculateDistance(ride.PickupLatitude, ride.PickupLongitude, int(chair.Latitude.Int64), int(chair.Longitude.Int64))
+			if distance < bestDistance || (distance == bestDistance && best >= 0 && chair.ID < chairs[best].ID) {
 				best = i
 				bestDistance = distance
-				bestHasLocation = hasLocation
 			}
+		}
+		if best < 0 {
+			continue
 		}
 		update.WriteString(" WHEN ? THEN ?")
 		args = append(args, ride.ID, chairs[best].ID)
