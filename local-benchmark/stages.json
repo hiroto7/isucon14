@@ -313,5 +313,10 @@
     "id": "chair-notification-autocommit",
     "label": "Chair notification autocommit",
     "decision": "rejected"
+  },
+  {
+    "id": "coordinate-batch-10ms",
+    "label": "Synchronous coordinate batch",
+    "decision": "rejected"
   }
 ]
