@@ -135,3 +135,40 @@ ax3.spines[["top", "right"]].set_visible(False)
 fig3.text(.01, -.04, "ARM64 / 2 vCPU / 4 GiB / one VM. Orange: rejected candidate. FAIL has no numeric score. All runs and logs are retained under results/.", fontsize=9, color="#555555")
 fig3.savefig(ROOT / "score-manual-review.png", dpi=170, bbox_inches="tight")
 print(ROOT / "score-manual-review.png")
+
+# Follow-up after reading the official problem commentary. Keep the repeat
+# measurements visible inside each stage instead of hiding their variation.
+followup_groups = [
+    ("Rebuilt\nbaseline", ["rebuilt-baseline"], "#64748b"),
+    ("Prior best\nadopted", ["final-restored"], "#64748b"),
+    ("Owner distance\nmaterialized", ["materialized-distance", "materialized-distance-repeat"], "#2563eb"),
+    ("Regional\nmatching", ["regional-matching", "regional-matching-repeat"], "#2563eb"),
+    ("Chair notification\ncache", ["chair-notification-cache", "chair-notification-cache-repeat"], "#2563eb"),
+    ("App notification\ncache [rejected]", ["app-notification-cache"], "#d97706"),
+    ("After restart\nadopted", ["article-followup-restored"], "#2563eb"),
+]
+fig4, ax4 = plt.subplots(figsize=(12, 5.5), layout="constrained")
+for x, (label, ids, color) in enumerate(followup_groups):
+    scores = [r["score"] for r in records if r["stage"] in ids and r["status"] == "passed" and r.get("score") is not None]
+    if not scores:
+        continue
+    median = statistics.median(scores)
+    ax4.errorbar(x, median, yerr=[[median - min(scores)], [max(scores) - median]], fmt="D", color=color, capsize=6, markersize=8, zorder=3)
+    for index, score in enumerate(scores):
+        offset = (index - (len(scores) - 1) / 2) * (.24 if x == 0 else .12)
+        ax4.scatter(x + offset, score, color=color, alpha=.65, s=38, zorder=4)
+        label_offset = (-20 if index == 1 else 12) if x == 0 else (12 if index % 2 == 0 else -18)
+        ax4.annotate(f"{score:,}", (x + offset, score), xytext=(0, label_offset), textcoords="offset points", ha="center", fontsize=8)
+    ax4.text(x, 15000, f"median {median:,.0f}\n{median/base:.1f}× initial", ha="center", va="center", fontsize=8,
+             bbox={"boxstyle": "round,pad=.25", "facecolor": "white", "edgecolor": "#cbd5e1"})
+ax4.set_xticks(range(len(followup_groups)), [g[0] for g in followup_groups])
+ax4.tick_params(axis="x", pad=18)
+ax4.set_ylim(0, 106000)
+ax4.set_xlim(-.5, len(followup_groups) - .5)
+ax4.set_ylabel("Official benchmark score")
+ax4.set_title("ISUCON14 — follow-up to the official commentary", loc="left", fontweight="bold")
+ax4.grid(axis="y", alpha=.2)
+ax4.spines[["top", "right"]].set_visible(False)
+fig4.text(.01, -.04, "ARM64 / 2 vCPU / 4 GiB / app and benchmark on one VM. Dots: individual valid runs; diamond and whiskers: median and range. Orange: rejected candidate.", fontsize=9, color="#555555")
+fig4.savefig(ROOT / "score-article-followup.png", dpi=170, bbox_inches="tight")
+print(ROOT / "score-article-followup.png")
