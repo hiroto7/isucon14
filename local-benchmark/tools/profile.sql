@@ -1,0 +1,8 @@
+SELECT DIGEST_TEXT, COUNT_STAR,
+       ROUND(SUM_TIMER_WAIT / 1000000000000, 3) AS total_seconds,
+       ROUND(AVG_TIMER_WAIT / 1000000000, 3) AS average_ms,
+       SUM_ROWS_EXAMINED, SUM_ROWS_SENT, SUM_NO_INDEX_USED
+FROM performance_schema.events_statements_summary_by_digest
+WHERE SCHEMA_NAME = 'isuride'
+ORDER BY SUM_TIMER_WAIT DESC
+LIMIT 25;

@@ -1,0 +1,16 @@
+count	total_seconds	average_ms	rows_examined	max_ms	query
+225	18.458	82.03	1132465	193.31	SELECT c.id, c.name, c.model, l.latitude, l.longitude FROM chairs c JOIN chair_latest_locations l ON l.chair_id = c.id WHERE c.is_active = TRUE AND NOT EXISTS ( SELECT ? FROM rides
+93	10.262	110.34	58598	254.75	SELECT id, owner_id, name, access_token, model, is_active, created_at, updated_at, IFNULL(total_distance, ?) AS total_distance, total_distance_updated_at FROM chairs LEFT JOIN (SEL
+14	1.084	77.43	58685	126.99	SELECT c.id, l.latitude, l.longitude FROM chairs c LEFT JOIN chair_latest_locations l ON l.chair_id = c.id WHERE c.is_active = TRUE AND NOT EXISTS ( SELECT ? FROM rides r JOIN ride
+17	0.925	54.40	0	59.17	COMMIT;
+9	0.587	65.26	9	87.36	SELECT status FROM ride_statuses WHERE ride_id = ? ORDER BY created_at DESC LIMIT ?;
+8	0.475	59.39	21	86.35	SELECT * FROM ride_statuses WHERE ride_id = ? AND app_sent_at IS NULL ORDER BY created_at ASC LIMIT ?;
+6	0.395	65.88	18	87.18	SELECT * FROM ride_statuses WHERE ride_id = ? ORDER BY created_at;
+3	0.162	53.92	14	55.23	SELECT * FROM ride_statuses WHERE ride_id = ? AND chair_sent_at IS NULL ORDER BY created_at ASC LIMIT ?;
+1	0.134	133.65	0	133.65	INSERT INTO `chair_locations` VALUES (?,?,?,-?,?),(?,?,?,-?,?),(?,?,-?,-?,?),(?,?,?,-?,?),(?,?,?,-?,?),(?,?,-?,-?,?),(?,?,?,-?,?),(?,?,?,?,?),(?,?,-?,-?,?),(?,?,?,-?,?),(?,?,?,?,?)
+1	0.100	100.04	0	100.04	INSERT INTO `ride_statuses` VALUES (?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,?,?,?,?),(?,?,
+1	0.069	69.50	0	69.50	INSERT INTO `chair_locations` VALUES (?,?,-?,?,?),(?,?,-?,-?,?),(?,?,?,?,?),(?,?,?,?,?),(?,?,?,-?,?),(?,?,?,-?,?),(?,?,-?,-?,?),(?,?,-?,?,?),(?,?,?,-?,?),(?,?,?,-?,?),(?,?,-?,-?,?)
+1	0.065	64.71	770	64.71	SELECT * FROM coupons WHERE used_by = ?;
+1	0.052	52.18	0	52.18	INSERT INTO ride_statuses (id, ride_id, status) VALUES (?, ?, ?);
+1	0.051	50.58	3	50.58	SELECT * FROM rides WHERE user_id = ? ORDER BY created_at DESC;
+1	0.051	50.55	0	50.55	INSERT INTO payment_tokens (user_id, token) VALUES (?, ?);

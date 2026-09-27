@@ -1,0 +1,270 @@
+time=00:55:37.285 level=INFO msg=負荷走行を開始します
+time=00:55:37.285 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=00:55:40.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=00:55:40.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=4 score="[0 0 0 3 1]" criteria="[4 1 4 4]"
+time=00:55:41.808 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:55:41.811 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:55:41.812 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:41.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=00:55:41.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[0 0 0 10 8]" criteria="[18 8 18 18]"
+time=00:55:43.611 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:55:43.612 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:43.612 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:55:43.614 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:55:43.614 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:55:43.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=00:55:43.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=33 score="[0 0 0 24 9]" criteria="[33 9 33 33]"
+time=00:55:43.631 level=INFO msg=これまでに地域内の評判によって6人、既存ユーザーの招待経由で33人が新規登録しました
+time=00:55:43.631 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、72.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=00:55:43.772 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:55:43.779 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=00:55:44.663 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:55:45.409 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:55:45.419 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:45.420 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:55:45.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=00:55:45.432 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=51 score="[0 0 0 32 19]" criteria="[51 19 51 51]"
+time=00:55:45.446 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=3
+time=00:55:47.066 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:55:47.230 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:55:47.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=00:55:47.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=68 score="[0 0 7 38 23]" criteria="[68 23 68 61]"
+time=00:55:47.232 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:55:47.236 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:47.277 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:55:49.031 level=INFO msg=これまでに地域内の評判によって18人、既存ユーザーの招待経由で57人が新規登録しました
+time=00:55:49.031 level=INFO msg=これまでに低評価なライドによって1人が利用をやめました
+time=00:55:49.031 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、70.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、14.2%のライドは椅子の実移動時間に不満がありました
+time=00:55:49.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=00:55:49.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=81 score="[0 3 16 39 23]" criteria="[81 24 77 62]"
+time=00:55:49.032 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:49.055 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:55:49.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:55:49.077 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:55:50.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=00:55:50.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=99 score="[0 8 22 46 23]" criteria="[94 32 87 69]"
+time=00:55:50.853 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:55:50.872 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:55:50.873 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:50.873 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:55:52.629 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:55:52.630 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:55:52.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=00:55:52.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=122 score="[3 16 31 49 23]" criteria="[98 39 102 78]"
+time=00:55:52.650 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:55:52.669 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:55:52.730 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:55:54.431 level=INFO msg=これまでに地域内の評判によって30人、既存ユーザーの招待経由で70人が新規登録しました
+time=00:55:54.431 level=INFO msg=これまでに低評価なライドによって15人が利用をやめました
+time=00:55:54.431 level=INFO msg=28.9%のライドは椅子がマッチされるまでの時間、62.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、29.9%のライドは椅子の実移動時間に不満がありました
+time=00:55:54.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=00:55:54.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=142 score="[6 19 41 52 24]" criteria="[101 53 118 81]"
+time=00:55:54.491 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:54.491 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:55:54.495 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:55:54.495 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:55:54.508 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:55:56.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=00:55:56.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=163 score="[11 27 48 52 25]" criteria="[109 61 126 83]"
+time=00:55:56.270 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:55:56.293 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:55:56.302 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:55:56.329 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:55:58.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=00:55:58.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=187 score="[16 33 57 56 25]" criteria="[121 74 137 83]"
+time=00:55:58.069 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:55:58.132 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:55:58.142 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:55:58.144 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:55:58.161 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:55:59.831 level=INFO msg=これまでに地域内の評判によって42人、既存ユーザーの招待経由で83人が新規登録しました
+time=00:55:59.831 level=INFO msg=これまでに低評価なライドによって25人が利用をやめました
+time=00:55:59.831 level=INFO msg=32.5%のライドは椅子がマッチされるまでの時間、59.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、44.6%のライドは椅子の実移動時間に不満がありました
+time=00:55:59.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=00:55:59.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=212 score="[17 43 61 64 27]" criteria="[143 87 147 88]"
+time=00:55:59.854 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:55:59.871 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:55:59.882 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:55:59.889 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=3
+time=00:55:59.963 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:01.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=00:56:01.632 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=242 score="[20 55 66 74 27]" criteria="[169 102 157 89]"
+time=00:56:01.660 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:01.663 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:01.697 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:01.724 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:01.753 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=3
+time=00:56:03.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=00:56:03.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=272 score="[20 63 75 85 29]" criteria="[199 123 168 94]"
+time=00:56:03.448 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:03.554 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=4
+time=00:56:03.554 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:03.556 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:03.575 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:03.751 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:03.976 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:05.231 level=INFO msg=これまでに地域内の評判によって54人、既存ユーザーの招待経由で111人が新規登録しました
+time=00:56:05.231 level=INFO msg=これまでに低評価なライドによって36人が利用をやめました
+time=00:56:05.231 level=INFO msg=24.1%のライドは椅子がマッチされるまでの時間、54.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、54.5%のライドは椅子の実移動時間に不満がありました
+time=00:56:05.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=00:56:05.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=303 score="[20 78 79 95 31]" criteria="[230 139 179 97]"
+time=00:56:05.267 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:05.284 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:05.287 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=3
+time=00:56:05.290 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:05.316 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:07.032 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=00:56:07.032 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=337 score="[20 89 94 103 31]" criteria="[264 162 187 97]"
+time=00:56:07.131 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:07.144 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:07.159 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=3
+time=00:56:07.163 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:07.233 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:07.833 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:07.845 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:08.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=00:56:08.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=361 score="[21 98 102 109 31]" criteria="[287 176 193 97]"
+time=00:56:08.843 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:08.903 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:08.904 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:08.924 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:08.971 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:10.631 level=INFO msg=これまでに地域内の評判によって66人、既存ユーザーの招待経由で125人が新規登録しました
+time=00:56:10.631 level=INFO msg=これまでに低評価なライドによって49人が利用をやめました
+time=00:56:10.631 level=INFO msg=18.7%のライドは椅子がマッチされるまでの時間、50.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、62.7%のライドは椅子の実移動時間に不満がありました
+time=00:56:10.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=00:56:10.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=395 score="[21 111 120 112 31]" criteria="[321 195 195 100]"
+time=00:56:10.713 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=3
+time=00:56:10.717 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:10.833 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:10.899 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:11.950 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:12.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=00:56:12.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=425 score="[21 118 138 117 31]" criteria="[351 217 199 102]"
+time=00:56:12.567 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:12.583 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:12.678 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:12.699 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:12.796 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:56:12.865 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:14.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=00:56:14.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=452 score="[21 127 151 122 31]" criteria="[378 233 202 106]"
+time=00:56:14.360 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:14.383 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:14.395 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:14.396 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:14.428 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:16.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=00:56:16.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=489 score="[21 144 166 127 31]" criteria="[415 253 205 108]"
+time=00:56:16.031 level=INFO msg=これまでに地域内の評判によって78人、既存ユーザーの招待経由で136人が新規登録しました
+time=00:56:16.031 level=INFO msg=これまでに低評価なライドによって57人が利用をやめました
+time=00:56:16.031 level=INFO msg=15.1%のライドは椅子がマッチされるまでの時間、48.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、68.0%のライドは椅子の実移動時間に不満がありました
+time=00:56:16.068 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:16.137 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:16.190 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:16.191 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:16.234 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:17.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=00:56:17.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=520 score="[21 154 185 129 31]" criteria="[446 274 206 109]"
+time=00:56:17.898 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:17.970 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:18.133 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:18.248 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:19.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=00:56:19.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=550 score="[22 165 200 132 31]" criteria="[475 292 209 109]"
+time=00:56:19.733 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:19.734 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:19.844 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:19.873 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:19.883 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:21.431 level=INFO msg=これまでに地域内の評判によって90人、既存ユーザーの招待経由で142人が新規登録しました
+time=00:56:21.431 level=INFO msg=これまでに低評価なライドによって68人が利用をやめました
+time=00:56:21.431 level=INFO msg=12.7%のライドは椅子がマッチされるまでの時間、46.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、72.8%のライドは椅子の実移動時間に不満がありました
+time=00:56:21.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=00:56:21.431 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=591 score="[22 180 224 133 32]" criteria="[516 318 211 110]"
+time=00:56:21.478 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=00:56:21.571 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:21.576 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:21.735 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:21.848 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:23.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=00:56:23.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=627 score="[22 190 247 136 32]" criteria="[552 344 213 111]"
+time=00:56:23.332 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:23.479 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:23.485 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:23.613 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:25.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=00:56:25.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=659 score="[22 202 264 139 32]" criteria="[584 364 216 111]"
+time=00:56:25.036 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:25.365 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:25.372 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:25.471 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:25.631 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:26.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=00:56:26.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=695 score="[22 217 284 140 32]" criteria="[620 385 216 112]"
+time=00:56:26.831 level=INFO msg=これまでに地域内の評判によって102人、既存ユーザーの招待経由で150人が新規登録しました
+time=00:56:26.831 level=INFO msg=これまでに低評価なライドによって79人が利用をやめました
+time=00:56:26.831 level=INFO msg=10.8%のライドは椅子がマッチされるまでの時間、44.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、76.4%のライドは椅子の実移動時間に不満がありました
+time=00:56:26.987 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:27.017 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:27.021 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:27.022 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:27.022 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:28.446 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M3F6VR7D0CHN5EZA7JFCSWN4の椅子は既にライド中です"
+time=00:56:28.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=00:56:28.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=734 score="[22 224 311 145 32]" criteria="[659 417 218 115]"
+time=00:56:28.841 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:28.842 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:28.847 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:28.888 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:30.432 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=00:56:30.432 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=768 score="[22 229 338 147 32]" criteria="[693 446 219 116]"
+time=00:56:30.482 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:30.586 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:30.589 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:30.665 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:30.742 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:32.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=00:56:32.231 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=814 score="[22 235 372 153 32]" criteria="[739 486 222 119]"
+time=00:56:32.231 level=INFO msg=これまでに地域内の評判によって114人、既存ユーザーの招待経由で163人が新規登録しました
+time=00:56:32.231 level=INFO msg=これまでに低評価なライドによって80人が利用をやめました
+time=00:56:32.231 level=INFO msg=9.2%のライドは椅子がマッチされるまでの時間、40.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、79.1%のライドは椅子の実移動時間に不満がありました
+time=00:56:32.387 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:32.408 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=00:56:32.466 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:32.757 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=2
+time=00:56:32.828 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:34.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=00:56:34.031 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=847 score="[22 239 397 157 32]" criteria="[772 515 223 122]"
+time=00:56:34.111 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:34.244 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:34.289 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:34.289 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:34.465 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:35.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=00:56:35.831 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=883 score="[22 243 426 160 32]" criteria="[808 547 225 123]"
+time=00:56:36.053 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:56:36.108 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=00:56:36.119 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=2
+time=00:56:36.139 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:36.268 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:37.631 level=INFO msg=これまでに地域内の評判によって126人、既存ユーザーの招待経由で172人が新規登録しました
+time=00:56:37.631 level=INFO msg=これまでに低評価なライドによって82人が利用をやめました
+time=00:56:37.631 level=INFO msg=8.1%のライドは椅子がマッチされるまでの時間、37.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.9%のライドは椅子の実移動時間に不満がありました
+time=00:56:37.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=00:56:37.631 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=922 score="[22 249 455 163 33]" criteria="[847 580 228 125]"
+time=00:56:37.762 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:56:37.832 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=00:56:37.867 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=00:56:37.905 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="PreLoved Chairs" 増加数=1
+time=00:56:37.924 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Sit Second Life" 増加数=1
+time=00:56:43.233 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=188 アクティブユーザー数=144
+time=00:56:43.233 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=126 アクティブユーザー数=88
+time=00:56:43.233 level=INFO msg=最終オーナー情報 名前="SitWell Designs" 売上=1379700 椅子数=55
+time=00:56:43.233 level=INFO msg=最終オーナー情報 名前=ふたたび椅子堂 売上=853800 椅子数=40
+time=00:56:43.233 level=INFO msg=最終オーナー情報 名前=ZenDrive 売上=858300 椅子数=41
+time=00:56:43.233 level=INFO msg=最終オーナー情報 名前="PreLoved Chairs" 売上=1206000 椅子数=51
+time=00:56:43.233 level=INFO msg=最終オーナー情報 名前="Sit Second Life" 売上=1329100 椅子数=54
+time=00:56:43.233 level=INFO msg=7.9%のライドは椅子がマッチされるまでの時間、36.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、81.6%のライドは椅子の実移動時間に不満がありました
+time=00:56:43.233 level=INFO msg=結果 pass=true スコア=67516 種別エラー数="map[8:1 17:11 30:1]"
+time=00:56:43.233 level=INFO msg=負荷走行が終了しました

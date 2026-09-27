@@ -1,0 +1,232 @@
+time=23:57:32.964 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=23:57:32.964 level=INFO msg=負荷走行を開始します
+time=23:57:35.732 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=23:57:35.732 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=6 score="[0 0 0 4 2]" criteria="[6 2 6 6]"
+time=23:57:37.511 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:37.518 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:57:37.528 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:57:37.532 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=23:57:37.532 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=20 score="[0 0 0 12 8]" criteria="[20 8 20 20]"
+time=23:57:39.006 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:57:39.318 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:57:39.324 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:57:39.326 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:39.327 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:57:39.333 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=23:57:39.333 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=32 score="[0 0 0 22 10]" criteria="[32 10 32 32]"
+time=23:57:39.333 level=INFO msg=これまでに地域内の評判によって7人、既存ユーザーの招待経由で30人が新規登録しました
+time=23:57:39.333 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、68.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=23:57:39.353 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:41.132 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=23:57:41.132 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=43 score="[0 0 2 28 13]" criteria="[43 13 43 41]"
+time=23:57:41.136 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:57:41.139 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:57:41.148 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:57:42.933 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=23:57:42.933 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=51 score="[0 2 4 29 16]" criteria="[51 17 49 44]"
+time=23:57:42.948 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:42.965 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:42.973 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:57:44.733 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=23:57:44.733 level=INFO msg=これまでに地域内の評判によって19人、既存ユーザーの招待経由で47人が新規登録しました
+time=23:57:44.733 level=INFO msg=これまでに低評価なライドによって1人が利用をやめました
+time=23:57:44.733 level=INFO msg=1.5%のライドは椅子がマッチされるまでの時間、68.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、23.1%のライドは椅子の実移動時間に不満がありました
+time=23:57:44.733 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=67 score="[0 9 9 33 16]" criteria="[66 21 58 45]"
+time=23:57:44.786 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:57:44.790 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:57:44.804 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:57:46.532 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=23:57:46.532 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=82 score="[1 21 11 33 16]" criteria="[70 24 64 48]"
+time=23:57:46.565 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:57:46.612 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:46.625 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:57:48.330 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:57:48.332 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=23:57:48.332 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=98 score="[6 24 15 37 16]" criteria="[70 32 74 53]"
+time=23:57:48.334 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:48.366 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:57:48.367 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:50.132 level=INFO msg=これまでに地域内の評判によって31人、既存ユーザーの招待経由で53人が新規登録しました
+time=23:57:50.132 level=INFO msg=これまでに低評価なライドによって16人が利用をやめました
+time=23:57:50.132 level=INFO msg=35.5%のライドは椅子がマッチされるまでの時間、64.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、38.6%のライドは椅子の実移動時間に不満がありました
+time=23:57:50.132 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=23:57:50.132 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=110 score="[11 25 19 38 17]" criteria="[71 39 80 55]"
+time=23:57:50.172 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:57:50.190 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:57:50.212 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:51.933 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=23:57:51.933 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=133 score="[20 28 25 41 19]" criteria="[81 49 89 58]"
+time=23:57:51.962 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=3
+time=23:57:51.965 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:57:51.977 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:57:51.990 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:53.733 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=23:57:53.733 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=149 score="[24 34 28 43 20]" criteria="[89 57 93 60]"
+time=23:57:53.804 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:53.813 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:57:53.842 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:55.533 level=INFO msg=これまでに地域内の評判によって43人、既存ユーザーの招待経由で67人が新規登録しました
+time=23:57:55.533 level=INFO msg=これまでに低評価なライドによって29人が利用をやめました
+time=23:57:55.533 level=INFO msg=38.8%のライドは椅子がマッチされるまでの時間、60.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、52.1%のライドは椅子の実移動時間に不満がありました
+time=23:57:55.533 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=23:57:55.533 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=170 score="[29 40 31 48 22]" criteria="[104 67 99 64]"
+time=23:57:55.595 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=2
+time=23:57:55.606 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:57:55.644 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=3
+time=23:57:55.661 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:57:55.729 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:57:57.332 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=23:57:57.332 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=194 score="[30 54 34 54 22]" criteria="[127 76 104 65]"
+time=23:57:57.444 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:57:57.477 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:57:57.539 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:57:57.541 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:57:59.132 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=23:57:59.132 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=213 score="[32 65 38 56 22]" criteria="[144 82 106 65]"
+time=23:57:59.198 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:57:59.248 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:57:59.263 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:57:59.269 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:00.933 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=23:58:00.933 level=INFO msg=これまでに地域内の評判によって55人、既存ユーザーの招待経由で79人が新規登録しました
+time=23:58:00.933 level=INFO msg=これまでに低評価なライドによって43人が利用をやめました
+time=23:58:00.933 level=INFO msg=29.4%のライドは椅子がマッチされるまでの時間、58.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、62.6%のライドは椅子の実移動時間に不満がありました
+time=23:58:00.933 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=235 score="[32 71 50 60 22]" criteria="[166 97 109 67]"
+time=23:58:00.956 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:00.963 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:00.968 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=3
+time=23:58:01.033 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:01.039 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:02.574 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:58:02.732 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=23:58:02.732 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=257 score="[32 81 57 65 22]" criteria="[188 109 113 68]"
+time=23:58:02.839 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:02.867 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:02.931 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:58:04.623 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=23:58:04.623 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=279 score="[32 86 70 68 23]" criteria="[210 125 115 72]"
+time=23:58:04.797 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:58:04.801 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:05.078 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:06.422 level=INFO msg=これまでに地域内の評判によって67人、既存ユーザーの招待経由で88人が新規登録しました
+time=23:58:06.422 level=INFO msg=これまでに低評価なライドによって53人が利用をやめました
+time=23:58:06.422 level=INFO msg=23.8%のライドは椅子がマッチされるまでの時間、54.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、68.0%のライドは椅子の実移動時間に不満がありました
+time=23:58:06.422 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=23:58:06.422 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=294 score="[33 91 78 69 23]" criteria="[224 134 116 72]"
+time=23:58:06.603 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:06.711 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:58:06.769 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:08.222 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=23:58:08.222 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=315 score="[34 97 90 71 23]" criteria="[244 148 118 72]"
+time=23:58:08.292 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:08.307 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:08.323 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:58:08.328 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:10.022 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=23:58:10.022 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=337 score="[35 106 101 72 23]" criteria="[265 160 119 72]"
+time=23:58:10.094 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=2
+time=23:58:10.151 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:10.171 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:10.174 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:11.824 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=23:58:11.824 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=364 score="[36 114 117 74 23]" criteria="[289 179 120 74]"
+time=23:58:11.824 level=INFO msg=これまでに地域内の評判によって79人、既存ユーザーの招待経由で91人が新規登録しました
+time=23:58:11.824 level=INFO msg=これまでに低評価なライドによって63人が利用をやめました
+time=23:58:11.824 level=INFO msg=20.6%のライドは椅子がマッチされるまでの時間、50.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、73.4%のライドは椅子の実移動時間に不満がありました
+time=23:58:12.048 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:58:12.091 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:58:12.144 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=23:58:12.151 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:12.805 level=WARN msg="取得したオーナーの椅子一覧の情報が想定しているものと異なります (CODE=26): total_distanceの反映が遅いデータがあります (id: 01M3F3HMRS06PZE91Q1HSG580A)"
+time=23:58:13.622 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=23:58:13.622 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=391 score="[37 128 127 76 23]" criteria="[314 191 122 75]"
+time=23:58:13.733 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:13.777 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:13.808 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:58:13.830 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:58:15.423 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=23:58:15.423 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=411 score="[38 135 137 78 23]" criteria="[329 205 124 77]"
+time=23:58:15.460 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:15.497 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:15.707 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:17.222 level=INFO msg=これまでに地域内の評判によって91人、既存ユーザーの招待経由で96人が新規登録しました
+time=23:58:17.222 level=INFO msg=これまでに低評価なライドによって73人が利用をやめました
+time=23:58:17.222 level=INFO msg=21.0%のライドは椅子がマッチされるまでの時間、49.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、76.2%のライドは椅子の実移動時間に不満がありました
+time=23:58:17.222 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=23:58:17.222 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=429 score="[38 145 145 78 23]" criteria="[339 218 126 78]"
+time=23:58:17.638 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:17.666 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:17.701 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:17.790 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:19.022 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=23:58:19.023 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=446 score="[39 156 150 78 23]" criteria="[341 234 128 79]"
+time=23:58:19.163 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:19.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:19.167 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:19.282 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:20.822 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=23:58:20.822 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=468 score="[42 170 155 78 23]" criteria="[345 250 132 79]"
+time=23:58:20.858 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:58:21.027 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:58:21.084 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:22.623 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=23:58:22.623 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=492 score="[46 185 159 79 23]" criteria="[345 270 136 81]"
+time=23:58:22.623 level=INFO msg=これまでに地域内の評判によって103人、既存ユーザーの招待経由で97人が新規登録しました
+time=23:58:22.624 level=INFO msg=これまでに低評価なライドによって81人が利用をやめました
+time=23:58:22.624 level=INFO msg=29.9%のライドは椅子がマッチされるまでの時間、45.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、77.9%のライドは椅子の実移動時間に不満がありました
+time=23:58:22.719 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:22.748 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:22.779 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:22.847 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:22.917 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:24.422 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=23:58:24.423 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=515 score="[48 201 164 79 23]" criteria="[347 289 140 82]"
+time=23:58:24.494 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:24.577 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:24.588 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:24.595 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:26.223 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=23:58:26.223 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=535 score="[49 217 167 79 23]" criteria="[348 307 141 84]"
+time=23:58:26.333 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:26.436 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:26.518 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:26.742 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:28.023 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=23:58:28.023 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=557 score="[50 236 169 79 23]" criteria="[349 327 142 85]"
+time=23:58:28.023 level=INFO msg=これまでに地域内の評判によって115人、既存ユーザーの招待経由で97人が新規登録しました
+time=23:58:28.023 level=INFO msg=これまでに低評価なライドによって93人が利用をやめました
+time=23:58:28.023 level=INFO msg=37.3%のライドは椅子がマッチされるまでの時間、41.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、79.6%のライドは椅子の実移動時間に不満がありました
+time=23:58:28.178 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:28.217 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:28.366 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=23:58:28.510 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:29.822 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=23:58:29.822 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=585 score="[52 259 172 79 23]" criteria="[353 349 145 85]"
+time=23:58:29.993 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:29.995 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:30.071 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:30.106 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:30.166 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:31.623 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=23:58:31.623 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=604 score="[55 272 175 79 23]" criteria="[353 365 146 87]"
+time=23:58:31.706 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Artisan Seats" 増加数=1
+time=23:58:31.783 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=23:58:31.811 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=23:58:31.892 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=23:58:33.423 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=23:58:33.423 level=INFO msg=これまでに地域内の評判によって127人、既存ユーザーの招待経由で98人が新規登録しました
+time=23:58:33.423 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=620 score="[56 284 177 80 23]" criteria="[354 379 149 88]"
+time=23:58:33.423 level=INFO msg=これまでに低評価なライドによって108人が利用をやめました
+time=23:58:33.423 level=INFO msg=42.9%のライドは椅子がマッチされるまでの時間、38.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.9%のライドは椅子の実移動時間に不満がありました
+time=23:58:33.686 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:58:33.728 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=23:58:38.933 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=139 アクティブユーザー数=83
+time=23:58:38.933 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=101 アクティブユーザー数=48
+time=23:58:38.933 level=INFO msg=最終オーナー情報 名前=CityRide 売上=1146700 椅子数=49
+time=23:58:38.933 level=INFO msg=最終オーナー情報 名前="Urban Wheels" 売上=1055900 椅子数=47
+time=23:58:38.933 level=INFO msg=最終オーナー情報 名前=ふたたび椅子堂 売上=922400 椅子数=44
+time=23:58:38.933 level=INFO msg=最終オーナー情報 名前="CraftChair Co., Ltd." 売上=345500 椅子数=22
+time=23:58:38.933 level=INFO msg=最終オーナー情報 名前="Artisan Seats" 売上=332500 椅子数=22
+time=23:58:38.933 level=INFO msg=44.3%のライドは椅子がマッチされるまでの時間、38.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.9%のライドは椅子の実移動時間に不満がありました
+time=23:58:38.933 level=INFO msg=結果 pass=true スコア=43994 種別エラー数="map[17:2 26:1]"
+time=23:58:38.933 level=INFO msg=負荷走行が終了しました

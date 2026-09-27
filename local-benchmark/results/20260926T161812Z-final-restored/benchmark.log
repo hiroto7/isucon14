@@ -1,0 +1,264 @@
+time=01:18:32.753 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=01:18:32.753 level=INFO msg=負荷走行を開始します
+time=01:18:35.501 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=01:18:35.501 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=2 score="[0 0 0 1 1]" criteria="[2 1 2 2]"
+time=01:18:37.089 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=01:18:37.275 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:37.288 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:18:37.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=01:18:37.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=19 score="[0 0 0 11 8]" criteria="[19 8 19 19]"
+time=01:18:39.077 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:39.079 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:39.079 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:18:39.080 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:18:39.080 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:18:39.101 level=INFO msg=これまでに地域内の評判によって6人、既存ユーザーの招待経由で32人が新規登録しました
+time=01:18:39.101 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、63.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=01:18:39.101 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=01:18:39.101 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=33 score="[0 0 0 21 12]" criteria="[33 12 33 33]"
+time=01:18:40.882 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:40.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=01:18:40.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=50 score="[0 0 1 35 14]" criteria="[50 14 50 49]"
+time=01:18:40.914 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:40.917 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:18:40.920 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:40.933 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:18:42.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=01:18:42.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=66 score="[0 0 5 44 17]" criteria="[66 17 66 61]"
+time=01:18:42.713 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:42.714 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:18:42.723 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:18:42.724 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:18:42.734 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:18:44.489 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:18:44.492 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:18:44.493 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:44.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=01:18:44.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=84 score="[0 0 12 50 22]" criteria="[83 27 82 70]"
+time=01:18:44.500 level=INFO msg=これまでに地域内の評判によって18人、既存ユーザーの招待経由で69人が新規登録しました
+time=01:18:44.500 level=INFO msg=1.2%のライドは椅子がマッチされるまでの時間、67.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、9.5%のライドは椅子の実移動時間に不満がありました
+time=01:18:44.508 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:44.511 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:46.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=01:18:46.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=102 score="[0 4 19 56 23]" criteria="[95 36 97 74]"
+time=01:18:46.322 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:46.329 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:18:46.330 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:46.332 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:18:48.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=01:18:48.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=123 score="[0 14 24 62 23]" criteria="[102 46 111 81]"
+time=01:18:48.117 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:48.120 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:18:48.128 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:48.136 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:48.143 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:18:49.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=01:18:49.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=142 score="[3 17 33 66 23]" criteria="[103 58 123 89]"
+time=01:18:49.900 level=INFO msg=これまでに地域内の評判によって30人、既存ユーザーの招待経由で84人が新規登録しました
+time=01:18:49.900 level=INFO msg=これまでに低評価なライドによって14人が利用をやめました
+time=01:18:49.900 level=INFO msg=27.5%のライドは椅子がマッチされるまでの時間、59.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、25.4%のライドは椅子の実移動時間に不満がありました
+time=01:18:49.955 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:49.957 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:18:49.973 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:49.990 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:49.998 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:18:51.701 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=01:18:51.701 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=168 score="[13 20 43 69 23]" criteria="[106 70 136 93]"
+time=01:18:51.727 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:18:51.733 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:18:51.738 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:18:51.744 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:18:51.756 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:18:53.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=01:18:53.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=189 score="[23 22 51 70 23]" criteria="[107 79 145 95]"
+time=01:18:53.528 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:53.528 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:53.528 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:18:53.538 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:18:55.301 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=01:18:55.301 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=220 score="[35 26 59 77 23]" criteria="[116 94 157 100]"
+time=01:18:55.301 level=INFO msg=これまでに地域内の評判によって42人、既存ユーザーの招待経由で96人が新規登録しました
+time=01:18:55.301 level=INFO msg=これまでに低評価なライドによって34人が利用をやめました
+time=01:18:55.301 level=INFO msg=47.3%のライドは椅子がマッチされるまでの時間、57.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、41.6%のライドは椅子の実移動時間に不満がありました
+time=01:18:55.312 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:55.352 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=4
+time=01:18:55.394 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:18:55.398 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:18:57.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=01:18:57.101 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=241 score="[43 32 64 79 23]" criteria="[122 103 162 102]"
+time=01:18:57.136 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:18:57.143 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:18:57.163 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:18:57.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:18:57.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:18:58.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=01:18:58.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=268 score="[50 40 73 82 23]" criteria="[135 116 170 103]"
+time=01:18:58.963 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:18:58.963 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:18:59.002 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:18:59.003 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:18:59.023 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:00.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=01:19:00.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=299 score="[55 48 83 87 26]" criteria="[160 134 176 109]"
+time=01:19:00.700 level=INFO msg=これまでに地域内の評判によって54人、既存ユーザーの招待経由で108人が新規登録しました
+time=01:19:00.700 level=INFO msg=これまでに低評価なライドによって52人が利用をやめました
+time=01:19:00.700 level=INFO msg=46.5%のライドは椅子がマッチされるまでの時間、55.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、52.3%のライドは椅子の実移動時間に不満がありました
+time=01:19:00.798 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:00.801 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=3
+time=01:19:00.802 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:00.812 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:00.872 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:02.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=01:19:02.501 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=324 score="[56 56 92 93 27]" criteria="[183 149 182 113]"
+time=01:19:02.542 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:02.542 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:02.616 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:02.633 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:02.706 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:04.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=01:19:04.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=357 score="[57 73 98 102 27]" criteria="[215 163 190 115]"
+time=01:19:04.353 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:04.433 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:04.452 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:04.575 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:06.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=01:19:06.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=392 score="[58 88 108 110 28]" criteria="[249 181 197 119]"
+time=01:19:06.100 level=INFO msg=これまでに地域内の評判によって66人、既存ユーザーの招待経由で127人が新規登録しました
+time=01:19:06.100 level=INFO msg=これまでに低評価なライドによって68人が利用をやめました
+time=01:19:06.100 level=INFO msg=36.5%のライドは椅子がマッチされるまでの時間、53.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、59.7%のライドは椅子の実移動時間に不満がありました
+time=01:19:06.190 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:06.232 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:06.262 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:06.291 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=3
+time=01:19:06.314 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:07.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=01:19:07.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=420 score="[58 99 120 114 29]" criteria="[277 198 200 122]"
+time=01:19:07.952 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:07.971 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:07.993 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:08.026 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:08.029 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:09.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=01:19:09.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=454 score="[59 107 138 121 29]" criteria="[310 223 206 123]"
+time=01:19:09.816 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:09.817 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:09.835 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:09.890 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:11.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=01:19:11.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=489 score="[61 120 150 128 30]" criteria="[343 243 213 125]"
+time=01:19:11.500 level=INFO msg=これまでに地域内の評判によって78人、既存ユーザーの招待経由で145人が新規登録しました
+time=01:19:11.500 level=INFO msg=これまでに低評価なライドによって77人が利用をやめました
+time=01:19:11.500 level=INFO msg=29.9%のライドは椅子がマッチされるまでの時間、50.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、65.4%のライドは椅子の実移動時間に不満がありました
+time=01:19:11.622 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:19:11.623 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:11.639 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:11.641 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:11.947 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:13.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=01:19:13.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=516 score="[61 129 160 136 30]" criteria="[370 261 219 127]"
+time=01:19:13.378 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:13.382 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:13.382 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:19:13.479 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:13.672 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:15.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=01:19:15.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=564 score="[61 142 189 141 31]" criteria="[418 296 224 129]"
+time=01:19:15.226 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:15.235 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:15.255 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:15.255 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:15.311 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:19:16.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=01:19:16.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=603 score="[62 153 211 146 31]" criteria="[456 323 227 131]"
+time=01:19:16.900 level=INFO msg=これまでに地域内の評判によって90人、既存ユーザーの招待経由で161人が新規登録しました
+time=01:19:16.900 level=INFO msg=これまでに低評価なライドによって85人が利用をやめました
+time=01:19:16.900 level=INFO msg=24.4%のライドは椅子がマッチされるまでの時間、46.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、70.3%のライドは椅子の実移動時間に不満がありました
+time=01:19:17.056 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:17.058 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:17.068 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:17.068 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:19:17.071 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:18.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=01:19:18.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=643 score="[63 164 235 150 31]" criteria="[495 351 230 132]"
+time=01:19:18.878 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:18.908 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:19.018 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:19.082 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:19.083 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=2
+time=01:19:20.501 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=01:19:20.501 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=690 score="[63 170 266 160 31]" criteria="[542 392 240 132]"
+time=01:19:20.730 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=3
+time=01:19:20.734 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:20.735 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:20.741 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:20.751 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:20.841 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=01:19:22.300 level=INFO msg=これまでに地域内の評判によって102人、既存ユーザーの招待経由で177人が新規登録しました
+time=01:19:22.300 level=INFO msg=これまでに低評価なライドによって91人が利用をやめました
+time=01:19:22.300 level=INFO msg=20.6%のライドは椅子がマッチされるまでの時間、42.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、74.1%のライドは椅子の実移動時間に不満がありました
+time=01:19:22.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=01:19:22.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=723 score="[64 175 290 163 31]" criteria="[574 419 241 134]"
+time=01:19:22.467 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:22.540 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:22.658 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=2
+time=01:19:22.733 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:24.033 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=01:19:24.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=01:19:24.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=762 score="[64 178 317 172 31]" criteria="[613 455 246 138]"
+time=01:19:24.211 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:24.275 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:24.327 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:24.340 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:24.351 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:25.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=01:19:25.900 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=809 score="[64 189 350 175 31]" criteria="[660 491 247 140]"
+time=01:19:25.941 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:25.948 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:25.953 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:26.288 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=3
+time=01:19:26.354 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=3
+time=01:19:27.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=01:19:27.700 level=INFO msg=これまでに地域内の評判によって114人、既存ユーザーの招待経由で189人が新規登録しました
+time=01:19:27.700 level=INFO msg=これまでに低評価なライドによって100人が利用をやめました
+time=01:19:27.700 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=866 score="[65 198 392 180 31]" criteria="[715 538 249 144]"
+time=01:19:27.700 level=INFO msg=17.4%のライドは椅子がマッチされるまでの時間、37.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、77.3%のライドは椅子の実移動時間に不満がありました
+time=01:19:27.959 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=3
+time=01:19:27.995 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:28.054 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:28.125 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:29.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=01:19:29.500 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=913 score="[65 206 424 187 31]" criteria="[762 577 253 147]"
+time=01:19:29.584 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=01:19:29.816 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=4
+time=01:19:30.019 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:30.056 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:30.148 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:31.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=01:19:31.300 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=950 score="[65 210 455 189 31]" criteria="[799 610 254 148]"
+time=01:19:31.455 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:31.491 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=01:19:31.519 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=1
+time=01:19:31.655 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:31.907 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:32.886 level=WARN msg="取得したオーナーの椅子一覧の情報が想定しているものと異なります (CODE=26): total_distanceの反映が遅いデータがあります (id: 01M3F86QDNWKSAHAC0ZBPSS908)"
+time=01:19:33.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=01:19:33.100 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1001 score="[67 219 490 194 31]" criteria="[848 649 257 151]"
+time=01:19:33.100 level=INFO msg=これまでに地域内の評判によって126人、既存ユーザーの招待経由で202人が新規登録しました
+time=01:19:33.100 level=INFO msg=これまでに低評価なライドによって105人が利用をやめました
+time=01:19:33.100 level=INFO msg=15.3%のライドは椅子がマッチされるまでの時間、35.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、79.6%のライドは椅子の実移動時間に不満がありました
+time=01:19:33.216 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=01:19:33.230 level=WARN msg="椅子がライドを受理できませんでした (CODE=3): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3F87H30PM28Z6ZX6N7PFD18/status\": EOF"
+time=01:19:33.316 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Urban Wheels" 増加数=1
+time=01:19:33.326 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=01:19:33.336 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=SwiftCab 増加数=2
+time=01:19:33.427 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ゆったり号 増加数=1
+time=01:19:38.701 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=190 アクティブユーザー数=130
+time=01:19:38.701 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=153 アクティブユーザー数=107
+time=01:19:38.701 level=INFO msg=最終オーナー情報 名前=SwiftCab 売上=1152600 椅子数=50
+time=01:19:38.701 level=INFO msg=最終オーナー情報 名前=風座プロダクツ 売上=1214400 椅子数=51
+time=01:19:38.701 level=INFO msg=最終オーナー情報 名前=椅子のめぐりや 売上=1231200 椅子数=51
+time=01:19:38.701 level=INFO msg=最終オーナー情報 名前=ゆったり号 売上=1113500 椅子数=48
+time=01:19:38.701 level=INFO msg=最終オーナー情報 名前="Urban Wheels" 売上=1265300 椅子数=52
+time=01:19:38.701 level=INFO msg=15.0%のライドは椅子がマッチされるまでの時間、34.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.2%のライドは椅子の実移動時間に不満がありました
+time=01:19:38.701 level=INFO msg=結果 pass=true スコア=70028 種別エラー数="map[3:1 17:3 26:1]"
+time=01:19:38.701 level=INFO msg=負荷走行が終了しました

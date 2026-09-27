@@ -1,0 +1,13 @@
+diff --git a/local-benchmark/deployed-source.json b/local-benchmark/deployed-source.json
+index 364aadac..03aece1a 100644
+--- a/local-benchmark/deployed-source.json
++++ b/local-benchmark/deployed-source.json
+@@ -11,7 +11,7 @@
+   "go/owner_handlers.go": "ab8a04897dba957f7f793a959f0083ccd6110b5a789b0e2aa5988d40c1ee0d12",
+   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
+   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
+-  "sql/1-schema.sql": "b09ae8d75718c716730e10c1bf1993cb07eb44efb872cd0ce52462ce0956ccba",
++  "sql/1-schema.sql": "f3bc34a9735c78a47b6c279285d86107715ca8ddb50cd15b00971041be199d98",
+   "sql/2-master-data.sql": "6ce8b7bdcbb163eb9d35a0067c0a9264115868b4df738a00a12d8ecb24bc193e",
+   "sql/3-initial-data.sql.gz": "2b45537b2e546377cca72ddf8feda271ed4a58fded88b1ee41c1e5cce497dc9c",
+   "sql/init.sh": "49c466cf9416fa2543044bb69a952c798733caff03fd60dbf8ba61ab7eba710d"

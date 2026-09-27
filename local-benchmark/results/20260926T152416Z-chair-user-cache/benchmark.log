@@ -1,0 +1,241 @@
+time=00:24:36.861 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=00:24:36.861 level=INFO msg=負荷走行を開始します
+time=00:24:39.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=00:24:39.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=5 score="[0 0 0 4 1]" criteria="[5 1 5 5]"
+time=00:24:41.403 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:41.406 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:41.409 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:24:41.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=00:24:41.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=20 score="[0 0 0 12 8]" criteria="[20 8 20 20]"
+time=00:24:43.205 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:43.225 level=INFO msg=これまでに地域内の評判によって6人、既存ユーザーの招待経由で32人が新規登録しました
+time=00:24:43.225 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、75.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=00:24:43.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=00:24:43.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=32 score="[0 0 0 24 8]" criteria="[32 8 32 32]"
+time=00:24:43.230 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:24:43.252 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:24:45.022 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:45.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=00:24:45.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=39 score="[0 0 0 31 8]" criteria="[39 8 39 39]"
+time=00:24:45.036 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:24:46.824 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=00:24:46.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=48 score="[0 0 4 36 8]" criteria="[48 9 48 43]"
+time=00:24:46.828 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:46.841 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:24:46.844 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:24:46.845 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:48.616 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:24:48.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=00:24:48.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=60 score="[0 2 12 37 9]" criteria="[55 13 60 45]"
+time=00:24:48.625 level=INFO msg=これまでに地域内の評判によって18人、既存ユーザーの招待経由で46人が新規登録しました
+time=00:24:48.625 level=INFO msg=8.3%のライドは椅子がマッチされるまでの時間、78.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、12.5%のライドは椅子の実移動時間に不満がありました
+time=00:24:48.628 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:24:48.645 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:24:48.657 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:24:50.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=00:24:50.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=73 score="[3 7 17 37 9]" criteria="[56 17 68 47]"
+time=00:24:50.434 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:50.435 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:50.446 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:24:52.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=00:24:52.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=89 score="[7 8 25 40 9]" criteria="[56 28 80 50]"
+time=00:24:52.247 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:24:52.254 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:24:52.256 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:24:52.262 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:24:54.026 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=00:24:54.026 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=103 score="[11 12 31 40 9]" criteria="[57 34 87 52]"
+time=00:24:54.026 level=INFO msg=これまでに地域内の評判によって30人、既存ユーザーの招待経由で49人が新規登録しました
+time=00:24:54.026 level=INFO msg=これまでに低評価なライドによって12人が利用をやめました
+time=00:24:54.026 level=INFO msg=44.7%のライドは椅子がマッチされるまでの時間、67.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、32.5%のライドは椅子の実移動時間に不満がありました
+time=00:24:54.033 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:24:54.036 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:54.042 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:54.050 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:24:54.050 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:24:55.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=00:24:55.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=115 score="[16 14 36 40 9]" criteria="[60 37 90 55]"
+time=00:24:55.837 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:55.878 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:55.905 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:24:55.922 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:24:57.615 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:57.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=00:24:57.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=133 score="[22 20 41 41 9]" criteria="[65 44 95 57]"
+time=00:24:57.629 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:24:57.644 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:24:57.684 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:24:59.424 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=00:24:59.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=155 score="[26 29 45 45 10]" criteria="[80 51 100 63]"
+time=00:24:59.425 level=INFO msg=これまでに地域内の評判によって42人、既存ユーザーの招待経由で52人が新規登録しました
+time=00:24:59.425 level=INFO msg=これまでに低評価なライドによって27人が利用をやめました
+time=00:24:59.425 level=INFO msg=48.4%のライドは椅子がマッチされるまでの時間、67.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、47.4%のライドは椅子の実移動時間に不満がありました
+time=00:24:59.469 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:24:59.470 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:24:59.479 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:24:59.479 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:25:01.224 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=00:25:01.224 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=179 score="[33 37 50 47 12]" criteria="[97 58 103 68]"
+time=00:25:01.246 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:01.246 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:01.281 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:25:01.327 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:01.353 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:03.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=00:25:03.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=201 score="[35 46 55 52 13]" criteria="[117 68 108 71]"
+time=00:25:03.105 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:03.108 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:25:03.145 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:25:03.156 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:04.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=00:25:04.826 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=227 score="[35 55 63 61 13]" criteria="[143 85 116 72]"
+time=00:25:04.826 level=INFO msg=これまでに地域内の評判によって54人、既存ユーザーの招待経由で72人が新規登録しました
+time=00:25:04.826 level=INFO msg=これまでに低評価なライドによって43人が利用をやめました
+time=00:25:04.826 level=INFO msg=37.0%のライドは椅子がマッチされるまでの時間、62.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、58.6%のライドは椅子の実移動時間に不満がありました
+time=00:25:04.846 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:04.881 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:04.924 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:04.925 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:04.935 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:06.624 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=00:25:06.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=257 score="[37 65 76 65 14]" criteria="[171 102 121 74]"
+time=00:25:06.720 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:06.722 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:06.722 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:06.761 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:06.789 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=4
+time=00:25:07.180 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:25:08.424 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=00:25:08.424 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=281 score="[38 70 87 70 16]" criteria="[194 120 128 76]"
+time=00:25:08.535 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:08.569 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:08.576 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=3
+time=00:25:10.224 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=00:25:10.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=309 score="[38 76 101 77 17]" criteria="[222 141 135 79]"
+time=00:25:10.225 level=INFO msg=これまでに地域内の評判によって66人、既存ユーザーの招待経由で88人が新規登録しました
+time=00:25:10.225 level=INFO msg=これまでに低評価なライドによって49人が利用をやめました
+time=00:25:10.225 level=INFO msg=28.2%のライドは椅子がマッチされるまでの時間、54.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、65.4%のライドは椅子の実移動時間に不満がありました
+time=00:25:10.336 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:10.444 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=3
+time=00:25:10.523 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:11.936 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:25:11.944 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:25:12.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=00:25:12.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=334 score="[38 80 116 83 17]" criteria="[247 162 140 80]"
+time=00:25:12.194 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:12.207 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:12.217 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:12.257 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:12.311 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:13.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=00:25:13.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=365 score="[39 83 135 91 17]" criteria="[277 189 147 81]"
+time=00:25:13.974 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:13.975 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:13.985 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:14.028 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:14.130 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:14.597 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=00:25:15.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=00:25:15.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=397 score="[39 94 150 97 17]" criteria="[309 209 151 84]"
+time=00:25:15.625 level=INFO msg=これまでに地域内の評判によって78人、既存ユーザーの招待経由で105人が新規登録しました
+time=00:25:15.625 level=INFO msg=これまでに低評価なライドによって56人が利用をやめました
+time=00:25:15.625 level=INFO msg=22.2%のライドは椅子がマッチされるまでの時間、47.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、70.4%のライドは椅子の実移動時間に不満がありました
+time=00:25:15.767 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:15.813 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:15.817 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:25:15.828 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:15.832 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:17.424 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=00:25:17.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=431 score="[40 103 170 101 17]" criteria="[342 233 154 85]"
+time=00:25:17.508 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:17.622 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:17.634 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:17.756 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=3
+time=00:25:17.763 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:19.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=00:25:19.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=459 score="[40 109 187 106 17]" criteria="[370 254 156 89]"
+time=00:25:19.407 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:25:19.460 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:19.463 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:21.026 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=00:25:21.026 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=491 score="[40 116 210 108 17]" criteria="[402 279 158 89]"
+time=00:25:21.026 level=INFO msg=これまでに地域内の評判によって90人、既存ユーザーの招待経由で116人が新規登録しました
+time=00:25:21.026 level=INFO msg=これまでに低評価なライドによって62人が利用をやめました
+time=00:25:21.026 level=INFO msg=18.1%のライドは椅子がマッチされるまでの時間、43.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、74.8%のライドは椅子の実移動時間に不満がありました
+time=00:25:21.174 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:21.189 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:21.338 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:21.341 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:21.441 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:25:22.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=00:25:22.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=515 score="[40 120 228 110 17]" criteria="[426 299 158 91]"
+time=00:25:22.864 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:22.937 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:23.015 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:23.055 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:23.255 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:24.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=00:25:24.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=547 score="[41 126 251 112 17]" criteria="[457 324 159 92]"
+time=00:25:24.783 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:24.854 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:24.947 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:25.125 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:26.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=00:25:26.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=581 score="[42 136 272 114 17]" criteria="[490 347 161 92]"
+time=00:25:26.425 level=INFO msg=これまでに地域内の評判によって102人、既存ユーザーの招待経由で122人が新規登録しました
+time=00:25:26.425 level=INFO msg=これまでに低評価なライドによって70人が利用をやめました
+time=00:25:26.425 level=INFO msg=15.7%のライドは椅子がマッチされるまでの時間、40.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、78.2%のライドは椅子の実移動時間に不満がありました
+time=00:25:26.513 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:26.695 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=3
+time=00:25:26.712 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:28.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=00:25:28.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=615 score="[42 144 297 115 17]" criteria="[524 373 161 93]"
+time=00:25:28.409 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:28.422 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:25:28.483 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:28.500 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:30.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=00:25:30.025 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=646 score="[42 147 323 117 17]" criteria="[555 401 163 93]"
+time=00:25:30.074 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:30.215 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=3
+time=00:25:30.274 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=00:25:30.503 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:31.825 level=INFO msg=これまでに地域内の評判によって114人、既存ユーザーの招待経由で127人が新規登録しました
+time=00:25:31.825 level=INFO msg=これまでに低評価なライドによって72人が利用をやめました
+time=00:25:31.825 level=INFO msg=13.5%のライドは椅子がマッチされるまでの時間、37.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.8%のライドは椅子の実移動時間に不満がありました
+time=00:25:31.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=00:25:31.825 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=675 score="[42 155 342 118 18]" criteria="[584 422 164 95]"
+time=00:25:31.963 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:25:32.081 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=00:25:32.130 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:32.201 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:33.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=00:25:33.625 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=708 score="[42 162 367 119 18]" criteria="[617 448 165 95]"
+time=00:25:33.669 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=00:25:33.781 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:33.886 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:25:35.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=00:25:35.425 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=748 score="[42 169 398 121 18]" criteria="[657 481 165 97]"
+time=00:25:35.490 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=00:25:35.567 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=00:25:35.774 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=1
+time=00:25:35.863 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=00:25:36.009 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=00:25:37.225 level=INFO msg=これまでに地域内の評判によって126人、既存ユーザーの招待経由で130人が新規登録しました
+time=00:25:37.225 level=INFO msg=これまでに低評価なライドによって79人が利用をやめました
+time=00:25:37.225 level=INFO msg=11.9%のライドは椅子がマッチされるまでの時間、35.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、83.1%のライドは椅子の実移動時間に不満がありました
+time=00:25:37.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=00:25:37.225 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=776 score="[43 176 418 121 18]" criteria="[684 501 165 97]"
+time=00:25:37.378 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=レトロ椅子館 増加数=2
+time=00:25:37.476 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=00:25:37.606 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=00:25:42.830 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=143 アクティブユーザー数=103
+time=00:25:42.830 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=129 アクティブユーザー数=90
+time=00:25:42.830 level=INFO msg=最終オーナー情報 名前="SitWell Designs" 売上=687100 椅子数=35
+time=00:25:42.830 level=INFO msg=最終オーナー情報 名前=椅子再生工房 売上=678500 椅子数=34
+time=00:25:42.830 level=INFO msg=最終オーナー情報 名前="CraftChair Co., Ltd." 売上=1188200 椅子数=51
+time=00:25:42.830 level=INFO msg=最終オーナー情報 名前="LuxeLine Taxi" 売上=1032100 椅子数=46
+time=00:25:42.830 level=INFO msg=最終オーナー情報 名前=レトロ椅子館 売上=1103800 椅子数=48
+time=00:25:42.830 level=INFO msg=11.4%のライドは椅子がマッチされるまでの時間、34.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、83.7%のライドは椅子の実移動時間に不満がありました
+time=00:25:42.831 level=INFO msg=結果 pass=true スコア=54930 種別エラー数=map[17:4]
+time=00:25:42.835 level=INFO msg=負荷走行が終了しました

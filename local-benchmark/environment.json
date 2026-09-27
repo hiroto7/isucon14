@@ -1,0 +1,17 @@
+{
+  "official_repository": "https://github.com/isucon/isucon14",
+  "official_commit": "53f8b627e040c30ebec600457c6c97da008b84b0",
+  "cloud_init_repository": "https://github.com/matsuu/cloud-init-isucon",
+  "cloud_init_commit": "d30817994a296a98661bd684cdcf21c66a4df2d8",
+  "vm": "isucon14",
+  "image": "24.04",
+  "architecture": "arm64",
+  "cpus": 2,
+  "memory_gib": 4,
+  "disk_gib": 25,
+  "co_located_benchmark": true,
+  "load_seconds": 60,
+  "cooldown_seconds": 20,
+  "host_memory_gib": 24,
+  "host_logical_cpus": 10
+}

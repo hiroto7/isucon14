@@ -1,0 +1,302 @@
+[
+  {
+    "id": "baseline",
+    "label": "Initial baseline",
+    "decision": "baseline"
+  },
+  {
+    "id": "flush-log-2",
+    "label": "InnoDB flush=2",
+    "decision": "rejected"
+  },
+  {
+    "id": "baseline-repeat",
+    "label": "Baseline repeat",
+    "decision": "baseline"
+  },
+  {
+    "id": "rebuilt-baseline",
+    "label": "Rebuilt baseline",
+    "decision": "baseline"
+  },
+  {
+    "id": "idle-pool-64",
+    "label": "Idle pool 64",
+    "decision": "accepted"
+  },
+  {
+    "id": "ride-status-index",
+    "label": "Ride status index",
+    "decision": "accepted"
+  },
+  {
+    "id": "restart-check",
+    "label": "After VM restart",
+    "decision": "verification"
+  },
+  {
+    "id": "read-only-rollback",
+    "label": "Read-only rollback",
+    "decision": "rejected"
+  },
+  {
+    "id": "rides-chair-index",
+    "label": "Rides chair index",
+    "decision": "rejected"
+  },
+  {
+    "id": "pre-rides-chair-repeat",
+    "label": "Before rides index repeat",
+    "decision": "baseline"
+  },
+  {
+    "id": "rides-chair-repeat",
+    "label": "Rides index repeat",
+    "decision": "rejected"
+  },
+  {
+    "id": "diagnostics",
+    "label": "Diagnostic profile",
+    "decision": "diagnostic"
+  },
+  {
+    "id": "owner-distance-filter",
+    "label": "Owner distance filter",
+    "decision": "accepted"
+  },
+  {
+    "id": "pre-owner-filter-repeat",
+    "label": "Before owner filter repeat",
+    "decision": "baseline"
+  },
+  {
+    "id": "owner-filter-repeat",
+    "label": "Owner filter repeat",
+    "decision": "accepted"
+  },
+  {
+    "id": "profiled-baseline",
+    "label": "Profiled baseline",
+    "decision": "baseline"
+  },
+  {
+    "id": "interpolate-params",
+    "label": "Interpolate params",
+    "decision": "rejected"
+  },
+  {
+    "id": "chair-location-index",
+    "label": "Chair location index",
+    "decision": "accepted"
+  },
+  {
+    "id": "auth-session-cache",
+    "label": "Auth session cache",
+    "decision": "candidate"
+  },
+  {
+    "id": "direct-matching",
+    "label": "Direct matching",
+    "decision": "accepted"
+  },
+  {
+    "id": "notification-autocommit",
+    "label": "Notification autocommit",
+    "decision": "rejected"
+  },
+  {
+    "id": "rides-user-index",
+    "label": "User ride index",
+    "decision": "accepted"
+  },
+  {
+    "id": "chair-stats-aggregate",
+    "label": "Chair stats aggregate",
+    "decision": "rejected"
+  },
+  {
+    "id": "matching-batch",
+    "label": "Matching batch",
+    "decision": "rejected"
+  },
+  {
+    "id": "matching-batch-pool-cap",
+    "label": "Matching + pool cap",
+    "decision": "accepted"
+  },
+  {
+    "id": "chair-stats-highload",
+    "label": "Chair stats at high load",
+    "decision": "rejected"
+  },
+  {
+    "id": "nearby-highload",
+    "label": "Nearby batch at high load",
+    "decision": "accepted"
+  },
+  {
+    "id": "coordinate-no-reread",
+    "label": "Coordinate no reread",
+    "decision": "accepted"
+  },
+  {
+    "id": "nearest-chair",
+    "label": "Nearest chair per ride",
+    "decision": "rejected"
+  },
+  {
+    "id": "nearest-batch-prefetch",
+    "label": "Nearest batch prefetch",
+    "decision": "accepted"
+  },
+  {
+    "id": "latest-location-table",
+    "label": "Latest location table",
+    "decision": "accepted"
+  },
+  {
+    "id": "matching-batch-update",
+    "label": "Batch ride assignment",
+    "decision": "accepted"
+  },
+  {
+    "id": "speed-aware-matching",
+    "label": "Speed-aware matching",
+    "decision": "rejected"
+  },
+  {
+    "id": "highload-diagnostics",
+    "label": "High-load diagnostics",
+    "decision": "diagnostic"
+  },
+  {
+    "id": "interpolate-highload",
+    "label": "Interpolate at high load",
+    "decision": "rejected"
+  },
+  {
+    "id": "nearby-sql-distance",
+    "label": "Nearby SQL distance",
+    "decision": "rejected"
+  },
+  {
+    "id": "app-notification-100ms",
+    "label": "App poll 100 ms",
+    "decision": "rejected"
+  },
+  {
+    "id": "matcher-100ms",
+    "label": "Matcher 100 ms",
+    "decision": "rejected"
+  },
+  {
+    "id": "materialized-chair-stats",
+    "label": "Materialized chair stats",
+    "decision": "accepted"
+  },
+  {
+    "id": "chair-user-cache",
+    "label": "Chair user cache",
+    "decision": "rejected"
+  },
+  {
+    "id": "mysql-unix-socket",
+    "label": "MySQL Unix socket",
+    "decision": "accepted"
+  },
+  {
+    "id": "read-only-rollback-highload",
+    "label": "Read-only rollback high load",
+    "decision": "accepted"
+  },
+  {
+    "id": "db-pool-32",
+    "label": "DB pool 32",
+    "decision": "rejected"
+  },
+  {
+    "id": "db-pool-96",
+    "label": "DB pool 96",
+    "decision": "rejected"
+  },
+  {
+    "id": "chair-notification-join",
+    "label": "Chair notification join",
+    "decision": "rejected"
+  },
+  {
+    "id": "coupon-used-by-index",
+    "label": "Coupon used_by index",
+    "decision": "accepted"
+  },
+  {
+    "id": "nearby-completed-index",
+    "label": "Nearby completed index",
+    "decision": "accepted"
+  },
+  {
+    "id": "no-go-request-log",
+    "label": "No Go request log",
+    "decision": "accepted"
+  },
+  {
+    "id": "ride-fare-cache",
+    "label": "Ride fare cache",
+    "decision": "accepted"
+  },
+  {
+    "id": "rides-chair-updated-index",
+    "label": "Rides chair updated index",
+    "decision": "rejected"
+  },
+  {
+    "id": "notification-chair-cache",
+    "label": "Notification chair cache",
+    "decision": "rejected"
+  },
+  {
+    "id": "coordinate-ride-status-query",
+    "label": "Coordinate ride status query",
+    "decision": "rejected"
+  },
+  {
+    "id": "idle-poll-50ms",
+    "label": "Idle poll 50ms",
+    "decision": "rejected"
+  },
+  {
+    "id": "final-restart-check",
+    "label": "Restart immediate check",
+    "decision": "verification"
+  },
+  {
+    "id": "final-restart-stable",
+    "label": "Restart stable check",
+    "decision": "verification"
+  },
+  {
+    "id": "mysql-no-binlog",
+    "label": "MySQL binlog off",
+    "decision": "rejected"
+  },
+  {
+    "id": "final-restored",
+    "label": "After MySQL restore",
+    "decision": "verification"
+  },
+  {
+    "id": "trip-time-matching",
+    "label": "Trip time matching",
+    "decision": "rejected"
+  },
+  {
+    "id": "nginx-log-buffer",
+    "label": "Nginx log buffer",
+    "decision": "rejected"
+  },
+  {
+    "id": "final-adopted-check",
+    "label": "Final adopted check",
+    "decision": "verification"
+  }
+]
