@@ -1,0 +1,32 @@
+diff --git a/local-benchmark/deployed-source.json b/local-benchmark/deployed-source.json
+index 7894b27e..51ad1f18 100644
+--- a/local-benchmark/deployed-source.json
++++ b/local-benchmark/deployed-source.json
+@@ -1,19 +1,21 @@
+ {
+   "go/.gitignore": "2568a79097dd80db87574459dd10e9de9ee37580eb2c0a4abf1dfcd0250c4245",
+-  "go/app_handlers.go": "3c6bbccde8fb30df11ecae8623cf3cb87e38a903f8466058b5a8a6df388a60f3",
+-  "go/chair_handlers.go": "64357d5a4e3c0c12dfe1772980ddbf1b1f041310b273aa4c2f62e9dda06ef523",
+-  "go/chair_notification_cache.go": "4ea6143039d861228e5d56a85ef237f6e51c49ee6f652aeaa864ada71244089c",
++  "go/app_handlers.go": "27b4044f48f00181bbc584bb462067448716e0ac34dd46987654bbe9378f5691",
++  "go/chair_handlers.go": "f6e1361ee97ea5707c6fd855436107a957ba40c179327df3897850fc134b6fa4",
++  "go/chair_notification_cache.go": "2d36a319cf8e7351d85da69af55b76bb8c776abc09f4f11502cf05567d871e13",
+   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
+   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
+-  "go/internal_handlers.go": "8e37ec09ae5124a5fd44d31631580b5d17a8c016c07812b960b97ed6fe8fdd2a",
++  "go/internal_handlers.go": "e2482a7cae3e6265825dcc813757ee4a090b6ca0584c614bc2885ead923b6fd4",
+   "go/main.go": "3257d3bf258442a7c5d469c9fcb8c029f365d9c41763ccb392e94470f9f15a1f",
+   "go/middlewares.go": "f6e2c742f61495341ead99c0d0bf3bca17d2e9852a98516ddd51d980b390f16e",
+   "go/models.go": "7eded81484544956b8cf35f913bb3e15557a85b40b0cfd0ceff48ba9c17ae83c",
++  "go/notification_stream.go": "63174bfc475847958184a197ffd62675fce88d0a0bfaf1e5402bbcb39382e9eb",
++  "go/notification_stream_test.go": "72d3d2b55c63991ad2af8e3f2bc3b7e4cf99a23364b48dbd1591d276536fbfe7",
+   "go/owner_handlers.go": "4420334b60fe85f51637044f67ba236bed562469b34f83544dfd6c654002dd92",
+   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
+   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",
+-  "sql/1-schema.sql": "f2c43942b8f202efcf967ecbf8b04d8a692d3c5f59fc00322f4763c88e3e34dc",
++  "sql/1-schema.sql": "c07d11b16ff3fb48fed645155190adba633441e9e6e028d5b7960e66320c1518",
+   "sql/2-master-data.sql": "6ce8b7bdcbb163eb9d35a0067c0a9264115868b4df738a00a12d8ecb24bc193e",
+   "sql/3-initial-data.sql.gz": "2b45537b2e546377cca72ddf8feda271ed4a58fded88b1ee41c1e5cce497dc9c",
+-  "sql/init.sh": "007c2ffcd6ccf9c6d677fca9b3787d1b6199ca1d2f1b078668ba41552c33c750"
++  "sql/init.sh": "43449ba1432fa446e34e6022d413ee0bf48d7ac73c9030b8d859c7a9930e0ea2"
+ }

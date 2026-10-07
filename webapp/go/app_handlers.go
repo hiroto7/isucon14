@@ -640,12 +640,6 @@ ON DUPLICATE KEY UPDATE total_rides_count = total_rides_count + 1,
 		}
 	}
 
-	if ride.ChairID.Valid {
-		if _, err := tx.ExecContext(ctx, `UPDATE chair_open_rides SET open_rides = GREATEST(open_rides - 1, 0) WHERE chair_id = ?`, ride.ChairID.String); err != nil {
-			writeError(w, http.StatusInternalServerError, err)
-			return
-		}
-	}
 	if err := tx.Commit(); err != nil {
 		writeError(w, http.StatusInternalServerError, err)
 		return
@@ -877,8 +871,15 @@ func appGetNearbyChairs(w http.ResponseWriter, r *http.Request) {
 SELECT c.id, c.name, c.model, l.latitude, l.longitude
 FROM chairs c
 JOIN chair_latest_locations l ON l.chair_id = c.id
-LEFT JOIN chair_open_rides o ON o.chair_id = c.id
-WHERE c.is_active = TRUE AND COALESCE(o.open_rides, 0) = 0
+WHERE c.is_active = TRUE
+  AND NOT EXISTS (
+    SELECT 1 FROM rides r
+    WHERE r.chair_id = c.id
+      AND NOT EXISTS (
+        SELECT 1 FROM ride_statuses s
+        WHERE s.ride_id = r.id AND s.status = 'COMPLETED'
+      )
+  )
 ORDER BY c.id`)
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, err)

@@ -162,9 +162,3 @@ CREATE TABLE coupons
   INDEX idx_coupons_used_by (used_by)
 )
   COMMENT 'クーポンテーブル';
-
-DROP TABLE IF EXISTS chair_open_rides;
-CREATE TABLE chair_open_rides (
-  chair_id VARCHAR(26) NOT NULL PRIMARY KEY,
-  open_rides INTEGER NOT NULL
-) COMMENT = '椅子の未完了ライド数';
