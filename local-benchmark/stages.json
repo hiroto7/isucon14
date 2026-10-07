@@ -368,5 +368,40 @@
     "id": "article-followup-restored",
     "label": "Follow-up adopted state",
     "decision": "verification"
+  },
+  {
+    "id": "sse-baseline",
+    "label": "SSE current baseline",
+    "decision": "baseline"
+  },
+  {
+    "id": "notification-sse",
+    "label": "SSE initial connection failure",
+    "decision": "rejected"
+  },
+  {
+    "id": "notification-sse-capacity",
+    "label": "SSE with nginx capacity",
+    "decision": "accepted"
+  },
+  {
+    "id": "nearby-open-rides",
+    "label": "Materialized nearby eligibility",
+    "decision": "rejected"
+  },
+  {
+    "id": "sse-baseline-deployment-failed",
+    "label": "Old-code deployment failure",
+    "decision": "rejected"
+  },
+  {
+    "id": "sse-baseline-capacity-check",
+    "label": "Old code with nginx capacity",
+    "decision": "verification"
+  },
+  {
+    "id": "notification-sse-restart",
+    "label": "SSE after reboot",
+    "decision": "verification"
   }
 ]

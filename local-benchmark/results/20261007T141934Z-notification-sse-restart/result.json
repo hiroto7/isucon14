@@ -1,7 +1,7 @@
 {
-  "stage": "notification-sse",
-  "started_at": "20261007T140544Z",
-  "commit": "59c3f56f2db88c13e05125cf2616a7524c345742",
+  "stage": "notification-sse-restart",
+  "started_at": "20261007T141934Z",
+  "commit": "22b9dd77fe21827d6ebbb3968704c2b18b31fe6e",
   "diff_sha256": "486f1a8026de01d265709b5727ec308a0791f816db5d2cf53c842779e1d77aa9",
   "command": "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.net --payment-url http://127.0.0.1:12346 --payment-bind-port 12346 -t 60",
   "vm": "isucon14",
@@ -9,8 +9,9 @@
   "memory_gib": 4,
   "cooldown_seconds": 20,
   "duration_seconds": 60,
-  "status": "failed",
-  "score": null,
+  "status": "passed",
+  "score": 116260,
+  "nginx_worker_connections": 8192,
   "database_settings_before": {
     "innodb_buffer_pool_size": "134217728",
     "innodb_flush_log_at_trx_commit": "1",
@@ -18,15 +19,15 @@
     "sync_binlog": "1"
   },
   "connection_status_before": {
-    "Connections": "100",
+    "Connections": "12",
     "Threads_connected": "2",
-    "Threads_created": "64",
+    "Threads_created": "2",
     "Threads_running": "2"
   },
   "matcher_interval_seconds": "0.5",
   "exit_code": 0,
-  "elapsed_seconds": 64.58,
-  "reported_score": 84613,
+  "elapsed_seconds": 66.46,
+  "reported_score": 116260,
   "database_settings_after": {
     "innodb_buffer_pool_size": "134217728",
     "innodb_flush_log_at_trx_commit": "1",
@@ -34,12 +35,9 @@
     "sync_binlog": "1"
   },
   "connection_status_after": {
-    "Connections": "329",
+    "Connections": "270",
     "Threads_connected": "65",
-    "Threads_created": "121",
+    "Threads_created": "66",
     "Threads_running": "2"
-  },
-  "nginx_worker_connections": 768,
-  "nginx_worker_rlimit_nofile": null,
-  "nginx_settings_source": "Recorded configuration and capacity script for this experiment"
+  }
 }

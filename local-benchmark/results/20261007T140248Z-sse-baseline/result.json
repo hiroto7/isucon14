@@ -38,5 +38,8 @@
     "Threads_connected": "38",
     "Threads_created": "64",
     "Threads_running": "2"
-  }
+  },
+  "nginx_worker_connections": 768,
+  "nginx_worker_rlimit_nofile": null,
+  "nginx_settings_source": "Recorded configuration and capacity script for this experiment"
 }

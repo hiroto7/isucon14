@@ -1,0 +1,25 @@
+diff --git a/local-benchmark/deployed-source.json b/local-benchmark/deployed-source.json
+index 7894b27e..9fe2f4d3 100644
+--- a/local-benchmark/deployed-source.json
++++ b/local-benchmark/deployed-source.json
+@@ -1,14 +1,16 @@
+ {
+   "go/.gitignore": "2568a79097dd80db87574459dd10e9de9ee37580eb2c0a4abf1dfcd0250c4245",
+-  "go/app_handlers.go": "3c6bbccde8fb30df11ecae8623cf3cb87e38a903f8466058b5a8a6df388a60f3",
+-  "go/chair_handlers.go": "64357d5a4e3c0c12dfe1772980ddbf1b1f041310b273aa4c2f62e9dda06ef523",
+-  "go/chair_notification_cache.go": "4ea6143039d861228e5d56a85ef237f6e51c49ee6f652aeaa864ada71244089c",
++  "go/app_handlers.go": "7e060f371fe558b2105662219eaec7a5b9797440702950e21dd9cda9688da8c3",
++  "go/chair_handlers.go": "f6e1361ee97ea5707c6fd855436107a957ba40c179327df3897850fc134b6fa4",
++  "go/chair_notification_cache.go": "2d36a319cf8e7351d85da69af55b76bb8c776abc09f4f11502cf05567d871e13",
+   "go/go.mod": "a40f0de0f4547e7ff53af993e91b3a68b5cebea45529801bb2123a2f2c88930c",
+   "go/go.sum": "df56c220038a521f1adaef6009790c68beb6742f6921e9985c5b39848208c6c1",
+-  "go/internal_handlers.go": "8e37ec09ae5124a5fd44d31631580b5d17a8c016c07812b960b97ed6fe8fdd2a",
++  "go/internal_handlers.go": "6a9192b47893ad6cced90d4f301cb3a5ce52afcdd52366cc69547c8c87c289ac",
+   "go/main.go": "3257d3bf258442a7c5d469c9fcb8c029f365d9c41763ccb392e94470f9f15a1f",
+   "go/middlewares.go": "f6e2c742f61495341ead99c0d0bf3bca17d2e9852a98516ddd51d980b390f16e",
+   "go/models.go": "7eded81484544956b8cf35f913bb3e15557a85b40b0cfd0ceff48ba9c17ae83c",
++  "go/notification_stream.go": "63174bfc475847958184a197ffd62675fce88d0a0bfaf1e5402bbcb39382e9eb",
++  "go/notification_stream_test.go": "72d3d2b55c63991ad2af8e3f2bc3b7e4cf99a23364b48dbd1591d276536fbfe7",
+   "go/owner_handlers.go": "4420334b60fe85f51637044f67ba236bed562469b34f83544dfd6c654002dd92",
+   "go/payment_gateway.go": "088e47382ac4038528910da80bd213fe44afad0f5b201eff7743ec690065ee2b",
+   "sql/0-init.sql": "717ab0f7c4106f33d973f0effc50a4e9dc5ab8b4eba5544ddff74704f375c45c",

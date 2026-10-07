@@ -1,0 +1,20 @@
+{
+  "stage": "sse-baseline-deployment-failed",
+  "started_at": "20261007T141441Z",
+  "commit": "8305326ba8f4cc148f0029f2cc40e45a65160e4b",
+  "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.net --payment-url http://127.0.0.1:12346 --payment-bind-port 12346 -t 60",
+  "vm": "isucon14",
+  "cpus": 2,
+  "memory_gib": 4,
+  "cooldown_seconds": 20,
+  "duration_seconds": 60,
+  "status": "failed",
+  "score": null,
+  "reported_score": null,
+  "failure_stage": "deployment",
+  "error": "Comparison aborted: stale SSE Go files caused old-code build failure; no valid measurement.",
+  "nginx_worker_connections": 8192,
+  "nginx_worker_rlimit_nofile": 65536,
+  "nginx_settings_source": "Recorded configuration and capacity script for this experiment"
+}
