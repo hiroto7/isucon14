@@ -433,6 +433,7 @@ func appPostRides(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	wakeNotification("app:" + user.ID)
 	writeJSON(w, http.StatusAccepted, &appPostRidesResponse{
 		RideID: rideID,
 		Fare:   fare,
@@ -643,6 +644,7 @@ ON DUPLICATE KEY UPDATE total_rides_count = total_rides_count + 1,
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
+	wakeNotification("app:" + ride.UserID)
 	if ride.ChairID.Valid {
 		invalidateChairNotification(ride.ChairID.String)
 	}
@@ -680,7 +682,7 @@ type appGetNotificationResponseChairStats struct {
 	TotalEvaluationAvg float64 `json:"total_evaluation_avg"`
 }
 
-func appGetNotification(w http.ResponseWriter, r *http.Request) {
+func appGetNotificationJSON(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	user := ctx.Value("user").(*User)
 

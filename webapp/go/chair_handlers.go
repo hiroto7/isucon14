@@ -173,6 +173,7 @@ ON DUPLICATE KEY UPDATE
 		return
 	}
 	if statusChanged {
+		wakeNotification("app:" + ride.UserID)
 		invalidateChairNotification(chair.ID)
 	}
 
@@ -199,7 +200,7 @@ type chairGetNotificationResponseData struct {
 	Status                string     `json:"status"`
 }
 
-func chairGetNotification(w http.ResponseWriter, r *http.Request) {
+func chairGetNotificationJSON(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
 	chair := ctx.Value("chair").(*Chair)
 	cached, stamp := cachedChairNotification(chair.ID)
@@ -369,6 +370,7 @@ func chairPostRideStatus(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	invalidateChairNotification(chair.ID)
+	wakeNotification("app:" + ride.UserID)
 
 	w.WriteHeader(http.StatusNoContent)
 }

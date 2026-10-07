@@ -42,9 +42,10 @@ func storeChairNotification(chairID string, stamp chairNotificationStamp, respon
 
 func invalidateChairNotification(chairID string) {
 	chairNotifications.Lock()
-	defer chairNotifications.Unlock()
 	chairNotifications.versions[chairID]++
 	delete(chairNotifications.responses, chairID)
+	chairNotifications.Unlock()
+	wakeNotification("chair:" + chairID)
 }
 
 func clearChairNotifications() {
