@@ -95,6 +95,9 @@ def main():
         # Same restart and cooldown for every scored attempt. No database tuning here.
         try:
             wait_for_services()
+            nginx = checked_multipass(["exec", "isucon14", "--", "sudo", "nginx", "-T"], capture_output=True, text=True)
+            (run / "nginx-config.txt").write_text(nginx.stdout + nginx.stderr)
+            record["nginx_worker_connections"] = int(re.search(r"worker_connections\s+(\d+)", nginx.stdout).group(1))
             checked_multipass(["exec", "isucon14", "--", "sudo", "systemctl", "restart", "isuride-go", "isuride-matcher"])
             time.sleep(20)
             checked_multipass(["exec", "isucon14", "--", "sudo", "mysql", "-e", "TRUNCATE TABLE performance_schema.events_statements_summary_by_digest"])
