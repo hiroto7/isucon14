@@ -419,3 +419,7 @@ local-benchmark/.venv/bin/python local-benchmark/tools/run_benchmark.py manual-c
 local-benchmark/.venv/bin/python local-benchmark/tools/plot_scores.py
 local-benchmark/.venv/bin/python local-benchmark/tools/plot_sse.py
 ```
+
+## 全試行・最高値更新グラフ（2026-10-07）
+
+初期VMの最初の5,104点から最新の116,260点まで、保存された全109試行を時系列で並べた `score-all-trials.png` と、最高値を更新した成功試行32件だけの `score-record-highs.png` を追加した。段階別の集約グラフではない。元データは `results/*/result.json`、再生成は `local-benchmark/.venv/bin/python local-benchmark/tools/plot_complete_history.py`。SVGと各点のCSVも出力する。抽出条件・FAILの扱い・再利用方法は [GRAPHS.md](GRAPHS.md) に記載した。
