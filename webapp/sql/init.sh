@@ -72,4 +72,10 @@ WHERE r.chair_id IS NOT NULL
   AND EXISTS (SELECT 1 FROM ride_statuses s WHERE s.ride_id = r.id AND s.status = 'CARRYING')
   AND EXISTS (SELECT 1 FROM ride_statuses s WHERE s.ride_id = r.id AND s.status = 'COMPLETED')
 GROUP BY r.chair_id;
+INSERT INTO chair_open_rides (chair_id, open_rides)
+SELECT r.chair_id, COUNT(*)
+FROM rides r
+WHERE r.chair_id IS NOT NULL
+  AND NOT EXISTS (SELECT 1 FROM ride_statuses s WHERE s.ride_id = r.id AND s.status = 'COMPLETED')
+GROUP BY r.chair_id;
 SQL

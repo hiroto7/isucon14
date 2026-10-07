@@ -86,7 +86,32 @@ WHERE c.is_active = TRUE
 			args = append(args, id)
 		}
 		update.WriteByte(')')
-		if _, err := db.ExecContext(ctx, update.String(), args...); err != nil {
+		tx, err := db.Beginx()
+		if err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+		defer tx.Rollback()
+		if _, err := tx.ExecContext(ctx, update.String(), args...); err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+		var openRides strings.Builder
+		openRides.WriteString("INSERT INTO chair_open_rides (chair_id, open_rides) VALUES ")
+		openArgs := make([]interface{}, 0, len(matchedChairIDs))
+		for i, chairID := range matchedChairIDs {
+			if i > 0 {
+				openRides.WriteByte(',')
+			}
+			openRides.WriteString("(?, 1)")
+			openArgs = append(openArgs, chairID)
+		}
+		openRides.WriteString(" ON DUPLICATE KEY UPDATE open_rides = open_rides + 1")
+		if _, err := tx.ExecContext(ctx, openRides.String(), openArgs...); err != nil {
+			writeError(w, http.StatusInternalServerError, err)
+			return
+		}
+		if err := tx.Commit(); err != nil {
 			writeError(w, http.StatusInternalServerError, err)
 			return
 		}
