@@ -1,0 +1,4 @@
+[mysqld]
+slow_query_log=ON
+long_query_time=0.05
+slow_query_log_file=/var/lib/mysql/isucon14-slow.log

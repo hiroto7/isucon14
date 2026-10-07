@@ -1,0 +1,270 @@
+time=13:21:59.190 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=13:21:59.190 level=INFO msg=負荷走行を開始します
+time=13:22:01.887 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:02.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=13:22:02.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=7 score="[0 0 0 3 4]" criteria="[7 4 7 7]"
+time=13:22:02.276 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:03.791 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:03.809 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:03.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=13:22:03.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=21 score="[0 0 0 11 10]" criteria="[21 10 21 21]"
+time=13:22:04.943 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:05.592 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:05.593 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:05.594 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:05.594 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:05.597 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:05.613 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=13:22:05.613 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=36 score="[0 0 0 24 12]" criteria="[36 12 36 36]"
+time=13:22:05.613 level=INFO msg=これまでに地域内の評判によって8人、既存ユーザーの招待経由で32人が新規登録しました
+time=13:22:05.613 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、66.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=13:22:06.965 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:07.401 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:07.405 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:07.405 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:07.405 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:07.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=13:22:07.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=52 score="[0 0 0 33 19]" criteria="[52 19 52 52]"
+time=13:22:07.796 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:09.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=13:22:09.213 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=64 score="[0 0 0 38 26]" criteria="[64 26 64 64]"
+time=13:22:09.238 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:09.238 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:09.238 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:09.244 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:09.642 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:10.691 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:22:11.013 level=INFO msg=これまでに地域内の評判によって19人、既存ユーザーの招待経由で70人が新規登録しました
+time=13:22:11.013 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、63.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、1.8%のライドは椅子の実移動時間に不満がありました
+time=13:22:11.013 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=13:22:11.013 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=84 score="[0 0 3 50 31]" criteria="[84 31 84 81]"
+time=13:22:11.017 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=13:22:11.030 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:11.049 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:11.070 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:12.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=13:22:12.818 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:12.818 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:12.818 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:12.819 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=102 score="[0 0 11 60 31]" criteria="[94 38 101 93]"
+time=13:22:12.851 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:12.862 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:14.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=13:22:14.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=121 score="[2 8 16 64 31]" criteria="[96 43 114 103]"
+time=13:22:14.641 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:14.681 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:14.692 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:14.694 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:16.412 level=INFO msg=これまでに地域内の評判によって31人、既存ユーザーの招待経由で85人が新規登録しました
+time=13:22:16.412 level=INFO msg=これまでに低評価なライドによって10人が利用をやめました
+time=13:22:16.412 level=INFO msg=31.7%のライドは椅子がマッチされるまでの時間、65.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、17.3%のライドは椅子の実移動時間に不満がありました
+time=13:22:16.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=13:22:16.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=142 score="[7 16 23 65 31]" criteria="[97 49 126 109]"
+time=13:22:16.440 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:16.471 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:16.500 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:16.514 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:18.198 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=2
+time=13:22:18.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=13:22:18.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=168 score="[13 21 34 69 31]" criteria="[100 61 142 117]"
+time=13:22:18.231 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:18.298 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:18.304 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:18.316 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=13:22:20.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=13:22:20.013 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=188 score="[21 24 42 70 31]" criteria="[103 69 151 119]"
+time=13:22:20.053 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:20.075 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:20.082 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:20.103 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:21.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=13:22:21.812 level=INFO msg=これまでに地域内の評判によって43人、既存ユーザーの招待経由で91人が新規登録しました
+time=13:22:21.812 level=INFO msg=これまでに低評価なライドによって26人が利用をやめました
+time=13:22:21.812 level=INFO msg=50.2%のライドは椅子がマッチされるまでの時間、63.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、33.7%のライドは椅子の実移動時間に不満がありました
+time=13:22:21.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=209 score="[31 31 45 71 31]" criteria="[104 77 155 122]"
+time=13:22:21.834 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:21.838 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:21.841 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:21.964 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:23.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=13:22:23.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=233 score="[39 41 49 73 31]" criteria="[107 90 160 125]"
+time=13:22:23.648 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:23.676 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:23.680 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=13:22:23.689 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:23.706 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:25.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=13:22:25.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=257 score="[50 47 56 73 31]" criteria="[110 103 164 125]"
+time=13:22:25.478 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:25.497 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:25.526 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:25.566 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=13:22:25.651 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:27.212 level=INFO msg=これまでに地域内の評判によって55人、既存ユーザーの招待経由で99人が新規登録しました
+time=13:22:27.212 level=INFO msg=これまでに低評価なライドによって43人が利用をやめました
+time=13:22:27.212 level=INFO msg=57.3%のライドは椅子がマッチされるまでの時間、58.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、47.6%のライドは椅子の実移動時間に不満がありました
+time=13:22:27.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=13:22:27.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=286 score="[59 54 63 79 31]" criteria="[122 119 172 128]"
+time=13:22:27.302 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:27.332 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:27.376 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:27.414 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:29.013 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=13:22:29.013 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=309 score="[64 58 74 82 31]" criteria="[138 132 177 129]"
+time=13:22:29.060 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:29.080 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:29.179 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=13:22:29.198 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:29.211 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:30.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=13:22:30.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=335 score="[69 66 84 85 31]" criteria="[158 144 179 132]"
+time=13:22:30.919 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:30.930 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:30.952 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:30.954 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:32.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=13:22:32.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=362 score="[71 81 92 87 31]" criteria="[183 154 179 134]"
+time=13:22:32.612 level=INFO msg=これまでに地域内の評判によって67人、既存ユーザーの招待経由で104人が新規登録しました
+time=13:22:32.612 level=INFO msg=これまでに低評価なライドによって53人が利用をやめました
+time=13:22:32.612 level=INFO msg=49.4%のライドは椅子がマッチされるまでの時間、57.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、56.8%のライドは椅子の実移動時間に不満がありました
+time=13:22:32.696 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:32.721 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:32.781 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:32.843 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:34.413 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=13:22:34.413 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=392 score="[74 91 107 89 31]" criteria="[210 171 180 135]"
+time=13:22:34.528 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:34.571 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:34.573 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:34.576 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:34.649 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:36.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=13:22:36.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=419 score="[75 102 121 89 32]" criteria="[236 186 181 136]"
+time=13:22:36.384 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:36.436 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:36.505 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:37.444 level=WARN msg="取得したオーナーの椅子一覧の情報が想定しているものと異なります (CODE=26): total_distanceの反映が遅いデータがあります (id: 01M3GHJQCBT3KZYKPGJ8ECTTGV)"
+time=13:22:38.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=13:22:38.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=440 score="[76 107 132 93 32]" criteria="[256 200 182 140]"
+time=13:22:38.012 level=INFO msg=これまでに地域内の評判によって79人、既存ユーザーの招待経由で111人が新規登録しました
+time=13:22:38.012 level=INFO msg=これまでに低評価なライドによって63人が利用をやめました
+time=13:22:38.012 level=INFO msg=41.8%のライドは椅子がマッチされるまでの時間、54.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、63.4%のライドは椅子の実移動時間に不満がありました
+time=13:22:38.273 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:38.320 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:38.375 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:38.395 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:38.497 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:39.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=13:22:39.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=468 score="[76 117 145 98 32]" criteria="[284 218 186 141]"
+time=13:22:39.888 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:39.966 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:40.052 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:40.092 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:40.096 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:41.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=13:22:41.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=498 score="[78 126 163 99 32]" criteria="[312 237 186 142]"
+time=13:22:41.798 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:41.802 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:41.839 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:41.905 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:41.970 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=13:22:43.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=13:22:43.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=537 score="[80 140 182 103 32]" criteria="[349 260 188 144]"
+time=13:22:43.412 level=INFO msg=これまでに地域内の評判によって91人、既存ユーザーの招待経由で120人が新規登録しました
+time=13:22:43.412 level=INFO msg=これまでに低評価なライドによって72人が利用をやめました
+time=13:22:43.412 level=INFO msg=35.0%のライドは椅子がマッチされるまでの時間、51.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、69.1%のライドは椅子の実移動時間に不満がありました
+time=13:22:43.423 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:43.578 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:43.584 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:43.589 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:43.648 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:45.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=13:22:45.212 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=566 score="[81 148 200 105 32]" criteria="[377 280 188 146]"
+time=13:22:45.311 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=2
+time=13:22:45.373 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:45.433 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:45.438 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:45.457 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:47.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=13:22:47.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=595 score="[83 155 216 109 32]" criteria="[404 300 191 147]"
+time=13:22:47.138 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:47.308 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:47.309 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:47.377 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:48.812 level=INFO msg=これまでに地域内の評判によって103人、既存ユーザーの招待経由で130人が新規登録しました
+time=13:22:48.812 level=INFO msg=これまでに低評価なライドによって79人が利用をやめました
+time=13:22:48.812 level=INFO msg=30.5%のライドは椅子がマッチされるまでの時間、47.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、72.9%のライドは椅子の実移動時間に不満がありました
+time=13:22:48.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=13:22:48.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=630 score="[84 158 243 113 32]" criteria="[438 331 195 147]"
+time=13:22:48.932 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:48.944 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:49.016 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:49.101 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:49.420 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:50.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=13:22:50.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=655 score="[84 161 262 116 32]" criteria="[463 353 197 148]"
+time=13:22:50.753 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:50.807 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:50.908 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:50.971 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:51.050 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:51.067 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:52.057 level=WARN msg="取得したオーナーの椅子一覧の情報が想定しているものと異なります (CODE=26): total_distanceの反映が遅いデータがあります (id: 01M3GHJCJ0V0ATPZA19PGPQ3WJ)"
+time=13:22:52.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=13:22:52.412 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=693 score="[85 166 294 116 32]" criteria="[500 385 197 148]"
+time=13:22:52.500 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:52.648 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:52.663 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:52.793 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:54.213 level=INFO msg=これまでに地域内の評判によって115人、既存ユーザーの招待経由で133人が新規登録しました
+time=13:22:54.213 level=INFO msg=これまでに低評価なライドによって81人が利用をやめました
+time=13:22:54.213 level=INFO msg=26.7%のライドは椅子がマッチされるまでの時間、42.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、76.1%のライドは椅子の実移動時間に不満がありました
+time=13:22:54.213 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=13:22:54.213 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=724 score="[85 168 322 117 32]" criteria="[531 414 197 149]"
+time=13:22:54.329 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:54.424 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:54.426 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:22:54.447 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:54.483 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:54.772 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:54.821 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:54.837 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:54.911 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:56.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=13:22:56.012 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=759 score="[85 176 347 119 32]" criteria="[566 441 199 149]"
+time=13:22:56.140 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:56.147 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:56.277 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:56.302 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:22:56.345 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:22:57.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=13:22:57.812 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=798 score="[85 181 379 121 32]" criteria="[605 475 200 150]"
+time=13:22:57.924 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=13:22:58.018 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=1
+time=13:22:58.113 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=13:22:58.168 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=1
+time=13:22:58.181 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=13:22:58.936 level=WARN msg="取得したオーナーの椅子一覧の情報が想定しているものと異なります (CODE=26): total_distanceの反映が遅いデータがあります (id: 01M3GHKWCWJY3JMDDRFZF5VJ5K)"
+time=13:22:59.096 level=WARN msg="取得したオーナーの椅子一覧の情報が想定しているものと異なります (CODE=26): total_distanceの反映が遅いデータがあります (id: 01M3GHK5JJVJDNZ3BQEAZQSJ52)"
+time=13:22:59.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=13:22:59.612 level=INFO msg=これまでに地域内の評判によって127人、既存ユーザーの招待経由で140人が新規登録しました
+time=13:22:59.612 level=INFO msg=これまでに低評価なライドによって81人が利用をやめました
+time=13:22:59.612 level=INFO msg=23.0%のライドは椅子がマッチされるまでの時間、38.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、78.9%のライドは椅子の実移動時間に不満がありました
+time=13:22:59.612 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=840 score="[85 183 414 126 32]" criteria="[647 515 203 152]"
+time=13:22:59.774 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:59.787 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=2
+time=13:22:59.812 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=暮らしの椅子研究所 増加数=2
+time=13:22:59.836 level=WARN msg="付近の椅子情報が想定よりも足りていません (CODE=31): 不足数1台"
+time=13:22:59.970 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=13:23:00.018 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Chair Charm" 増加数=2
+time=13:23:00.075 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=13:23:05.214 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=160 アクティブユーザー数=116
+time=13:23:05.214 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=125 アクティブユーザー数=88
+time=13:23:05.214 level=INFO msg=最終オーナー情報 名前=暮らしの椅子研究所 売上=769600 椅子数=39
+time=13:23:05.214 level=INFO msg=最終オーナー情報 名前=風座プロダクツ 売上=1528400 椅子数=58
+time=13:23:05.214 level=INFO msg=最終オーナー情報 名前=椅子再生工房 売上=1388100 椅子数=56
+time=13:23:05.214 level=INFO msg=最終オーナー情報 名前="Chair Charm" 売上=901200 椅子数=43
+time=13:23:05.214 level=INFO msg=最終オーナー情報 名前="Orbit Taxi" 売上=453900 椅子数=26
+time=13:23:05.214 level=INFO msg=22.3%のライドは椅子がマッチされるまでの時間、37.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、79.4%のライドは椅子の実移動時間に不満がありました
+time=13:23:05.214 level=INFO msg=結果 pass=true スコア=60644 種別エラー数="map[17:8 26:4 31:10]"
+time=13:23:05.214 level=INFO msg=負荷走行が終了しました

@@ -1,0 +1,26 @@
+DIGEST_TEXT	COUNT_STAR	total_seconds	average_ms	SUM_ROWS_EXAMINED	SUM_ROWS_SENT	SUM_NO_INDEX_USED
+COMMIT	148096	252.699	1.706	0	0	0
+SELECT STATUS FROM `ride_statuses` WHERE `ride_id` = ? ORDER BY `created_at` DESC LIMIT ?	139050	57.038	0.410	139049	139049	0
+SELECT * FROM `ride_statuses` WHERE `ride_id` = ? AND `app_sent_at` IS NULL ORDER BY `created_at` ASC LIMIT ?	53864	41.103	0.763	136684	4695	0
+SELECT * FROM `ride_statuses` WHERE `ride_id` = ? AND `chair_sent_at` IS NULL ORDER BY `created_at` ASC LIMIT ?	54729	40.203	0.735	189444	4720	0
+SELECT * FROM `ride_statuses` WHERE `ride_id` = ? ORDER BY `created_at`	140959	39.369	0.279	729807	729817	0
+SELECT `c` . `id` , `c` . `name` , `c` . `model` , `l` . `latitude` , `l` . `longitude` FROM `chairs` `c` JOIN `chair_latest_locations` `l` ON `l` . `chair_id` = `c` . `id` WHERE `c` . `is_active` = TRUE AND NOT EXISTS ( SELECT ? FROM `rides` `r` WHERE `r` . `chair_id` = `c` . `id` AND COALESCE ( ( SELECT `s` . `status` FROM `ride_statuses` `s` WHERE `s` . `ride_id` = `r` . `id` ORDER BY `s` . `created_at` DESC LIMIT ? ) , ? ) != ? ) ORDER BY `c` . `id`	1225	38.300	31.265	4258121	27928	0
+SELECT * FROM `coupons` WHERE `used_by` = ?	57902	38.111	0.658	48023325	38438	57902
+SELECT `id` , `owner_id` , NAME , `access_token` , `model` , `is_active` , `created_at` , `updated_at` , `IFNULL` ( `total_distance` , ? ) AS `total_distance` , `total_distance_updated_at` FROM `chairs` LEFT JOIN ( SELECT `chair_id` , SUM ( `IFNULL` ( `distance` , ? ) ) AS `total_distance` , MAX ( `created_at` ) AS `total_distance_updated_at` FROM ( SELECT `chair_id` , `created_at` , `ABS` ( `latitude` - LAG ( `latitude` ) OVER ( PARTITION BY `chair_id` ORDER BY `created_at` ) ) + `ABS` ( `longitude` - LAG ( `longitude` ) OVER ( PARTITION BY `chair_id` ORDER BY `created_at` ) ) AS `distance` FROM `chair_locations` WHERE `chair_id` IN ( SELECT `id` FROM `chairs` WHERE `owner_id` = ? ) ) `tmp` GROUP BY `chair_id` ) `distance_table` ON `distance_table` . `chair_id` = `chairs` . `id` WHERE `owner_id` = ?	161	14.706	91.344	98104	3021	161
+SELECT * FROM `rides` WHERE `chair_id` = ? ORDER BY `updated_at` DESC LIMIT ?	91779	13.003	0.142	404491	88528	0
+INSERT INTO `ride_statuses` ( `id` , `ride_id` , STATUS ) VALUES (...)	4720	8.377	1.775	0	0	0
+INSERT INTO `chair_latest_locations` ( `chair_id` , `latitude` , `longitude` , `created_at` ) VALUES (...) ON DUPLICATE KEY UPDATE `latitude` = IF ( VALUES ( `created_at` ) >= `created_at` , VALUES ( `latitude` ) , `latitude` ) , `longitude` = IF ( VALUES ( `created_at` ) >= `created_at` , VALUES ( `longitude` ) , `longitude` ) , `created_at` = `GREATEST` ( `created_at` , VALUES ( `created_at` ) )	33988	6.785	0.200	0	0	0
+SELECT * FROM `rides` WHERE `user_id` = ? ORDER BY `created_at` DESC LIMIT ?	53865	6.516	0.121	53864	53864	0
+SELECT * FROM `rides` WHERE `chair_id` = ? ORDER BY `updated_at` DESC	39517	5.554	0.141	282052	141026	0
+INSERT INTO `chair_locations` ( `id` , `chair_id` , `latitude` , `longitude` , `created_at` ) VALUES (...)	33987	5.551	0.163	0	0	0
+UPDATE `ride_statuses` SET `app_sent_at` = NOW (?) WHERE `id` = ?	4695	4.610	0.982	4695	0	0
+UPDATE `ride_statuses` SET `chair_sent_at` = NOW (?) WHERE `id` = ?	4720	4.081	0.865	4720	0	0
+SELECT * FROM `users` WHERE `id` = ? FOR SHARE	54720	2.532	0.046	54720	54720	0
+SELECT * FROM `chairs` WHERE `id` = ?	41980	2.293	0.055	41974	41974	0
+SELECT `c` . `id` , `l` . `latitude` , `l` . `longitude` FROM `chairs` `c` LEFT JOIN `chair_latest_locations` `l` ON `l` . `chair_id` = `c` . `id` WHERE `c` . `is_active` = TRUE AND NOT EXISTS ( SELECT ? FROM `rides` `r` JOIN `ride_statuses` `rs` ON `rs` . `ride_id` = `r` . `id` WHERE `r` . `chair_id` = `c` . `id` GROUP BY `r` . `id` HAVING COUNT ( `rs` . `chair_sent_at` ) != ? )	82	2.070	25.242	281596	1875	82
+SELECT `rides` . * FROM `rides` JOIN `ride_statuses` ON `rides` . `id` = `ride_statuses` . `ride_id` WHERE `chair_id` = ? AND STATUS = ? AND `updated_at` BETWEEN ? AND ? + INTERVAL ? MICROSECOND	3289	1.986	0.604	75150	9423	0
+START TRANSACTION	152648	1.787	0.012	0	0	0
+INSERT INTO `payment_tokens` ( `user_id` , `token` ) VALUES (...)	268	1.355	5.057	0	0	0
+UPDATE `chairs` SET `is_active` = ? WHERE `id` = ?	196	1.114	5.686	196	0	0
+INSERT INTO `chairs` ( `id` , `owner_id` , NAME , `model` , `is_active` , `access_token` ) VALUES (...)	200	1.110	5.552	0	0	0
+SELECT * FROM `coupons` WHERE CODE = ? FOR UPDATE	132	0.413	3.131	101520	69	132

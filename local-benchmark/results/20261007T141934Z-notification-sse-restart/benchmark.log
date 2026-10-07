@@ -1,0 +1,300 @@
+time=23:19:55.943 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=23:19:55.944 level=INFO msg=負荷走行を開始します
+time=23:19:58.884 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=23:19:58.884 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=7 score="[0 0 0 4 3]" criteria="[7 3 7 7]"
+time=23:20:00.659 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=1
+time=23:20:00.662 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:00.672 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=23:20:00.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=23:20:00.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=19 score="[0 0 0 10 9]" criteria="[19 9 19 19]"
+time=23:20:01.967 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:02.461 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=1
+time=23:20:02.461 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:02.461 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:02.464 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:02.470 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=23:20:02.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=23:20:02.483 level=INFO msg=これまでに地域内の評判によって8人、既存ユーザーの招待経由で34人が新規登録しました
+time=23:20:02.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=35 score="[0 0 0 22 13]" criteria="[35 13 35 35]"
+time=23:20:02.483 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、62.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=23:20:02.687 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:03.267 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:04.274 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:04.275 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:04.276 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:04.277 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:04.279 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:04.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=23:20:04.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=65 score="[0 0 0 40 25]" criteria="[65 25 65 65]"
+time=23:20:05.028 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:05.059 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:05.140 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:06.067 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:06.070 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:06.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:06.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=23:20:06.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:06.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=23:20:06.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=91 score="[0 0 0 53 38]" criteria="[91 38 91 91]"
+time=23:20:06.246 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:06.748 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:07.649 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:07.661 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:07.875 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:07.882 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:07.882 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:07.883 level=INFO msg=これまでに地域内の評判によって20人、既存ユーザーの招待経由で117人が新規登録しました
+time=23:20:07.883 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、54.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、1.1%のライドは椅子の実移動時間に不満がありました
+time=23:20:07.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=23:20:07.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=133 score="[0 0 3 69 61]" criteria="[133 61 133 130]"
+time=23:20:07.885 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=4
+time=23:20:07.889 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:08.161 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:08.190 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:08.191 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:09.039 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:09.040 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:09.049 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:09.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=23:20:09.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=180 score="[0 1 8 92 79]" criteria="[174 89 179 167]"
+time=23:20:09.707 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:09.708 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:09.712 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:09.715 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:09.751 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=23:20:09.796 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:10.057 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:10.061 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:10.240 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:10.274 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:10.339 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:10.698 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:11.484 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=23:20:11.484 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=228 score="[0 2 15 115 96]" criteria="[217 119 226 199]"
+time=23:20:11.497 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:11.499 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:11.499 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:11.512 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:11.521 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:11.859 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:11.865 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:11.873 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:11.874 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:11.882 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:12.096 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:12.290 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:13.279 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=4
+time=23:20:13.280 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:13.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=23:20:13.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=278 score="[0 4 36 134 104]" criteria="[253 153 273 215]"
+time=23:20:13.283 level=INFO msg=これまでに地域内の評判によって33人、既存ユーザーの招待経由で193人が新規登録しました
+time=23:20:13.283 level=INFO msg=これまでに低評価なライドによって1人が利用をやめました
+time=23:20:13.283 level=INFO msg=9.0%のライドは椅子がマッチされるまでの時間、45.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、12.2%のライドは椅子の実移動時間に不満がありました
+time=23:20:13.326 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=4
+time=23:20:13.338 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:13.356 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:13.363 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:13.560 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=23:20:13.618 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:13.631 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:13.636 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:14.495 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:15.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=23:20:15.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=329 score="[5 11 60 147 106]" criteria="[266 189 313 228]"
+time=23:20:15.123 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:15.134 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:15.134 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=4
+time=23:20:15.163 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:15.166 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=4
+time=23:20:16.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=23:20:16.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=390 score="[16 23 91 154 106]" criteria="[268 231 354 238]"
+time=23:20:16.888 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=4
+time=23:20:16.905 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=1
+time=23:20:16.921 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=4
+time=23:20:16.931 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:16.968 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:18.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=23:20:18.683 level=INFO msg=これまでに地域内の評判によって50人、既存ユーザーの招待経由で219人が新規登録しました
+time=23:20:18.683 level=INFO msg=これまでに低評価なライドによって22人が利用をやめました
+time=23:20:18.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=452 score="[33 32 120 161 106]" criteria="[269 273 390 247]"
+time=23:20:18.683 level=INFO msg=40.5%のライドは椅子がマッチされるまでの時間、39.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、29.5%のライドは椅子の実移動時間に不満がありました
+time=23:20:18.690 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:18.716 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:18.753 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:18.763 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:18.794 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:20.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=23:20:20.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=521 score="[53 41 154 167 106]" criteria="[269 322 425 258]"
+time=23:20:20.499 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:20.527 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=4
+time=23:20:20.548 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:20.568 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:20.636 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:20.786 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:20:21.192 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M4BBRM13GZDF885QNDCMX40Mの椅子は既にライド中です"
+time=23:20:22.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=23:20:22.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=586 score="[69 60 180 171 106]" criteria="[271 370 452 264]"
+time=23:20:22.366 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:22.397 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:22.425 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:22.446 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:22.456 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:24.084 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=23:20:24.085 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=655 score="[87 79 204 178 107]" criteria="[279 419 477 274]"
+time=23:20:24.085 level=INFO msg=これまでに地域内の評判によって64人、既存ユーザーの招待経由で233人が新規登録しました
+time=23:20:24.085 level=INFO msg=これまでに低評価なライドによって64人が利用をやめました
+time=23:20:24.085 level=INFO msg=57.4%のライドは椅子がマッチされるまでの時間、36.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、42.7%のライドは椅子の実移動時間に不満がありました
+time=23:20:24.122 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:24.131 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:24.175 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:24.180 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=4
+time=23:20:24.192 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:25.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=23:20:25.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=727 score="[98 107 230 185 107]" criteria="[304 474 494 278]"
+time=23:20:25.948 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:25.953 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:26.042 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:26.043 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:26.082 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:27.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=23:20:27.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=781 score="[105 118 255 196 107]" criteria="[339 515 508 282]"
+time=23:20:27.770 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:27.773 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=23:20:27.781 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:27.802 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:27.874 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:29.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=23:20:29.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=849 score="[109 134 294 205 107]" criteria="[393 569 518 285]"
+time=23:20:29.483 level=INFO msg=これまでに地域内の評判によって76人、既存ユーザーの招待経由で252人が新規登録しました
+time=23:20:29.483 level=INFO msg=これまでに低評価なライドによって86人が利用をやめました
+time=23:20:29.483 level=INFO msg=53.7%のライドは椅子がマッチされるまでの時間、33.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、52.7%のライドは椅子の実移動時間に不満がありました
+time=23:20:29.581 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:29.597 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:29.747 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:29.759 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:30.113 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:31.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=23:20:31.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=911 score="[114 148 326 214 109]" criteria="[447 615 529 287]"
+time=23:20:31.408 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:31.431 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:31.432 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:31.548 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:31.664 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:33.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=23:20:33.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=975 score="[116 165 365 220 109]" criteria="[507 662 530 292]"
+time=23:20:33.196 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:33.278 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:33.309 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=4
+time=23:20:33.418 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:33.460 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:34.883 level=INFO msg=これまでに地域内の評判によって88人、既存ユーザーの招待経由で279人が新規登録しました
+time=23:20:34.883 level=INFO msg=これまでに低評価なライドによって93人が利用をやめました
+time=23:20:34.883 level=INFO msg=44.9%のライドは椅子がマッチされるまでの時間、31.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、59.9%のライドは椅子の実移動時間に不満がありました
+time=23:20:34.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=23:20:34.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1042 score="[116 176 410 230 110]" criteria="[574 717 538 297]"
+time=23:20:34.911 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:34.941 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:35.009 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:35.043 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:35.180 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=1
+time=23:20:36.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=23:20:36.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1100 score="[116 188 450 235 111]" criteria="[632 763 541 301]"
+time=23:20:36.760 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:36.789 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:36.795 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:36.806 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:36.985 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=23:20:38.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=23:20:38.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1160 score="[116 205 489 239 111]" criteria="[691 806 542 305]"
+time=23:20:38.527 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:38.592 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:38.670 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=1
+time=23:20:38.871 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:38.909 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:40.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=23:20:40.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1225 score="[116 220 535 243 111]" criteria="[756 854 544 309]"
+time=23:20:40.283 level=INFO msg=これまでに地域内の評判によって100人、既存ユーザーの招待経由で291人が新規登録しました
+time=23:20:40.283 level=INFO msg=これまでに低評価なライドによって100人が利用をやめました
+time=23:20:40.283 level=INFO msg=38.3%のライドは椅子がマッチされるまでの時間、30.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、65.2%のライドは椅子の実移動時間に不満がありました
+time=23:20:40.458 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:40.470 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:40.480 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:40.617 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:40.636 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:42.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=23:20:42.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1288 score="[116 239 576 246 111]" criteria="[819 898 546 310]"
+time=23:20:42.178 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:42.198 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:42.208 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:42.230 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:42.266 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:43.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=23:20:43.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1338 score="[116 244 617 250 111]" criteria="[868 944 548 312]"
+time=23:20:44.015 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:44.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:44.150 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:44.177 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=1
+time=23:20:44.295 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=23:20:45.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=23:20:45.684 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1402 score="[116 256 663 256 111]" criteria="[932 996 550 316]"
+time=23:20:45.684 level=INFO msg=これまでに地域内の評判によって112人、既存ユーザーの招待経由で301人が新規登録しました
+time=23:20:45.684 level=INFO msg=これまでに低評価なライドによって107人が利用をやめました
+time=23:20:45.684 level=INFO msg=33.5%のライドは椅子がマッチされるまでの時間、29.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、69.1%のライドは椅子の実移動時間に不満がありました
+time=23:20:45.745 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:45.772 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:45.889 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:46.007 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=1
+time=23:20:46.169 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:47.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=23:20:47.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1477 score="[116 276 715 259 111]" criteria="[1005 1053 552 317]"
+time=23:20:47.772 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:47.846 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:48.028 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=2
+time=23:20:48.162 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:20:48.542 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:49.283 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=23:20:49.284 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1553 score="[116 295 768 263 111]" criteria="[1080 1111 554 319]"
+time=23:20:49.352 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:20:49.550 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=3
+time=23:20:49.566 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:49.641 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:51.083 level=INFO msg=これまでに地域内の評判によって124人、既存ユーザーの招待経由で309人が新規登録しました
+time=23:20:51.083 level=INFO msg=これまでに低評価なライドによって115人が利用をやめました
+time=23:20:51.083 level=INFO msg=29.5%のライドは椅子がマッチされるまでの時間、28.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、72.7%のライドは椅子の実移動時間に不満がありました
+time=23:20:51.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=23:20:51.083 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1601 score="[116 306 805 263 111]" criteria="[1128 1148 554 319]"
+time=23:20:51.224 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:51.348 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:51.433 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=3
+time=23:20:51.956 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:52.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=23:20:52.883 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1655 score="[116 321 841 265 112]" criteria="[1172 1197 556 321]"
+time=23:20:52.955 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:20:53.010 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:53.051 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=1
+time=23:20:53.222 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=3
+time=23:20:54.683 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=23:20:54.684 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1718 score="[116 333 887 270 112]" criteria="[1229 1254 558 324]"
+time=23:20:54.766 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:54.986 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=2
+time=23:20:55.291 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:55.507 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=風座プロダクツ 増加数=4
+time=23:20:56.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=23:20:56.483 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1798 score="[116 356 936 277 113]" criteria="[1297 1322 564 328]"
+time=23:20:56.483 level=INFO msg=これまでに地域内の評判によって135人、既存ユーザーの招待経由で323人が新規登録しました
+time=23:20:56.483 level=INFO msg=これまでに低評価なライドによって116人が利用をやめました
+time=23:20:56.483 level=INFO msg=27.9%のライドは椅子がマッチされるまでの時間、26.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、75.2%のライドは椅子の実移動時間に不満がありました
+time=23:20:56.598 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=つばさ交通 増加数=3
+time=23:20:56.611 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Timeless Seats" 増加数=2
+time=23:20:56.932 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:20:57.354 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=23:21:02.083 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=278 アクティブユーザー数=215
+time=23:21:02.083 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=198 アクティブユーザー数=144
+time=23:21:02.083 level=INFO msg=最終オーナー情報 名前=つばさ交通 売上=2094100 椅子数=73
+time=23:21:02.083 level=INFO msg=最終オーナー情報 名前=風座プロダクツ 売上=2437300 椅子数=80
+time=23:21:02.083 level=INFO msg=最終オーナー情報 名前="Timeless Seats" 売上=1873600 椅子数=67
+time=23:21:02.083 level=INFO msg=最終オーナー情報 名前=椅子のふるさと 売上=1905200 椅子数=68
+time=23:21:02.083 level=INFO msg=最終オーナー情報 名前=再座堂 売上=2294300 椅子数=77
+time=23:21:02.083 level=INFO msg=27.3%のライドは椅子がマッチされるまでの時間、25.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、75.8%のライドは椅子の実移動時間に不満がありました
+time=23:21:02.083 level=INFO msg=結果 pass=true スコア=116260 種別エラー数="map[8:1 17:36 30:1]"
+time=23:21:02.083 level=INFO msg=負荷走行が終了しました

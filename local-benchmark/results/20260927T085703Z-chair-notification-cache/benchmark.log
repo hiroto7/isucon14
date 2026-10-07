@@ -1,0 +1,280 @@
+time=17:57:23.788 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=17:57:23.788 level=INFO msg=負荷走行を開始します
+time=17:57:26.690 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=17:57:26.690 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=2 score="[0 0 0 1 1]" criteria="[2 1 2 2]"
+time=17:57:27.142 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:57:28.473 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:28.478 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:28.482 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:57:28.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=17:57:28.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=14 score="[0 0 3 7 4]" criteria="[14 5 14 10]"
+time=17:57:30.267 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:30.272 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:57:30.287 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:57:30.288 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:57:30.291 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=17:57:30.291 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=33 score="[0 0 3 23 7]" criteria="[33 8 33 29]"
+time=17:57:30.291 level=INFO msg=これまでに地域内の評判によって6人、既存ユーザーの招待経由で28人が新規登録しました
+time=17:57:30.291 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、75.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、6.1%のライドは椅子の実移動時間に不満がありました
+time=17:57:30.996 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:57:32.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=17:57:32.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=53 score="[0 0 3 37 13]" criteria="[53 14 53 49]"
+time=17:57:32.094 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:32.096 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:32.099 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:57:32.102 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:57:32.102 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:33.549 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:57:33.876 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:57:33.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=17:57:33.891 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=74 score="[0 0 4 49 21]" criteria="[74 24 74 67]"
+time=17:57:33.933 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:33.936 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:57:33.944 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:33.952 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:35.246 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:57:35.691 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=17:57:35.691 level=INFO msg=これまでに地域内の評判によって18人、既存ユーザーの招待経由で81人が新規登録しました
+time=17:57:35.691 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、63.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、12.7%のライドは椅子の実移動時間に不満がありました
+time=17:57:35.691 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=102 score="[0 1 14 60 27]" criteria="[102 37 101 77]"
+time=17:57:35.698 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=3
+time=17:57:35.699 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=17:57:35.700 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:35.702 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:35.763 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:37.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=17:57:37.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=131 score="[0 7 24 70 30]" criteria="[125 49 124 87]"
+time=17:57:37.586 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:37.586 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:57:37.599 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:37.609 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:37.612 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:37.662 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:57:38.249 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:57:39.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=17:57:39.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=157 score="[0 12 30 81 34]" criteria="[149 66 144 92]"
+time=17:57:39.323 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:57:39.333 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:39.346 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:39.370 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=17:57:39.377 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:41.090 level=INFO msg=これまでに地域内の評判によって30人、既存ユーザーの招待経由で112人が新規登録しました
+time=17:57:41.090 level=INFO msg=これまでに低評価なライドによって11人が利用をやめました
+time=17:57:41.090 level=INFO msg=10.9%のライドは椅子がマッチされるまでの時間、54.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、30.4%のライドは椅子の実移動時間に不満がありました
+time=17:57:41.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=17:57:41.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=184 score="[2 20 39 87 36]" criteria="[164 83 158 98]"
+time=17:57:41.160 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:57:41.166 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:57:41.201 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:57:41.210 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:57:41.256 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:42.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=17:57:42.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=221 score="[11 38 48 88 36]" criteria="[178 96 169 99]"
+time=17:57:42.935 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:42.968 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=17:57:42.968 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=3
+time=17:57:42.970 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=17:57:42.994 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=3
+time=17:57:44.692 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=17:57:44.692 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=262 score="[26 46 63 91 36]" criteria="[180 121 187 101]"
+time=17:57:44.796 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:44.803 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:44.803 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:44.828 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=17:57:44.828 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:46.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=17:57:46.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=302 score="[36 56 80 94 36]" criteria="[188 145 205 104]"
+time=17:57:46.490 level=INFO msg=これまでに地域内の評判によって42人、既存ユーザーの招待経由で118人が新規登録しました
+time=17:57:46.490 level=INFO msg=これまでに低評価なライドによって39人が利用をやめました
+time=17:57:46.490 level=INFO msg=37.7%のライドは椅子がマッチされるまでの時間、52.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、48.8%のライドは椅子の実移動時間に不満がありました
+time=17:57:46.604 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:46.630 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:46.638 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:46.677 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=17:57:46.681 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:48.282 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:48.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=17:57:48.291 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=350 score="[42 66 96 107 39]" criteria="[224 178 223 110]"
+time=17:57:48.331 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:48.339 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:48.373 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=17:57:48.448 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=3
+time=17:57:50.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=17:57:50.091 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=394 score="[46 81 111 117 39]" criteria="[263 202 233 112]"
+time=17:57:50.166 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:57:50.168 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:50.168 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:50.173 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:50.248 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=3
+time=17:57:51.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=17:57:51.891 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=440 score="[46 99 128 127 40]" criteria="[308 230 241 117]"
+time=17:57:51.891 level=INFO msg=これまでに地域内の評判によって54人、既存ユーザーの招待経由で150人が新規登録しました
+time=17:57:51.891 level=INFO msg=これまでに低評価なライドによって56人が利用をやめました
+time=17:57:51.891 level=INFO msg=30.0%のライドは椅子がマッチされるまでの時間、47.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、59.3%のライドは椅子の実移動時間に不満がありました
+time=17:57:51.962 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:52.028 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=17:57:52.031 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:52.081 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:52.132 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:53.362 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M3H1AX6G4W9B73RKHJT500A1の椅子は既にライド中です"
+time=17:57:53.690 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=17:57:53.690 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=483 score="[46 108 159 130 40]" criteria="[351 264 243 118]"
+time=17:57:53.745 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:53.945 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:53.947 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:54.021 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:54.045 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:55.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=17:57:55.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=538 score="[46 120 194 137 41]" criteria="[406 305 249 123]"
+time=17:57:55.693 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=3
+time=17:57:55.692 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:57:55.713 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:57:55.737 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=4
+time=17:57:55.746 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:57:57.291 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=17:57:57.291 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=587 score="[46 137 221 142 41]" criteria="[455 337 253 124]"
+time=17:57:57.291 level=INFO msg=これまでに地域内の評判によって66人、既存ユーザーの招待経由で167人が新規登録しました
+time=17:57:57.291 level=INFO msg=これまでに低評価なライドによって62人が利用をやめました
+time=17:57:57.291 level=INFO msg=22.5%のライドは椅子がマッチされるまでの時間、42.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、67.9%のライドは椅子の実移動時間に不満がありました
+time=17:57:57.351 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:57:57.470 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=17:57:57.472 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=3
+time=17:57:57.477 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:57:57.682 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:59.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=17:57:59.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=625 score="[46 149 239 149 42]" criteria="[493 363 257 129]"
+time=17:57:59.265 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=3
+time=17:57:59.268 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:57:59.316 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:57:59.398 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:57:59.611 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M3H1ASN07J0DQCKM2BWVHXSWの椅子は既にライド中です"
+time=17:58:00.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=17:58:00.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=667 score="[46 155 271 153 42]" criteria="[535 399 260 130]"
+time=17:58:00.985 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:58:00.987 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:58:01.068 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:58:01.149 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:58:01.151 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:02.690 level=INFO msg=これまでに地域内の評判によって78人、既存ユーザーの招待経由で178人が新規登録しました
+time=17:58:02.690 level=INFO msg=これまでに低評価なライドによって68人が利用をやめました
+time=17:58:02.690 level=INFO msg=18.4%のライドは椅子がマッチされるまでの時間、38.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、72.7%のライドは椅子の実移動時間に不満がありました
+time=17:58:02.690 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=17:58:02.690 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=719 score="[46 167 309 155 42]" criteria="[587 439 261 131]"
+time=17:58:02.756 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:02.773 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:58:02.946 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:58:02.989 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=17:58:02.989 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=3
+time=17:58:04.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=17:58:04.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=776 score="[46 182 344 162 42]" criteria="[644 481 266 133]"
+time=17:58:04.678 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:58:04.723 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:04.746 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:58:04.764 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=17:58:05.088 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:58:06.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=17:58:06.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=813 score="[46 190 368 167 42]" criteria="[681 509 268 137]"
+time=17:58:06.337 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:58:06.352 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:58:06.461 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:06.503 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:58:06.538 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:08.091 level=INFO msg=これまでに地域内の評判によって90人、既存ユーザーの招待経由で194人が新規登録しました
+time=17:58:08.091 level=INFO msg=これまでに低評価なライドによって77人が利用をやめました
+time=17:58:08.091 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=17:58:08.091 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=876 score="[46 205 408 173 44]" criteria="[744 557 275 140]"
+time=17:58:08.091 level=INFO msg=15.1%のライドは椅子がマッチされるまでの時間、36.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、76.3%のライドは椅子の実移動時間に不満がありました
+time=17:58:08.162 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:08.297 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:58:08.320 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:58:08.323 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=17:58:08.613 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:08.677 level=WARN msg="椅子がライドを受理できませんでした (CODE=3): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3H1C05DXP5DJ7K11Y61N6TW/status\": EOF"
+time=17:58:08.802 level=WARN msg="椅子がライドを受理できませんでした (CODE=3): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3H1BZNC4BZTJYPAD68QABXJ/status\": EOF"
+time=17:58:09.891 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=17:58:09.891 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=924 score="[46 214 443 177 44]" criteria="[792 596 277 142]"
+time=17:58:10.071 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:10.072 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:10.074 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:58:10.074 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:10.188 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:58:11.691 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=17:58:11.691 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=977 score="[46 220 487 180 44]" criteria="[845 643 279 143]"
+time=17:58:11.929 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:58:11.939 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:11.941 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:12.006 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=17:58:12.454 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:58:13.492 level=INFO msg=これまでに地域内の評判によって102人、既存ユーザーの招待経由で203人が新規登録しました
+time=17:58:13.492 level=INFO msg=これまでに低評価なライドによって85人が利用をやめました
+time=17:58:13.492 level=INFO msg=13.0%のライドは椅子がマッチされるまでの時間、33.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、79.1%のライドは椅子の実移動時間に不満がありました
+time=17:58:13.491 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=17:58:13.492 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1017 score="[46 224 520 183 44]" criteria="[885 679 280 145]"
+time=17:58:13.531 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:58:13.626 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:58:13.647 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:13.849 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:58:13.868 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:58:15.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=17:58:15.290 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1074 score="[46 227 567 189 45]" criteria="[942 733 284 149]"
+time=17:58:15.380 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:58:15.601 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:58:15.601 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:15.662 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:58:15.727 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:58:16.001 level=WARN msg="椅子がライドを受理できませんでした (CODE=3): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3H1C6BQ9W37QTAP080BJ3G9/status\": EOF"
+time=17:58:16.019 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:58:17.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=17:58:17.090 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1116 score="[46 232 600 193 45]" criteria="[983 771 287 150]"
+time=17:58:17.220 level=WARN msg="椅子がライドを受理できませんでした (CODE=3): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3H1C8254MX6HBVS1H2J7DQC/status\": EOF"
+time=17:58:17.242 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=17:58:17.260 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:58:17.307 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:58:17.550 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:18.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=17:58:18.890 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1161 score="[46 238 634 198 45]" criteria="[1028 810 289 153]"
+time=17:58:18.891 level=INFO msg=これまでに地域内の評判によって114人、既存ユーザーの招待経由で218人が新規登録しました
+time=17:58:18.891 level=INFO msg=これまでに低評価なライドによって87人が利用をやめました
+time=17:58:18.892 level=INFO msg=11.5%のライドは椅子がマッチされるまでの時間、30.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、81.0%のライドは椅子の実移動時間に不満がありました
+time=17:58:19.300 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:19.312 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:19.316 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=17:58:19.322 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=2
+time=17:58:19.548 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:20.691 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=17:58:20.692 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1210 score="[46 238 681 200 45]" criteria="[1077 859 291 153]"
+time=17:58:20.785 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M3H1BF0ZAYNDS6AMFFTZ5W0Jの椅子は既にライド中です"
+time=17:58:21.053 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=2
+time=17:58:21.151 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:58:21.273 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:21.277 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=3
+time=17:58:22.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=17:58:22.490 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1262 score="[46 242 725 204 45]" criteria="[1129 907 293 155]"
+time=17:58:22.724 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:58:22.750 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:22.879 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子再生工房 増加数=1
+time=17:58:23.128 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=3
+time=17:58:23.430 level=WARN msg="椅子が出発できませんでした (CODE=2): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3H1CB9QSNQBQ2K14VDGNZPN/status\": EOF"
+time=17:58:23.434 level=WARN msg="椅子が出発できませんでした (CODE=2): POST /api/chair/rides/{rideID}/statusのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/rides/01M3H1CDJME8FPTCT8VYPF4KQX/status\": EOF"
+time=17:58:23.484 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=17:58:24.302 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=17:58:24.303 level=INFO msg=これまでに地域内の評判によって126人、既存ユーザーの招待経由で223人が新規登録しました
+time=17:58:24.303 level=INFO msg=これまでに低評価なライドによって87人が利用をやめました
+time=17:58:24.303 level=INFO msg=10.2%のライドは椅子がマッチされるまでの時間、27.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、82.8%のライドは椅子の実移動時間に不満がありました
+time=17:58:24.302 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1300 score="[46 245 760 204 45]" criteria="[1167 942 293 155]"
+time=17:58:24.504 level=WARN msg="椅子の座標送信に失敗しました (CODE=1): POST /api/chair/coordinateのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/coordinate\": EOF"
+time=17:58:24.504 level=WARN msg="椅子の座標送信に失敗しました (CODE=1): POST /api/chair/coordinateのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/coordinate\": EOF"
+time=17:58:24.504 level=WARN msg="椅子の座標送信に失敗しました (CODE=1): POST /api/chair/coordinateのリクエストが失敗しました: Post \"https://isuride.xiv.isucon.net/api/chair/coordinate\": EOF"
+time=17:58:24.700 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:58:24.747 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子と暮らし舎 増加数=1
+time=17:58:24.857 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=17:58:29.892 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=204 アクティブユーザー数=157
+time=17:58:29.892 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=159 アクティブユーザー数=119
+time=17:58:29.892 level=INFO msg=最終オーナー情報 名前=椅子再生工房 売上=1472700 椅子数=57
+time=17:58:29.892 level=INFO msg=最終オーナー情報 名前=座り心地再生所 売上=1506500 椅子数=59
+time=17:58:29.892 level=INFO msg=最終オーナー情報 名前=ふたたび椅子堂 売上=1639300 椅子数=61
+time=17:58:29.892 level=INFO msg=最終オーナー情報 名前=ZenSeat 売上=1547400 椅子数=59
+time=17:58:29.892 level=INFO msg=最終オーナー情報 名前=椅子と暮らし舎 売上=1686700 椅子数=63
+time=17:58:29.892 level=INFO msg=10.0%のライドは椅子がマッチされるまでの時間、27.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、83.2%のライドは椅子の実移動時間に不満がありました
+time=17:58:29.892 level=INFO msg=結果 pass=true スコア=86803 種別エラー数="map[1:3 2:2 3:4 17:7 30:3]"
+time=17:58:29.893 level=INFO msg=負荷走行が終了しました

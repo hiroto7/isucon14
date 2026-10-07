@@ -7,6 +7,7 @@ import (
 	"log/slog"
 	"net"
 	"net/http"
+	_ "net/http/pprof"
 	"os"
 	"os/exec"
 	"strconv"
@@ -20,6 +21,13 @@ import (
 var db *sqlx.DB
 
 func main() {
+	if os.Getenv("ISUCON_PPROF") == "1" {
+		go func() {
+			if err := http.ListenAndServe("127.0.0.1:6060", nil); err != nil {
+				slog.Error("pprof server failed", "err", err)
+			}
+		}()
+	}
 	mux := setup()
 	slog.Info("Listening on :8080")
 	http.ListenAndServe(":8080", mux)
@@ -58,15 +66,24 @@ func setup() http.Handler {
 	dbConfig.Net = "tcp"
 	dbConfig.DBName = dbname
 	dbConfig.ParseTime = true
+	if host == "127.0.0.1" && port == "3306" {
+		if _, err := os.Stat("/var/run/mysqld/mysqld.sock"); err == nil {
+			dbConfig.Net = "unix"
+			dbConfig.Addr = "/var/run/mysqld/mysqld.sock"
+		}
+	}
 
 	_db, err := sqlx.Connect("mysql", dbConfig.FormatDSN())
 	if err != nil {
 		panic(err)
 	}
+	// Reuse MySQL connections across the frequent notification polls.
+	_db.SetMaxIdleConns(64)
+	// The burst after matching several rides must stay below MySQL's 151-connection limit.
+	_db.SetMaxOpenConns(64)
 	db = _db
 
 	mux := chi.NewRouter()
-	mux.Use(middleware.Logger)
 	mux.Use(middleware.Recoverer)
 	mux.HandleFunc("POST /api/initialize", postInitialize)
 
@@ -137,6 +154,11 @@ func postInitialize(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusInternalServerError, err)
 		return
 	}
+	userSessions.Clear()
+	ownerSessions.Clear()
+	chairSessions.Clear()
+	rideFares.Clear()
+	clearChairNotifications()
 
 	writeJSON(w, http.StatusOK, postInitializeResponse{Language: "go"})
 }

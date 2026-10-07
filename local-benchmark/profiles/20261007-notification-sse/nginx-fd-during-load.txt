@@ -1,0 +1,5 @@
+During the official notification-sse-capacity run, the live command output showed nginx worker FD counts 977 and 973.
+The benchmark log tail in the same observation was tick=1860, with the last line at 2026-10-07 23:09:57.532 JST.
+The observation command also matched its own shell processes (FD counts 8 and 3); those are excluded.
+The later nginx-fd-observation.txt capture was after load completed (14:10:13 UTC) and shows 12 FDs per worker; it is not a peak measurement.
+The previous nginx configuration allowed 768 connections per worker and a soft open-file limit of 1024. FD counts include non-connection descriptors, so this is supporting evidence for connection pressure, not a measured old-limit failure counter.

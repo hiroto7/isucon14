@@ -1,0 +1,56 @@
+time=01:04:14.674 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=01:04:14.675 level=INFO msg=負荷走行を開始します
+time=01:04:17.526 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=01:04:17.526 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=4 score="[0 0 0 3 1]" criteria="[4 1 4 4]"
+time=01:04:17.684 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=01:04:19.312 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=01:04:19.313 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=いすの道 増加数=1
+time=01:04:19.313 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=2
+time=01:04:19.327 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=01:04:19.328 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=19 score="[0 0 0 12 7]" criteria="[19 7 19 19]"
+time=01:04:21.103 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=街のりタクシー 増加数=1
+time=01:04:21.105 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=01:04:21.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=いすの道 増加数=1
+time=01:04:21.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=01:04:21.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=2
+time=01:04:21.127 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=01:04:21.127 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=35 score="[0 0 0 25 10]" criteria="[35 10 35 35]"
+time=01:04:21.127 level=INFO msg=これまでに地域内の評判によって7人、既存ユーザーの招待経由で34人が新規登録しました
+time=01:04:21.127 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、71.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=01:04:21.334 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=01:04:22.913 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=街のりタクシー 増加数=1
+time=01:04:22.927 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=01:04:22.927 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=56 score="[0 0 0 39 17]" criteria="[56 17 56 56]"
+time=01:04:22.931 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=01:04:22.948 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=いすの道 増加数=2
+time=01:04:22.949 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=2
+time=01:04:24.723 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=01:04:24.727 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=01:04:24.727 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=73 score="[0 0 2 52 19]" criteria="[73 21 73 69]"
+time=01:04:24.729 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=いすの道 増加数=1
+time=01:04:24.733 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=街のりタクシー 増加数=2
+time=01:04:24.747 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=1
+time=01:04:24.753 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=01:04:26.178 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=01:04:25.806 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=01:04:25.807 level=INFO msg=これまでに地域内の評判によって19人、既存ユーザーの招待経由で75人が新規登録しました
+time=01:04:25.807 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=91 score="[0 3 9 59 20]" criteria="[91 26 88 73]"
+time=01:04:25.807 level=INFO msg=これまでに低評価なライドによって2人が利用をやめました
+time=01:04:25.807 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、71.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、11.5%のライドは椅子の実移動時間に不満がありました
+time=01:04:25.809 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=01:04:25.809 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=和やか交通 増加数=2
+time=01:04:25.816 level=WARN msg="ユーザーのライド評価に失敗しました (CODE=5): POST /api/app/rides/{ride_id}/evaluationへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:200, actual:400)"
+time=01:04:25.820 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=いすの道 増加数=1
+time=01:04:25.829 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="Orbit Taxi" 増加数=1
+time=01:04:25.837 level=ERROR msg=クリティカルエラーが発生しました error="ユーザーに想定していないライドの状態遷移の通知がありました (CODE=11): ride_id: 01M3F7BRJD3KG8ZWP8FV4G0P3T, expect: CARRYING, got: PICKUP (current: CARRYING)"
+time=01:04:30.840 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=65 アクティブユーザー数=64
+time=01:04:30.840 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=47 アクティブユーザー数=46
+time=01:04:30.840 level=INFO msg=最終オーナー情報 名前=いすの道 売上=116600 椅子数=10
+time=01:04:30.840 level=INFO msg=最終オーナー情報 名前="Orbit Taxi" 売上=150600 椅子数=12
+time=01:04:30.840 level=INFO msg=最終オーナー情報 名前=ZenSeat 売上=101900 椅子数=10
+time=01:04:30.840 level=INFO msg=最終オーナー情報 名前=街のりタクシー 売上=77300 椅子数=8
+time=01:04:30.840 level=INFO msg=最終オーナー情報 名前=和やか交通 売上=140900 椅子数=11
+time=01:04:30.840 level=INFO msg=1.0%のライドは椅子がマッチされるまでの時間、68.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、12.8%のライドは椅子の実移動時間に不満がありました
+time=01:04:30.840 level=INFO msg=結果 pass=false スコア=6973 種別エラー数="map[5:1 11:2 17:3]"
+time=01:04:30.840 level=INFO msg=負荷走行が終了しました
+time=01:04:30.840 level=ERROR source=/tmp/isucon14/bench/cmd/run.go:138 msg=発生したエラー errors="[load:\n    github.com/isucon/isucandar.(*BenchmarkStep).AddError\n        /root/go/pkg/mod/github.com/isucon/isucandar@v0.0.0-20220322062028-6dd56dc57d72/benchmark_step.go:30\n    github.com/isucon/isucandar.(*Benchmark).Start.func3.func1\n        /root/go/pkg/mod/github.com/isucon/isucandar@v0.0.0-20220322062028-6dd56dc57d72/benchmark.go:132\n    github.com/isucon/isucandar/parallel.(*Parallel).Do.func1\n        /root/go/pkg/mod/github.com/isucon/isucandar@v0.0.0-20220322062028-6dd56dc57d72/parallel/parallel.go:68\n  - ユーザーに想定していないライドの状態遷移の通知がありました (CODE=11): ride_id: 01M3F7BRJD3KG8ZWP8FV4G0P3T, expect: CARRYING, got: PICKUP (current: CARRYING)]"

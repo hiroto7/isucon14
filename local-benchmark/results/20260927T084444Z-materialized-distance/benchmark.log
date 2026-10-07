@@ -1,0 +1,269 @@
+time=17:45:05.673 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=17:45:05.673 level=INFO msg=負荷走行を開始します
+time=17:45:08.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=17:45:08.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=4 score="[0 0 0 3 1]" criteria="[4 1 4 4]"
+time=17:45:09.579 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=17:45:10.576 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:10.585 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:10.585 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:10.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=17:45:10.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[0 0 0 12 6]" criteria="[18 6 18 18]"
+time=17:45:12.381 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:12.386 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:12.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=17:45:12.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=31 score="[0 0 0 25 6]" criteria="[31 6 31 31]"
+time=17:45:12.400 level=INFO msg=これまでに地域内の評判によって7人、既存ユーザーの招待経由で30人が新規登録しました
+time=17:45:12.400 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、80.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=17:45:12.404 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:12.407 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:13.897 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:14.185 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=3
+time=17:45:14.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=17:45:14.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=42 score="[0 0 0 33 9]" criteria="[42 9 42 42]"
+time=17:45:14.201 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:14.330 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:16.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=17:45:16.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=55 score="[0 0 2 43 10]" criteria="[55 13 55 50]"
+time=17:45:16.003 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:16.005 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:16.005 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:16.005 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:16.057 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:17.790 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:17.790 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:17.794 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:17.794 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:17.794 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:17.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=17:45:17.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=70 score="[0 0 15 45 10]" criteria="[64 18 69 54]"
+time=17:45:17.800 level=INFO msg=これまでに地域内の評判によって19人、既存ユーザーの招待経由で51人が新規登録しました
+time=17:45:17.800 level=INFO msg=8.6%のライドは椅子がマッチされるまでの時間、74.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、12.1%のライドは椅子の実移動時間に不満がありました
+time=17:45:19.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=17:45:19.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=82 score="[0 5 18 49 10]" criteria="[65 22 81 60]"
+time=17:45:19.602 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:19.615 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:19.625 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:19.625 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:21.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=17:45:21.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=105 score="[4 13 25 53 10]" criteria="[69 31 95 67]"
+time=17:45:21.417 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:21.417 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:21.417 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:21.429 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:21.439 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=17:45:23.199 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=17:45:23.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=123 score="[6 23 29 55 10]" criteria="[71 37 108 70]"
+time=17:45:23.200 level=INFO msg=これまでに地域内の評判によって31人、既存ユーザーの招待経由で60人が新規登録しました
+time=17:45:23.200 level=INFO msg=これまでに低評価なライドによって13人が利用をやめました
+time=17:45:23.200 level=INFO msg=42.3%のライドは椅子がマッチされるまでの時間、69.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、27.6%のライドは椅子の実移動時間に不満がありました
+time=17:45:23.210 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:23.227 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:23.236 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:23.259 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:23.260 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:25.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=17:45:25.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=148 score="[13 34 32 59 10]" criteria="[80 43 120 72]"
+time=17:45:25.041 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:25.042 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:25.049 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:25.049 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:25.060 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:26.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=17:45:26.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=178 score="[22 45 36 61 14]" criteria="[98 52 128 78]"
+time=17:45:26.829 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:26.854 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:26.863 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=3
+time=17:45:26.873 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:26.886 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:27.821 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:28.436 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:28.441 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:28.599 level=INFO msg=これまでに地域内の評判によって43人、既存ユーザーの招待経由で75人が新規登録しました
+time=17:45:28.599 level=INFO msg=これまでに低評価なライドによって37人が利用をやめました
+time=17:45:28.599 level=INFO msg=40.6%のライドは椅子がマッチされるまでの時間、67.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、45.9%のライドは椅子の実移動時間に不満がありました
+time=17:45:28.599 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=17:45:28.599 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=207 score="[24 56 39 72 16]" criteria="[123 67 142 82]"
+time=17:45:28.646 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:28.663 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:28.686 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:28.693 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:28.868 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:28.878 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:29.351 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:30.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=17:45:30.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=236 score="[26 62 46 86 16]" criteria="[150 84 156 86]"
+time=17:45:30.448 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:30.458 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:30.471 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:30.473 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:30.553 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:32.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=17:45:32.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=268 score="[26 74 54 97 17]" criteria="[182 103 167 89]"
+time=17:45:32.219 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:32.221 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=17:45:32.221 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:32.294 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:32.306 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:32.874 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:33.999 level=INFO msg=これまでに地域内の評判によって55人、既存ユーザーの招待経由で107人が新規登録しました
+time=17:45:33.999 level=INFO msg=これまでに低評価なライドによって47人が利用をやめました
+time=17:45:33.999 level=INFO msg=28.3%のライドは椅子がマッチされるまでの時間、58.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、55.8%のライドは椅子の実移動時間に不満がありました
+time=17:45:33.999 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=17:45:33.999 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=304 score="[26 87 65 108 18]" criteria="[218 126 178 91]"
+time=17:45:34.066 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:34.090 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=3
+time=17:45:34.093 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:34.126 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:34.126 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:35.572 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:35.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=17:45:35.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=339 score="[26 100 78 115 20]" criteria="[253 145 187 96]"
+time=17:45:35.819 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:35.885 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:35.901 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:35.916 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:35.934 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:37.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=17:45:37.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=371 score="[26 112 90 123 20]" criteria="[285 165 195 96]"
+time=17:45:37.677 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:37.694 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:37.727 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:37.728 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:37.860 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:39.400 level=INFO msg=これまでに地域内の評判によって67人、既存ユーザーの招待経由で130人が新規登録しました
+time=17:45:39.400 level=INFO msg=これまでに低評価なライドによって58人が利用をやめました
+time=17:45:39.400 level=INFO msg=21.4%のライドは椅子がマッチされるまでの時間、52.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、63.2%のライドは椅子の実移動時間に不満がありました
+time=17:45:39.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=17:45:39.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=406 score="[27 118 111 130 20]" criteria="[319 192 200 99]"
+time=17:45:39.471 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:39.513 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=3
+time=17:45:39.523 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:39.523 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=17:45:39.525 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:40.528 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:41.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=17:45:41.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=454 score="[27 135 133 138 21]" criteria="[367 222 207 103]"
+time=17:45:41.219 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=3
+time=17:45:41.233 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:41.281 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:41.304 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:41.335 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=17:45:41.335 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:43.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=17:45:43.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=484 score="[27 142 147 147 21]" criteria="[397 245 214 105]"
+time=17:45:43.092 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:43.099 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:43.102 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:43.151 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:44.799 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=17:45:44.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=518 score="[28 151 166 152 21]" criteria="[430 269 217 107]"
+time=17:45:44.800 level=INFO msg=これまでに地域内の評判によって79人、既存ユーザーの招待経由で150人が新規登録しました
+time=17:45:44.800 level=INFO msg=これまでに低評価なライドによって70人が利用をやめました
+time=17:45:44.800 level=INFO msg=17.0%のライドは椅子がマッチされるまでの時間、48.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、68.7%のライドは椅子の実移動時間に不満がありました
+time=17:45:44.911 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:44.935 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=17:45:46.599 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=17:45:46.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=559 score="[28 161 187 162 21]" criteria="[471 300 226 108]"
+time=17:45:46.678 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:46.692 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:46.715 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:46.724 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=3
+time=17:45:46.855 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:48.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=17:45:48.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=599 score="[28 174 210 165 22]" criteria="[511 327 228 111]"
+time=17:45:48.526 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:48.602 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:48.612 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:48.704 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:48.732 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:50.199 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=17:45:50.199 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=637 score="[28 185 234 168 22]" criteria="[549 352 230 114]"
+time=17:45:50.199 level=INFO msg=これまでに地域内の評判によって91人、既存ユーザーの招待経由で160人が新規登録しました
+time=17:45:50.199 level=INFO msg=これまでに低評価なライドによって80人が利用をやめました
+time=17:45:50.199 level=INFO msg=13.8%のライドは椅子がマッチされるまでの時間、44.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、73.0%のライドは椅子の実移動時間に不満がありました
+time=17:45:50.302 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:50.305 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:50.333 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=17:45:50.352 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:50.366 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=3
+time=17:45:51.999 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=17:45:52.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=690 score="[28 198 267 175 22]" criteria="[602 392 236 115]"
+time=17:45:52.029 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:52.063 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=3
+time=17:45:52.084 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:52.157 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:52.251 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=3
+time=17:45:53.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=17:45:53.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=728 score="[28 208 294 176 22]" criteria="[640 420 237 115]"
+time=17:45:53.834 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:53.952 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:54.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:54.164 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:54.250 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:45:55.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=17:45:55.600 level=INFO msg=これまでに地域内の評判によって103人、既存ユーザーの招待経由で175人が新規登録しました
+time=17:45:55.600 level=INFO msg=これまでに低評価なライドによって86人が利用をやめました
+time=17:45:55.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=767 score="[28 216 318 183 22]" criteria="[679 451 241 118]"
+time=17:45:55.600 level=INFO msg=11.5%のライドは椅子がマッチされるまでの時間、41.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、76.6%のライドは椅子の実移動時間に不満がありました
+time=17:45:55.703 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:45:55.709 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:55.746 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:55.851 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:56.060 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:57.284 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=17:45:57.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=17:45:57.400 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=812 score="[28 222 349 190 23]" criteria="[724 490 247 121]"
+time=17:45:57.577 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:45:57.617 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:45:57.622 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:45:57.624 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:57.624 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:45:59.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=17:45:59.200 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=858 score="[28 228 386 193 23]" criteria="[770 530 250 121]"
+time=17:45:59.302 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:45:59.434 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:45:59.443 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:45:59.485 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:45:59.485 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:46:01.000 level=INFO msg=これまでに地域内の評判によって115人、既存ユーザーの招待経由で190人が新規登録しました
+time=17:46:01.000 level=INFO msg=これまでに低評価なライドによって92人が利用をやめました
+time=17:46:01.000 level=INFO msg=9.8%のライドは椅子がマッチされるまでの時間、37.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、79.1%のライドは椅子の実移動時間に不満がありました
+time=17:46:01.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=17:46:01.000 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=899 score="[28 238 412 198 23]" criteria="[811 561 253 123]"
+time=17:46:01.281 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:46:01.332 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:46:01.455 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=17:46:01.456 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:46:01.459 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:46:02.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=17:46:02.800 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=946 score="[28 246 449 200 23]" criteria="[858 600 253 125]"
+time=17:46:03.049 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=17:46:03.147 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=2
+time=17:46:03.150 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=2
+time=17:46:03.212 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:46:03.788 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:46:04.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=17:46:04.600 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=990 score="[28 250 483 206 23]" criteria="[902 639 256 129]"
+time=17:46:04.806 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=1
+time=17:46:04.809 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=17:46:04.917 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:46:05.357 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:46:06.399 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=17:46:06.399 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1030 score="[28 252 519 208 23]" criteria="[941 678 257 130]"
+time=17:46:06.399 level=INFO msg=これまでに地域内の評判によって127人、既存ユーザーの招待経由で199人が新規登録しました
+time=17:46:06.399 level=INFO msg=これまでに低評価なライドによって95人が利用をやめました
+time=17:46:06.399 level=INFO msg=8.6%のライドは椅子がマッチされるまでの時間、34.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、81.2%のライドは椅子の実移動時間に不満がありました
+time=17:46:06.484 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のふるさと 増加数=1
+time=17:46:06.527 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=17:46:06.555 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenDrive 増加数=1
+time=17:46:06.569 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=CityRide 増加数=2
+time=17:46:11.971 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=178 アクティブユーザー数=130
+time=17:46:11.971 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=169 アクティブユーザー数=122
+time=17:46:11.971 level=INFO msg=最終オーナー情報 名前=CityRide 売上=1161500 椅子数=50
+time=17:46:11.971 level=INFO msg=最終オーナー情報 名前=椅子のふるさと 売上=1137400 椅子数=49
+time=17:46:11.971 level=INFO msg=最終オーナー情報 名前=座り心地再生所 売上=1005200 椅子数=46
+time=17:46:11.971 level=INFO msg=最終オーナー情報 名前="LuxeLine Taxi" 売上=1534400 椅子数=57
+time=17:46:11.971 level=INFO msg=最終オーナー情報 名前=ZenDrive 売上=1219400 椅子数=51
+time=17:46:11.971 level=INFO msg=8.4%のライドは椅子がマッチされるまでの時間、33.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、81.4%のライドは椅子の実移動時間に不満がありました
+time=17:46:11.971 level=INFO msg=結果 pass=true スコア=72012 種別エラー数="map[8:1 17:13]"
+time=17:46:11.971 level=INFO msg=負荷走行が終了しました

@@ -1,0 +1,27 @@
+{
+  "stage": "flush-log-2",
+  "started_at": "20260926T081318Z",
+  "commit": "8fa033ced297c42d5d40999dd6f5257b0b62eb1e",
+  "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.net --payment-url http://127.0.0.1:12346 --payment-bind-port 12346 -t 60",
+  "vm": "isucon14",
+  "cpus": 2,
+  "memory_gib": 4,
+  "cooldown_seconds": 20,
+  "duration_seconds": 60,
+  "status": "passed",
+  "score": 3688,
+  "database_settings_before": {
+    "innodb_buffer_pool_size": "134217728",
+    "innodb_flush_log_at_trx_commit": "2",
+    "sync_binlog": "1"
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 68.42,
+  "reported_score": 3688,
+  "database_settings_after": {
+    "innodb_buffer_pool_size": "134217728",
+    "innodb_flush_log_at_trx_commit": "2",
+    "sync_binlog": "1"
+  }
+}

@@ -1,0 +1,406 @@
+time=13:12:38.178 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=13:12:38.178 level=INFO msg=負荷走行を開始します
+time=13:12:41.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=13:12:41.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=6 score="[0 0 0 3 3]" criteria="[6 3 6 6]"
+time=13:12:42.539 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=13:12:42.846 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:12:42.849 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:42.849 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:42.849 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:12:42.855 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:42.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=13:12:42.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=21 score="[0 0 0 13 8]" criteria="[21 8 21 21]"
+time=13:12:42.984 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ANV6P0Q8N2JCKA0FTJ7, chair_id: 01M3GH18RM062D2GSXP30A1XE1, got: 2, want: 1)"
+time=13:12:43.039 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:12:44.331 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1C89DPES3M7HN7TY87QX, chair_id: 01M3GH1CFA0J2WZJN5V8MFKQCY, got: 1, want: 0)"
+time=13:12:44.640 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:12:44.655 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:12:44.661 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:12:44.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=13:12:44.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=36 score="[0 0 2 21 13]" criteria="[36 13 36 34]"
+time=13:12:44.661 level=INFO msg=これまでに地域内の評判によって7人、既存ユーザーの招待経由で33人が新規登録しました
+time=13:12:44.661 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、63.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、2.8%のライドは椅子の実移動時間に不満がありました
+time=13:12:45.532 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1CE1XQVVW10CY2QSC6KS, chair_id: 01M3GH1CFCKR28ZEHBBZEWHR08, got: 1, want: 0)"
+time=13:12:46.312 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1CJ6MZ0GA0AFSBNF36DC, chair_id: 01M3GH1CFCKR28ZEHBBVFRW8G8, got: 2, want: 1)"
+time=13:12:46.446 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:46.452 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:46.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=13:12:46.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=53 score="[0 0 9 25 19]" criteria="[53 20 53 43]"
+time=13:12:46.466 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:12:46.466 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=13:12:46.474 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:47.831 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:12:48.112 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ECNDQNFJC1ZRCXTEVVB, chair_id: 01M3GH1E747A5ZFBZCV2DCEBE8, got: 2, want: 1)"
+time=13:12:48.232 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1EA3CNM55325BNPKW1JM, chair_id: 01M3GH18S7S157PK2N64730DKJ, got: 4, want: 3)"
+time=13:12:48.259 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:48.260 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:48.260 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:48.261 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=13:12:48.261 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=67 score="[0 0 17 29 21]" criteria="[67 24 66 48]"
+time=13:12:48.310 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:12:48.311 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:12:49.402 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1F6SPMXBN5QJ6P37M8Y6, chair_id: 01M3GH1FZHZ34WV18DFA1ZT39S, got: 2, want: 1)"
+time=13:12:49.852 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1FV1Q0JZ4VGK5HZJ2NCK, chair_id: 01M3GH1HV45DTC4PN10YD74GHJ, got: 1, want: 0)"
+time=13:12:50.062 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=13:12:50.062 level=INFO msg=これまでに地域内の評判によって20人、既存ユーザーの招待経由で55人が新規登録しました
+time=13:12:50.062 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、62.2%のライドはマッチされた椅子が乗車地点までに掛かる時間、18.9%のライドは椅子の実移動時間に不満がありました
+time=13:12:50.062 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=82 score="[0 0 25 32 25]" criteria="[82 31 80 53]"
+time=13:12:50.080 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:50.080 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:50.094 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:12:50.106 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:12:50.573 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1FW1BMM0GZ75FWJTDYR2, chair_id: 01M3GH1HTJ6EC9C6QMRZRVKSB1, got: 1, want: 0)"
+time=13:12:51.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=13:12:51.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=96 score="[0 4 30 36 26]" criteria="[93 39 90 54]"
+time=13:12:51.875 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:51.879 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:12:51.879 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:12:52.793 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1J0DSE8Z1YWK473YB2WS, chair_id: 01M3GH1FZHZ34WV18DFA1ZT39S, got: 4, want: 3)"
+time=13:12:53.452 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1J5ZCZA602F0A6RBN288, chair_id: 01M3GH1HV45DTC4PN10YD74GHJ, got: 3, want: 2)"
+time=13:12:53.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=13:12:53.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=114 score="[0 12 34 41 27]" criteria="[105 47 99 60]"
+time=13:12:53.669 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:53.670 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:53.670 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:12:53.671 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:12:53.702 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:54.353 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1JKAYJKJA5TWP10MW792, chair_id: 01M3GH1CFCKR28ZEHBBZEWHR08, got: 4, want: 3)"
+time=13:12:54.353 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1HG3YVXQSM4NBW3H0AZJ, chair_id: 01M3GH1HTJ6EC9C6QMRZRVKSB1, got: 2, want: 1)"
+time=13:12:55.461 level=INFO msg=これまでに地域内の評判によって32人、既存ユーザーの招待経由で67人が新規登録しました
+time=13:12:55.461 level=INFO msg=これまでに低評価なライドによって6人が利用をやめました
+time=13:12:55.461 level=INFO msg=15.9%のライドは椅子がマッチされるまでの時間、60.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、36.0%のライドは椅子の実移動時間に不満がありました
+time=13:12:55.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=13:12:55.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=132 score="[5 18 40 42 27]" criteria="[111 52 107 62]"
+time=13:12:55.493 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:55.493 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:55.494 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:55.569 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:12:55.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:12:56.092 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1HEK4EM13KB3DRPSWBZB, chair_id: 01M3GH1KHZ8QKH3VK2WYQRABXE, got: 1, want: 0)"
+time=13:12:56.182 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1KACYMB260YREE7TM9CA, chair_id: 01M3GH18SSM8FB74H8GFA904W5, got: 5, want: 4)"
+time=13:12:57.142 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1KWECPGA19NXFC0RPCC5, chair_id: 01M3GH1Q20XJWSQAK47SG1HPPH, got: 1, want: 0)"
+time=13:12:57.261 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=13:12:57.261 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=148 score="[11 20 47 43 27]" criteria="[113 60 116 62]"
+time=13:12:57.303 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:57.306 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:12:57.324 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:12:57.327 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:12:57.502 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1NSE5X5BHD1WDTM45NHQ, chair_id: 01M3GH1RX67NVDYW5J14SD04FA, got: 1, want: 0)"
+time=13:12:57.983 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1KG1GZYB8HXF6MBJJHGH, chair_id: 01M3GH18RTTSGXN2N1H5RMHJF6, got: 5, want: 4)"
+time=13:12:58.222 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1NE1ERK9BEVAQ0NED6CR, chair_id: 01M3GH1CF50H0254F00TZGQ99J, got: 4, want: 3)"
+time=13:12:58.642 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1NTYD1YTZS5V2F3G4NFD, chair_id: 01M3GH1NAD0BJC8PSY8AWGHQAH, got: 2, want: 1)"
+time=13:12:58.852 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1NSE5X5BHD1WDTY7KWV6, chair_id: 01M3GH1RZDXP65364NJ9MNXQRR, got: 1, want: 0)"
+time=13:12:59.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=13:12:59.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=172 score="[20 28 52 45 27]" criteria="[117 70 123 65]"
+time=13:12:59.115 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:12:59.116 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:12:59.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:12:59.119 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:12:59.119 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:12:59.303 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1BJ51ST0HXTQRWV3Z15T, chair_id: 01M3GH18TAV5Q1AKXGZFTBQ00T, got: 2, want: 1)"
+time=13:12:59.662 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1NTBK0JMTGZ8SFHWXQY5, chair_id: 01M3GH18RQ3WS0NN3AG9XGKF68, got: 6, want: 5)"
+time=13:13:00.173 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1QK3D454CGSF4G3YKXBJ, chair_id: 01M3GH1Q3WY3B87RDKAXGFR5BZ, got: 2, want: 1)"
+time=13:13:00.533 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1QQCZNQC940GCFG9D4ET, chair_id: 01M3GH1TMBCGC08C254ARB0GHE, got: 1, want: 0)"
+time=13:13:00.832 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1SXZFY1MW0Z0XQCV1AZZ, chair_id: 01M3GH1S0PFP11DFMEKM32H6PG, got: 2, want: 1)"
+time=13:13:00.861 level=INFO msg=これまでに地域内の評判によって44人、既存ユーザーの招待経由で70人が新規登録しました
+time=13:13:00.861 level=INFO msg=これまでに低評価なライドによって30人が利用をやめました
+time=13:13:00.861 level=INFO msg=38.4%のライドは椅子がマッチされるまでの時間、59.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、51.0%のライドは椅子の実移動時間に不満がありました
+time=13:13:00.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=13:13:00.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=198 score="[28 42 56 45 27]" criteria="[122 81 126 68]"
+time=13:13:00.885 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:13:00.885 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=3
+time=13:13:00.892 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1HRVRBECWE0W5BZFNYYK, chair_id: 01M3GH1KHZ8QKH3VK2WTWDQDX4, got: 1, want: 0)"
+time=13:13:00.914 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:13:00.915 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:00.923 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:13:02.212 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1WT16F5QSQHTNF4CQEB3, chair_id: 01M3GH1S0PFP11DFMEKM32H6PG, got: 3, want: 2)"
+time=13:13:02.425 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1PR6WAH0JXRY28DPY7GW, chair_id: 01M3GH18SSM8FB74H8GFA904W5, got: 6, want: 5)"
+time=13:13:02.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=13:13:02.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=224 score="[33 51 58 53 29]" criteria="[140 94 136 72]"
+time=13:13:02.677 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:02.678 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:02.694 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1V0V9AVYZE71ZM9M2GEY, chair_id: 01M3GH1Q20XJWSQAK47SW3QNYY, got: 3, want: 2)"
+time=13:13:02.715 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:02.723 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:13:02.771 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:03.142 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1PS4ZVZRKYJC110KXXSZ, chair_id: 01M3GH1G0J0754R5V3X5TYFPBF, got: 3, want: 2)"
+time=13:13:03.443 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1XMG521G4C5FSZW95QTY, chair_id: 01M3GH1Q2B95SRCA232PGK2RC5, got: 4, want: 3)"
+time=13:13:03.863 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1Z2QDV7RY0PNMSAPDWG6, chair_id: 01M3GH1S0PFP11DFMEKM32H6PG, got: 4, want: 3)"
+time=13:13:03.895 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1X5TZ55NHZBNQSQWXX0D, chair_id: 01M3GH1Y3KRDHRDCRVRKHGTKW2, got: 1, want: 0)"
+time=13:13:03.895 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1XQQJ78KT12VDVF8NVAQ, chair_id: 01M3GH1Y4KB2XMCF4NK608ZCHF, got: 1, want: 0)"
+time=13:13:03.983 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1XCV8PWW3TZ2QR1WFYD2, chair_id: 01M3GH1HS5T6BGP1MEP6M9J5N0, got: 5, want: 4)"
+time=13:13:04.193 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1YS1FNG3A7BY1ZSYH7AM, chair_id: 01M3GH1CFCKR28ZEHBBVFRW8G8, got: 6, want: 5)"
+time=13:13:04.313 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1YEXZC7EFM5EF0TK5SRV, chair_id: 01M3GH1HV45DTC4PN10YD74GHJ, got: 7, want: 6)"
+time=13:13:04.425 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=13:13:04.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=13:13:04.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=256 score="[37 59 65 65 30]" criteria="[167 113 147 77]"
+time=13:13:04.542 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:04.554 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1YR18TKYZZGHMZ3PD9ET, chair_id: 01M3GH1TKH08ZES99M2EZGR7HR, got: 3, want: 2)"
+time=13:13:04.559 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:13:04.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:04.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:04.691 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=13:13:04.793 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1YR18TKYZZGHN0GQE30B, chair_id: 01M3GH1RX793RSFKA86XZ5JRR3, got: 4, want: 3)"
+time=13:13:05.032 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1HDM4NED7041EG6J03S5, chair_id: 01M3GH1G18STZCMT51QTX2WX4B, got: 3, want: 2)"
+time=13:13:05.151 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1YZHY2F60P50HS1DYCNP, chair_id: 01M3GH1E9GA840BRV9JPQYCPBB, got: 4, want: 3)"
+time=13:13:05.422 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1DZER6M064CP0D1SCP99, chair_id: 01M3GH18V27EEBT1R0J5A3TFMF, got: 4, want: 3)"
+time=13:13:05.692 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ZZP47C84E4DJ1H5QBTE, chair_id: 01M3GH1ZZMYZN6G9GEYTYCCVR0, got: 1, want: 0)"
+time=13:13:05.872 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ZJ7637JFEPRDFGKRH1T, chair_id: 01M3GH1ZXJ3GETC7835WQR9QBW, got: 1, want: 0)"
+time=13:13:05.991 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2056NE5179AFJDMNCR0A, chair_id: 01M3GH1FZWKTHCH4NE5FX8VMN9, got: 7, want: 6)"
+time=13:13:05.992 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH20APGN0V3WB95JETNM3J, chair_id: 01M3GH1Q2B95SRCA232PGK2RC5, got: 5, want: 4)"
+time=13:13:05.992 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH212JZS7014CV1P6AP6PH, chair_id: 01M3GH1Y3KRDHRDCRVRKHGTKW2, got: 2, want: 1)"
+time=13:13:06.111 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ZK1BGKBA7G1PZEXKWZV, chair_id: 01M3GH1Q20XJWSQAK47SW3QNYY, got: 4, want: 3)"
+time=13:13:06.261 level=INFO msg=これまでに地域内の評判によって56人、既存ユーザーの招待経由で97人が新規登録しました
+time=13:13:06.261 level=INFO msg=これまでに低評価なライドによって45人が利用をやめました
+time=13:13:06.261 level=INFO msg=32.1%のライドは椅子がマッチされるまでの時間、55.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、59.6%のライドは椅子の実移動時間に不満がありました
+time=13:13:06.261 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=13:13:06.261 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=287 score="[40 73 71 73 30]" criteria="[195 127 155 77]"
+time=13:13:06.264 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:06.317 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:06.329 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:06.330 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:06.351 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:13:06.472 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1WRMZ0V3B8WNYN2RQ52A, chair_id: 01M3GH1Y4DPG5Z9XZM9Z30ZA1X, got: 1, want: 0)"
+time=13:13:06.472 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1E072TFSERN758JQ9HYS, chair_id: 01M3GH1E7KSB0YTN5XHZ8BMXNA, got: 2, want: 1)"
+time=13:13:06.501 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1TG1KJDXYB0JA4QB2B39, chair_id: 01M3GH1WBPKP8WA4K486HTRQ2E, got: 1, want: 0)"
+time=13:13:06.561 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1V5KYNR8FGTEQTC0BRB8, chair_id: 01M3GH18RQ3WS0NN3AG9XGKF68, got: 7, want: 6)"
+time=13:13:06.862 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ZEV6QK19JH37JV0QKKQ, chair_id: 01M3GH20020R53T2JXV3B5SF53, got: 1, want: 0)"
+time=13:13:07.012 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH21F7W0F9CYFKAG3MMKHM, chair_id: 01M3GH21S94A13Z5TWJNVFJG73, got: 1, want: 0)"
+time=13:13:07.342 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH21EB31PX6DRTE8AAY24H, chair_id: 01M3GH221H2D33C66F0KR4G3Q4, got: 1, want: 0)"
+time=13:13:07.372 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1ZJW91CR3VBXNP4N83ZE, chair_id: 01M3GH1ZZFVJWJRQ9RZDPGPYK7, got: 1, want: 0)"
+time=13:13:07.612 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH202F2BW5MRMDQSS413CS, chair_id: 01M3GH1ZX2SCXYGD0SN9XWV9PF, got: 1, want: 0)"
+time=13:13:07.794 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22641HKA1H0SQ2FSW1VZ, chair_id: 01M3GH1KHZ8QKH3VK2WTWDQDX4, got: 4, want: 3)"
+time=13:13:07.913 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH21N3D2W746TCZ8QMA7K0, chair_id: 01M3GH1E7TZDPW5ZZ1XB4PC92A, got: 9, want: 8)"
+time=13:13:08.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=13:13:08.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=322 score="[41 87 81 82 31]" criteria="[229 147 164 79]"
+time=13:13:08.094 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:08.116 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:08.116 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:08.189 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=13:13:08.224 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:13:08.303 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH21DQXMEC2WC9PRG2ZVM6, chair_id: 01M3GH1HS5T6BGP1MEP6M9J5N0, got: 6, want: 5)"
+time=13:13:08.362 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22R0ZE55VX8K4Z0E6B78, chair_id: 01M3GH23EVCE0KG36QPWGRCYJ3, got: 1, want: 0)"
+time=13:13:08.363 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH21NVX1KRN342A4C0ZYR1, chair_id: 01M3GH21P7C5DYMXV8R9JYXP2V, got: 1, want: 0)"
+time=13:13:08.421 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22SY2ZD8CCTSH40C7EDX, chair_id: 01M3GH23GKCTMBJ17AWZE6N709, got: 1, want: 0)"
+time=13:13:08.661 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH23HESJH1PGNH80GW8QKG, chair_id: 01M3GH1G14601RX6QAXHRXZJ90, got: 8, want: 7)"
+time=13:13:08.691 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2130VEP1K8YZSSJW0M0E, chair_id: 01M3GH1NACD4E6YVHZ21Y84G3Y, got: 5, want: 4)"
+time=13:13:08.961 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22ZYY37FN6ZDAHJCRSM2, chair_id: 01M3GH1ZW6EYRXHHP4C4GWHKMW, got: 2, want: 1)"
+time=13:13:08.961 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22C6TBFM0P6SBYVCHH14, chair_id: 01M3GH1ZZMYZN6G9GEYTYCCVR0, got: 2, want: 1)"
+time=13:13:09.172 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2056NE5179AFJF2WWVNE, chair_id: 01M3GH18S90P64WM4A832097FB, got: 5, want: 4)"
+time=13:13:09.292 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22PT9XG38ED7WZBKS13S, chair_id: 01M3GH1ZXJ3GETC7835WQR9QBW, got: 2, want: 1)"
+time=13:13:09.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=13:13:09.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=354 score="[41 101 93 88 31]" criteria="[261 165 169 80]"
+time=13:13:09.973 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:13:10.001 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:10.071 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH21SWFC549DNWTTW0B27V, chair_id: 01M3GH18TY7026BVD0E591J7Q3, got: 8, want: 7)"
+time=13:13:10.073 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:10.103 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH22W07BR8K66QNSQWYSSH, chair_id: 01M3GH1Y3KRDHRDCRVRKHGTKW2, got: 3, want: 2)"
+time=13:13:10.104 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:13:10.131 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1EQYQ2NDNDFDV60ZKNAT, chair_id: 01M3GH18SF3PHE5YWKA5B7DTSM, got: 5, want: 4)"
+time=13:13:10.208 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:10.433 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24DJ72C2RP98FVH3MWPN, chair_id: 01M3GH220B8MJYDD8WKKQYB3JC, got: 2, want: 1)"
+time=13:13:11.122 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2413C5K1Q8R1TY6NWAGN, chair_id: 01M3GH1FZHZ34WV18DFA1ZT39S, got: 7, want: 6)"
+time=13:13:11.182 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH23WC50WQ8NW2947DBXJX, chair_id: 01M3GH1G0J0754R5V3X5TYFPBF, got: 5, want: 4)"
+time=13:13:11.391 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24YH4HBBVAAQ4HJ4S4WR, chair_id: 01M3GH1CFA0J2WZJN5V8MFKQCY, got: 6, want: 5)"
+time=13:13:11.391 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH25BPWYWGFF0RSXMNTJ94, chair_id: 01M3GH1Q20XJWSQAK47SW3QNYY, got: 6, want: 5)"
+time=13:13:11.633 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1TVN8MZ7RKYZ0TDTH5SN, chair_id: 01M3GH1WCE644SM8W405RDPSM3, got: 1, want: 0)"
+time=13:13:11.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=13:13:11.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=390 score="[41 113 110 95 31]" criteria="[297 189 173 83]"
+time=13:13:11.662 level=INFO msg=これまでに地域内の評判によって68人、既存ユーザーの招待経由で122人が新規登録しました
+time=13:13:11.662 level=INFO msg=これまでに低評価なライドによって59人が利用をやめました
+time=13:13:11.662 level=INFO msg=23.8%のライドは椅子がマッチされるまでの時間、51.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、67.2%のライドは椅子の実移動時間に不満がありました
+time=13:13:11.744 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=3
+time=13:13:11.749 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:11.773 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:13:11.832 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=13:13:11.874 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH23R4GGH30R96Z24CFEBP, chair_id: 01M3GH1N9X7M4K79CK1NQ5Y2W2, got: 6, want: 5)"
+time=13:13:11.933 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH23JXFE7254HQ452F07XE, chair_id: 01M3GH23H7RX5J0RXHNQVKJ8QR, got: 1, want: 0)"
+time=13:13:12.322 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2508HMV7MY2AQKWVWDFG, chair_id: 01M3GH259YGXXY854VQH5FCJPF, got: 1, want: 0)"
+time=13:13:12.382 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2523B7EPW1REAXDV1RTT, chair_id: 01M3GH1G1MEPVK44FT6N21Q474, got: 7, want: 6)"
+time=13:13:12.652 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH25RRB4QNFD7WJBV609CC, chair_id: 01M3GH1Y32086S5D2BWSP1181Y, got: 3, want: 2)"
+time=13:13:12.773 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH23MM2XZQWPN6YNT4BBM2, chair_id: 01M3GH1KHRNCW52BBKVWG3AZXM, got: 2, want: 1)"
+time=13:13:13.011 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27DNR164JF82RPG8Z5QE, chair_id: 01M3GH1WBPKP8WA4K486HTRQ2E, got: 3, want: 2)"
+time=13:13:13.161 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24YDSQGPTS4BNC9DSFZ1, chair_id: 01M3GH2001TWW50W3BPPSNZAGZ, got: 2, want: 1)"
+time=13:13:13.462 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=13:13:13.462 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=423 score="[41 125 124 102 31]" criteria="[330 207 177 89]"
+time=13:13:13.483 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:13.495 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:13:13.515 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:13.533 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:13.543 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:13:13.641 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2353YK08WVVDVJ32AD7A, chair_id: 01M3GH1E7KSB0YTN5XHZ8BMXNA, got: 3, want: 2)"
+time=13:13:13.792 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH26BYFZ7M19TFVT2Q9A3X, chair_id: 01M3GH1E747A5ZFBZCV2DCEBE8, got: 10, want: 9)"
+time=13:13:14.184 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27V3ZX9TBJGBW5VHJ2RK, chair_id: 01M3GH1TKH08ZES99M2EZGR7HR, got: 6, want: 5)"
+time=13:13:14.541 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27W7C70ZKGHZ1XCPZN3Q, chair_id: 01M3GH1CFCKR28ZEHBBVFRW8G8, got: 9, want: 8)"
+time=13:13:14.751 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=13:13:14.784 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28ZTJCZFD4PA5XH8EX8B, chair_id: 01M3GH23EVCE0KG36QPWGRCYJ3, got: 3, want: 2)"
+time=13:13:14.812 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28CVCTCVAF642WNWM76B, chair_id: 01M3GH257DW42K22KQGP3HP3VB, got: 2, want: 1)"
+time=13:13:14.812 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24ZA2V5V72QXRJEN5N7F, chair_id: 01M3GH18SSM8FB74H8GFA904W5, got: 8, want: 7)"
+time=13:13:14.842 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28PYESRVC7WRCX65D706, chair_id: 01M3GH1HV45DTC4PN10YD74GHJ, got: 10, want: 9)"
+time=13:13:14.962 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27TJ1TAFQ74XY8K3NCR3, chair_id: 01M3GH1CFA0J2WZJN5V8MFKQCY, got: 7, want: 6)"
+time=13:13:15.202 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH221EFWTW0YF81ADRPF4C, chair_id: 01M3GH1RX67NVDYW5J14SD04FA, got: 3, want: 2)"
+time=13:13:15.203 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28AY1RJTKD28XQ946BQT, chair_id: 01M3GH1KHZ8QKH3VK2WTWDQDX4, got: 6, want: 5)"
+time=13:13:15.262 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=13:13:15.262 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=459 score="[41 132 145 110 31]" criteria="[366 236 181 93]"
+time=13:13:15.292 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH26JRR3QF1173NW7BDN5W, chair_id: 01M3GH1CFCKR28ZEHBBZEWHR08, got: 10, want: 9)"
+time=13:13:15.334 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:15.352 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28VK2NJH5G4ZZJJSCS01, chair_id: 01M3GH1Y51YSYEK1RGJ39XMBDY, got: 2, want: 1)"
+time=13:13:15.363 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:15.365 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:13:15.365 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=13:13:15.382 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28893E460ZFJHBW7QJCN, chair_id: 01M3GH1G0J0754R5V3X5TYFPBF, got: 6, want: 5)"
+time=13:13:15.479 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:16.133 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH287CRM8V2GTXS3JKCK3E, chair_id: 01M3GH1WCE644SM8W405RDPSM3, got: 2, want: 1)"
+time=13:13:16.372 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH294TA2GJ22EEHZT6WB2Q, chair_id: 01M3GH23DX6APK4Z8EBM01058V, got: 2, want: 1)"
+time=13:13:16.403 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27SAHYGMN6KPH2528MAF, chair_id: 01M3GH1Q20XJWSQAK47SG1HPPH, got: 4, want: 3)"
+time=13:13:16.702 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28NDXSPYZXG4SN6NJZNW, chair_id: 01M3GH28SV8GBJT2BE49DADFJ2, got: 1, want: 0)"
+time=13:13:16.731 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH29WJC6RFV7X5E2226QSR, chair_id: 01M3GH257KB66W4TRTM59FVMXV, got: 2, want: 1)"
+time=13:13:16.732 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH25HCV8G98S1NVS33XEYQ, chair_id: 01M3GH258GB12DMYM084KZ4F9N, got: 1, want: 0)"
+time=13:13:16.762 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH294H9MFBT1XW0ANCQACX, chair_id: 01M3GH1ZXJ3GETC7835WQR9QBW, got: 4, want: 3)"
+time=13:13:16.821 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27K4HWF8EQ66C0K0PS16, chair_id: 01M3GH275XQVWS5CE0GWA6EE4Q, got: 1, want: 0)"
+time=13:13:16.882 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2AE1BH6H5C47ZJ6QMA1Q, chair_id: 01M3GH2AFBCH3MSYH3FQKJ1A83, got: 1, want: 0)"
+time=13:13:17.033 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH23VRQSY5JMGT7EZ7KP4G, chair_id: 01M3GH1Y493VGQDNW2FM7MB37G, got: 4, want: 3)"
+time=13:13:17.064 level=INFO msg=これまでに地域内の評判によって80人、既存ユーザーの招待経由で139人が新規登録しました
+time=13:13:17.064 level=INFO msg=これまでに低評価なライドによって67人が利用をやめました
+time=13:13:17.064 level=INFO msg=19.0%のライドは椅子がマッチされるまでの時間、47.4%のライドはマッチされた椅子が乗車地点までに掛かる時間、72.0%のライドは椅子の実移動時間に不満がありました
+time=13:13:17.064 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=13:13:17.064 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=494 score="[42 142 167 111 32]" criteria="[400 260 182 95]"
+time=13:13:17.080 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:17.116 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:17.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:13:17.121 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH25NSDGXVM0GG64FWD4HW, chair_id: 01M3GH1TKQKPK8MVFXPFNDY7M7, got: 3, want: 2)"
+time=13:13:17.152 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27DHPQAY4SDCC6KRRGCS, chair_id: 01M3GH277XC7SAR3Q6N435NWPR, got: 1, want: 0)"
+time=13:13:17.193 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:17.220 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=3
+time=13:13:17.273 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2APZD2YF005KJWAFSNR1, chair_id: 01M3GH2AG1AV8YZ6GB1GJE3PS0, got: 1, want: 0)"
+time=13:13:17.603 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28ZTJCZFD4PA5T6TFN0D, chair_id: 01M3GH1ZZMYZN6G9GEYTYCCVR0, got: 4, want: 3)"
+time=13:13:17.633 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH29RVT78RD1DMX93RC0S5, chair_id: 01M3GH1Y32086S5D2BWSP1181Y, got: 4, want: 3)"
+time=13:13:17.874 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2AX7A98EEFBCABNF68G6, chair_id: 01M3GH1TKH08ZES99M2EZGR7HR, got: 7, want: 6)"
+time=13:13:17.963 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH29033DA2GQ0PMPMJST0D, chair_id: 01M3GH28QNAAHM8F41ZSCXPGVW, got: 1, want: 0)"
+time=13:13:18.083 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH28WXJ0501K78XHJ4PP62, chair_id: 01M3GH1TMBCGC08C254ARB0GHE, got: 3, want: 2)"
+time=13:13:18.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=13:13:18.861 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=523 score="[42 154 184 111 32]" criteria="[429 276 182 96]"
+time=13:13:19.031 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:13:19.033 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:13:19.044 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2B313Z8HQRZK2HT3088V, chair_id: 01M3GH255PY10NGRFHT0Y1FK97, got: 3, want: 2)"
+time=13:13:19.094 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:19.096 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:19.193 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2CA0Q81TD31VWPCV4R92, chair_id: 01M3GH1HV45DTC4PN10YD74GHJ, got: 11, want: 10)"
+time=13:13:19.402 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2CJDXVBVGT04HZH3WC7Z, chair_id: 01M3GH2CG42WQ3ZR6X5QHZT0CV, got: 1, want: 0)"
+time=13:13:19.402 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2B43HDMDA9ZHMM13S7P7, chair_id: 01M3GH1Q20XJWSQAK47SW3QNYY, got: 8, want: 7)"
+time=13:13:19.613 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2AB4ZGVNS5SH8GA6ED1Z, chair_id: 01M3GH1TMWYWBXGF1EQ3D1G41X, got: 5, want: 4)"
+time=13:13:19.672 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2DQQ3CFKTK8V1PGSYEN4, chair_id: 01M3GH257KB66W4TRTM59FVMXV, got: 3, want: 2)"
+time=13:13:19.731 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2BQKHWTXRCHQDDDHQQEM, chair_id: 01M3GH1Y51YSYEK1RGJ39XMBDY, got: 3, want: 2)"
+time=13:13:19.941 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2BZ8RN733PEWN0CQQGAN, chair_id: 01M3GH2CA12ZMJ5RF76BDBEFBK, got: 1, want: 0)"
+time=13:13:20.392 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2CPM6D914E5552G35JT8, chair_id: 01M3GH279582KX74EAN99SKCPA, got: 3, want: 2)"
+time=13:13:20.453 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH29VRTW8K91V4S512159V, chair_id: 01M3GH1KHRNCW52BBKVWG3AZXM, got: 3, want: 2)"
+time=13:13:20.661 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=13:13:20.662 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=570 score="[42 169 215 112 32]" criteria="[476 307 183 97]"
+time=13:13:20.817 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:20.838 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:20.839 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:20.930 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:20.944 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:20.993 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH279B0AGJS6F76XR5MH3D, chair_id: 01M3GH18S7S157PK2N64730DKJ, got: 9, want: 8)"
+time=13:13:21.022 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24THV4A3VE6DDPRB2R63, chair_id: 01M3GH1Y4KB2XMCF4NK608ZCHF, got: 3, want: 2)"
+time=13:13:21.051 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2DZD0EA5STWB84Q4YGAQ, chair_id: 01M3GH1E747A5ZFBZCV2DCEBE8, got: 12, want: 11)"
+time=13:13:21.081 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2CFTDJKV7DKHZ04RFY2Y, chair_id: 01M3GH255JF9PDN7VPYFPZC2YE, got: 3, want: 2)"
+time=13:13:21.292 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2BV93M6GVSG7A84XHHGX, chair_id: 01M3GH2C9JQHQ2P766WBB357DC, got: 1, want: 0)"
+time=13:13:21.442 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2ESE5W2X7MKW7K2973X9, chair_id: 01M3GH1N9X7M4K79CK1NQ5Y2W2, got: 8, want: 7)"
+time=13:13:21.622 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2EKE2S2447C2APCPFE0W, chair_id: 01M3GH1Y32086S5D2BWSP1181Y, got: 5, want: 4)"
+time=13:13:21.622 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24V37R1W3BEHF9CVD00C, chair_id: 01M3GH1CF50H0254F00TZGQ99J, got: 8, want: 7)"
+time=13:13:21.652 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2DQC2P0AME4WY940PZ4M, chair_id: 01M3GH275ZQ04CHQ1NP9N8F7RT, got: 3, want: 2)"
+time=13:13:21.951 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1TSRGZG85E9GGY0H8CY2, chair_id: 01M3GH1WC9JDN6N1EBSN7X3ZGY, got: 1, want: 0)"
+time=13:13:22.012 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH25YEH0YK031BZSGJWE3G, chair_id: 01M3GH1FZWKTHCH4NE5FX8VMN9, got: 9, want: 8)"
+time=13:13:22.041 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2G5JZW0RDB9N4H5XQRXH, chair_id: 01M3GH1Q20XJWSQAK47SW3QNYY, got: 9, want: 8)"
+time=13:13:22.103 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2D0RT36E10SJRXSSQQD5, chair_id: 01M3GH1WCE644SM8W405RDPSM3, got: 3, want: 2)"
+time=13:13:22.133 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH24Y1H94C1S2X99MS11X3, chair_id: 01M3GH1E7TZDPW5ZZ1XB4PC92A, got: 10, want: 9)"
+time=13:13:22.162 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2ED489W40YT5H9F5J4EE, chair_id: 01M3GH2AG1AV8YZ6GB1GJE3PS0, got: 2, want: 1)"
+time=13:13:22.403 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2GMBZ74HCGVHNVQGYJE1, chair_id: 01M3GH1RX793RSFKA86XZ5JRR3, got: 9, want: 8)"
+time=13:13:22.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=13:13:22.461 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=622 score="[43 188 243 116 32]" criteria="[527 338 187 98]"
+time=13:13:22.461 level=INFO msg=これまでに地域内の評判によって92人、既存ユーザーの招待経由で143人が新規登録しました
+time=13:13:22.461 level=INFO msg=これまでに低評価なライドによって83人が利用をやめました
+time=13:13:22.461 level=INFO msg=15.3%のライドは椅子がマッチされるまでの時間、45.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、77.1%のライドは椅子の実移動時間に不満がありました
+time=13:13:22.462 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2DR4N8AZ2KGYCR1V1Y3J, chair_id: 01M3GH277XC7SAR3Q6N435NWPR, got: 2, want: 1)"
+time=13:13:22.462 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2G3Q6ADHFKDGKD3MSF4X, chair_id: 01M3GH1HV45DTC4PN10YD74GHJ, got: 12, want: 11)"
+time=13:13:22.492 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2DPCDDT1HCF0SX52J9RS, chair_id: 01M3GH258GB12DMYM084KZ4F9N, got: 2, want: 1)"
+time=13:13:22.541 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=3
+time=13:13:22.596 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=1
+time=13:13:22.604 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=2
+time=13:13:22.625 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=2
+time=13:13:22.661 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:22.672 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2EKGH5E4QD5T2GXC1AQS, chair_id: 01M3GH1Q2B95SRCA232PGK2RC5, got: 9, want: 8)"
+time=13:13:22.672 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FXKS4ZMPW6325ZP24VX, chair_id: 01M3GH2FTC7YY9B43QBJ5Q9YSE, got: 1, want: 0)"
+time=13:13:22.733 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2A9HME1BBWA043A007C4, chair_id: 01M3GH21TQP0JS352ZKCPNKZ7B, got: 4, want: 3)"
+time=13:13:23.243 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2DWSY17SH6YWCK584DTQ, chair_id: 01M3GH275XQVWS5CE0GWA6EE4Q, got: 2, want: 1)"
+time=13:13:23.272 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FDQQPKPD3RYRE4KV1JZ, chair_id: 01M3GH1Q3WY3B87RDKAXGFR5BZ, got: 7, want: 6)"
+time=13:13:23.303 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2BT3NG43GAPS1S2C0R0W, chair_id: 01M3GH18SSM8FB74H8GFA904W5, got: 9, want: 8)"
+time=13:13:23.333 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FCG8Q9H29A8HGEKCMCR, chair_id: 01M3GH1RZDXP65364NJ9MNXQRR, got: 6, want: 5)"
+time=13:13:23.392 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FCG8Q9H29A8HHECCW4Q, chair_id: 01M3GH1TMBCGC08C254ARB0GHE, got: 4, want: 3)"
+time=13:13:23.482 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FCG8Q9H29A8HHXG2504, chair_id: 01M3GH1WBPKP8WA4K486HTRQ2E, got: 5, want: 4)"
+time=13:13:23.662 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2H62DSQG2CDM2N9V38F3, chair_id: 01M3GH1CFCKR28ZEHBBVFRW8G8, got: 11, want: 10)"
+time=13:13:23.692 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FCMQQS1E3VTN9R5J1A4, chair_id: 01M3GH18SCMEMW3STFK8RF3VKN, got: 6, want: 5)"
+time=13:13:23.722 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2A6PD65JF4T3B5GAMTS2, chair_id: 01M3GH1WCV0PJJT9X56R8J1N4S, got: 3, want: 2)"
+time=13:13:23.785 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2FDB9A6YH09EDDKNRZDA, chair_id: 01M3GH2E0ZD093FXHD9SE3016C, got: 1, want: 0)"
+time=13:13:24.262 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=13:13:24.262 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=656 score="[44 197 260 122 33]" criteria="[560 362 191 102]"
+time=13:13:24.291 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2H3DBTQTP7B40XNRB8MG, chair_id: 01M3GH21V6TWVS1YB6NZB2W7WB, got: 5, want: 4)"
+time=13:13:24.363 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=13:13:24.447 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=1
+time=13:13:24.455 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=13:13:24.456 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=13:13:24.469 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=1
+time=13:13:24.472 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH1WPTENG5NDZX58D4APMF, chair_id: 01M3GH1RYM8G5ZD758XG65Q2ZF, got: 2, want: 1)"
+time=13:13:24.502 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2H53JQ1F7NVEEMKTDKZH, chair_id: 01M3GH1ZX2SCXYGD0SN9XWV9PF, got: 3, want: 2)"
+time=13:13:24.563 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2J7EZRYJT4MNFQRR43H3, chair_id: 01M3GH1ZZFVJWJRQ9RZDPGPYK7, got: 4, want: 3)"
+time=13:13:24.621 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2C9C634SRKDCXBQZZH5A, chair_id: 01M3GH2ADV02J3XDTKCFR78858, got: 1, want: 0)"
+time=13:13:24.712 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2F4MPYRQAGZZXDC48KFR, chair_id: 01M3GH18TY7026BVD0E591J7Q3, got: 11, want: 10)"
+time=13:13:24.982 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2EFRT3NYFEBKWBS62DZS, chair_id: 01M3GH1HS7717PBB44J9YVHJC0, got: 3, want: 2)"
+time=13:13:25.192 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2GFCYJSJG4SNQPJ42KY1, chair_id: 01M3GH2EB3KP9QW1X0CMSP104K, got: 1, want: 0)"
+time=13:13:25.222 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2HXR4ZR5FBA2EM30NDW7, chair_id: 01M3GH2HJPDCGP97BT8XZHYDEG, got: 1, want: 0)"
+time=13:13:25.223 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2J983ENMPGH78W527CWK, chair_id: 01M3GH1KHZ8QKH3VK2WYQRABXE, got: 9, want: 8)"
+time=13:13:25.253 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH27H78KZ7BWT892B6YNZC, chair_id: 01M3GH1S0PFP11DFMEKM32H6PG, got: 7, want: 6)"
+time=13:13:25.402 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2HSHQR20DFHM3EKZSKQD, chair_id: 01M3GH1CFA0J2WZJN5V7HSWRRZ, got: 9, want: 8)"
+time=13:13:25.435 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2K04R51FK16TY4G78XY8, chair_id: 01M3GH1N9X7M4K79CK1NQ5Y2W2, got: 9, want: 8)"
+time=13:13:25.523 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2JQW4ACYJR2NAJPTPXMA, chair_id: 01M3GH1WE4QFEDXJ67TND27D6B, got: 5, want: 4)"
+time=13:13:25.552 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2HXAG0B8Q2JT0WQG0KZ5, chair_id: 01M3GH2CBK1T5RKW9N7HCC2M9F, got: 2, want: 1)"
+time=13:13:25.704 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2B5164HJD27Y2Q6MNQGD, chair_id: 01M3GH1Y75R46N7JE17F8S7VWK, got: 4, want: 3)"
+time=13:13:25.792 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2JPG1H2YMF8J2K2QCNSN, chair_id: 01M3GH2E3DFGGSHJJ992J80K26, got: 2, want: 1)"
+time=13:13:25.852 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2HN067TYE3B9RBBXV7E5, chair_id: 01M3GH1HTJ6EC9C6QMRZRVKSB1, got: 8, want: 7)"
+time=13:13:26.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=13:13:26.061 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=712 score="[45 212 298 124 33]" criteria="[615 402 191 104]"
+time=13:13:26.119 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=13:13:26.121 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=13:13:26.122 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2GAN1DGVCZNHEXAM4RZW, chair_id: 01M3GH18V27EEBT1R0J5A3TFMF, got: 7, want: 6)"
+time=13:13:26.134 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ZenSeat 増加数=3
+time=13:13:26.184 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2KT3TNSP3FSH0S043FS2, chair_id: 01M3GH275XQVWS5CE0GWA6EE4Q, got: 3, want: 2)"
+time=13:13:26.186 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="CraftChair Co., Ltd." 増加数=2
+time=13:13:26.202 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=PulseRide 増加数=3
+time=13:13:26.242 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2JZG4A1WKWKXXQGV1WWC, chair_id: 01M3GH275ZQ04CHQ1NP9N8F7RT, got: 4, want: 3)"
+time=13:13:26.332 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2M047E5PWFAG018C8FF0, chair_id: 01M3GH1Q2T2PPJH1ADEP3Y4HPX, got: 8, want: 7)"
+time=13:13:26.392 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2JJN69HB2D2PX4XQ1PJE, chair_id: 01M3GH1RW7G7M2Z94QMK2AB11A, got: 6, want: 5)"
+time=13:13:26.451 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2G14V4M0MTG5D68MW21S, chair_id: 01M3GH28T3KXFV2V2XXTHDECZH, got: 2, want: 1)"
+time=13:13:26.602 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2N0K55H00PAAPGPAA25P, chair_id: 01M3GH2E0ZD093FXHD9SE3016C, got: 2, want: 1)"
+time=13:13:26.603 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2KSNG3KY3KPVS9GQ9VNN, chair_id: 01M3GH2FTC7YY9B43QBJ5Q9YSE, got: 2, want: 1)"
+time=13:13:26.632 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2HXNWDJVBDY86TS86GSN, chair_id: 01M3GH1CF50H0254F00TZGQ99J, got: 9, want: 8)"
+time=13:13:26.813 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2ED489W40YT5HAP17GJ3, chair_id: 01M3GH2001TWW50W3BPPSNZAGZ, got: 4, want: 3)"
+time=13:13:26.962 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2H2GJ31BWVQK3C5GZ2X9, chair_id: 01M3GH23DY4W44FBX59BG90PXE, got: 3, want: 2)"
+time=13:13:27.023 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2J08Z3X4ERVVQ4DQ26H2, chair_id: 01M3GH1G1MEPVK44FT6N21Q474, got: 10, want: 9)"
+time=13:13:27.505 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M3GH18RTTSGXN2N1H5RMHJF6の椅子は既にライド中です"
+time=13:13:27.532 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2MM5K2EPRPSPXF5R30PG, chair_id: 01M3GH1WBPKP8WA4K486HTRQ2E, got: 6, want: 5)"
+time=13:13:27.533 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2JPG1H2YMF8J2GF8SEVN, chair_id: 01M3GH18RTTSGXN2N1H5RMHJF6, got: 9, want: 8)"
+time=13:13:27.623 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2GJJ81XPJJTMKDQS4W9S, chair_id: 01M3GH23B6HKTF2QS5SSBGQYAM, got: 3, want: 2)"
+time=13:13:27.773 level=WARN msg="ユーザーが受け取った通知の内容が想定と異なります (CODE=33): 椅子の総乗車回数が一致しません。(ride_id: 01M3GH2KBDNGM30TXF3EB8A5M4, chair_id: 01M3GH2AG1AV8YZ6GB1GJE3PS0, got: 3, want: 2)"
+time=13:13:27.773 level=ERROR msg=クリティカルエラーが発生しました error=発生しているエラーが多すぎます
+time=13:13:32.774 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=171 アクティブユーザー数=114
+time=13:13:32.774 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=103 アクティブユーザー数=68
+time=13:13:32.774 level=INFO msg=最終オーナー情報 名前=ZenSeat 売上=1123100 椅子数=48
+time=13:13:32.774 level=INFO msg=最終オーナー情報 名前=椅子のめぐりや 売上=1124800 椅子数=47
+time=13:13:32.774 level=INFO msg=最終オーナー情報 名前=EcoChairs 売上=650100 椅子数=33
+time=13:13:32.774 level=INFO msg=最終オーナー情報 名前="CraftChair Co., Ltd." 売上=559800 椅子数=30
+time=13:13:32.774 level=INFO msg=最終オーナー情報 名前=PulseRide 売上=1063300 椅子数=45
+time=13:13:32.774 level=INFO msg=12.6%のライドは椅子がマッチされるまでの時間、41.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.3%のライドは椅子の実移動時間に不満がありました
+time=13:13:32.774 level=INFO msg=結果 pass=false スコア=55465 種別エラー数="map[8:2 17:3 30:1 33:195]"
+time=13:13:32.774 level=INFO msg=負荷走行が終了しました
+time=13:13:32.774 level=ERROR source=/tmp/isucon14/bench/cmd/run.go:138 msg=発生したエラー errors="[load:\n    github.com/isucon/isucandar.(*BenchmarkStep).AddError\n        /root/go/pkg/mod/github.com/isucon/isucandar@v0.0.0-20220322062028-6dd56dc57d72/benchmark_step.go:30\n    github.com/isucon/isucandar.(*Benchmark).Start.func3.func1\n        /root/go/pkg/mod/github.com/isucon/isucandar@v0.0.0-20220322062028-6dd56dc57d72/benchmark.go:132\n    github.com/isucon/isucandar/parallel.(*Parallel).Do.func1\n        /root/go/pkg/mod/github.com/isucon/isucandar@v0.0.0-20220322062028-6dd56dc57d72/parallel/parallel.go:68\n  - 発生しているエラーが多すぎます]"

@@ -44,9 +44,22 @@ CREATE TABLE chair_locations
   latitude   INTEGER     NOT NULL COMMENT '経度',
   longitude  INTEGER     NOT NULL COMMENT '緯度',
   created_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '登録日時',
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  INDEX idx_chair_locations_chair_created (chair_id, created_at)
 )
   COMMENT = '椅子の現在位置情報テーブル';
+
+DROP TABLE IF EXISTS chair_latest_locations;
+CREATE TABLE chair_latest_locations
+(
+  chair_id   VARCHAR(26) NOT NULL,
+  latitude   INTEGER NOT NULL,
+  longitude  INTEGER NOT NULL,
+  created_at DATETIME(6) NOT NULL,
+  total_distance INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (chair_id)
+)
+  COMMENT = '椅子ごとの最新位置';
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users
@@ -90,7 +103,9 @@ CREATE TABLE rides
   evaluation            INTEGER     NULL     COMMENT '評価',
   created_at            DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '要求日時',
   updated_at            DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6) COMMENT '状態更新日時',
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  INDEX idx_rides_chair_created (chair_id, created_at),
+  INDEX idx_rides_user_created (user_id, created_at)
 )
   COMMENT = 'ライド情報テーブル';
 
@@ -103,9 +118,21 @@ CREATE TABLE ride_statuses
   created_at      DATETIME(6)                                                                NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '状態変更日時',
   app_sent_at     DATETIME(6)                                                                NULL COMMENT 'ユーザーへの状態通知日時',
   chair_sent_at   DATETIME(6)                                                                NULL COMMENT '椅子への状態通知日時',
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  INDEX idx_ride_statuses_ride_created (ride_id, created_at),
+  INDEX idx_ride_statuses_ride_status (ride_id, status)
 )
   COMMENT = 'ライドステータスの変更履歴テーブル';
+
+DROP TABLE IF EXISTS chair_stats;
+CREATE TABLE chair_stats
+(
+  chair_id VARCHAR(26) NOT NULL,
+  total_rides_count INTEGER NOT NULL,
+  total_evaluation_sum INTEGER NOT NULL,
+  PRIMARY KEY (chair_id)
+)
+  COMMENT = '椅子の完了ライド統計';
 
 DROP TABLE IF EXISTS owners;
 CREATE TABLE owners
@@ -131,6 +158,7 @@ CREATE TABLE coupons
   discount   INTEGER      NOT NULL COMMENT '割引額',
   created_at DATETIME(6)  NOT NULL DEFAULT CURRENT_TIMESTAMP(6) COMMENT '付与日時',
   used_by    VARCHAR(26)  NULL COMMENT 'クーポンが適用されたライドのID',
-  PRIMARY KEY (user_id, code)
+  PRIMARY KEY (user_id, code),
+  INDEX idx_coupons_used_by (used_by)
 )
   COMMENT 'クーポンテーブル';

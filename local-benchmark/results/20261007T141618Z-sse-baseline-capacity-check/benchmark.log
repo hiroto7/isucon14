@@ -1,0 +1,257 @@
+time=23:16:40.985 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=23:16:40.985 level=INFO msg=負荷走行を開始します
+time=23:16:44.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=23:16:44.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=1 score="[0 0 0 0 1]" criteria="[1 1 1 1]"
+time=23:16:45.186 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:16:45.976 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:16:45.995 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:16:46.002 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=23:16:46.002 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=12 score="[0 0 2 7 3]" criteria="[12 5 11 9]"
+time=23:16:46.852 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:16:47.795 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:16:47.798 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:16:47.801 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=23:16:47.801 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=24 score="[0 0 5 13 6]" criteria="[24 10 23 16]"
+time=23:16:47.801 level=INFO msg=これまでに地域内の評判によって6人、既存ユーザーの招待経由で17人が新規登録しました
+time=23:16:47.801 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、58.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、18.8%のライドは椅子の実移動時間に不満がありました
+time=23:16:47.806 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:16:49.222 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=23:16:49.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=23:16:49.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=42 score="[0 0 7 26 9]" criteria="[42 13 41 32]"
+time=23:16:49.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:16:49.616 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=3
+time=23:16:49.629 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:16:49.634 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:16:49.634 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:16:50.356 level=WARN msg="ユーザーが新しくライドを作成できませんでした (CODE=8): POST /api/app/ridesへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:202, actual:500)"
+time=23:16:51.402 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=23:16:51.402 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=56 score="[0 0 13 32 11]" criteria="[56 17 55 38]"
+time=23:16:51.457 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:16:51.465 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:16:51.474 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:16:53.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=23:16:53.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=74 score="[0 6 21 34 13]" criteria="[74 21 67 40]"
+time=23:16:53.201 level=INFO msg=これまでに地域内の評判によって18人、既存ユーザーの招待経由で44人が新規登録しました
+time=23:16:53.201 level=INFO msg=これまでに低評価なライドによって2人が利用をやめました
+time=23:16:53.201 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、71.6%のライドはマッチされた椅子が乗車地点までに掛かる時間、27.7%のライドは椅子の実移動時間に不満がありました
+time=23:16:53.246 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:16:53.251 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:16:53.255 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:16:53.257 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:16:55.001 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=23:16:55.001 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=95 score="[0 13 28 40 14]" criteria="[95 27 80 43]"
+time=23:16:55.036 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:16:55.036 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:16:55.041 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:16:55.043 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:16:55.055 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:16:55.837 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:16:56.802 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=23:16:56.802 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=115 score="[1 22 33 45 14]" criteria="[112 35 89 43]"
+time=23:16:56.881 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:16:56.886 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:16:56.960 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:16:56.962 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:16:58.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=540
+time=23:16:58.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=141 score="[4 37 38 47 15]" criteria="[133 41 93 47]"
+time=23:16:58.601 level=INFO msg=これまでに地域内の評判によって30人、既存ユーザーの招待経由で58人が新規登録しました
+time=23:16:58.601 level=INFO msg=これまでに低評価なライドによって18人が利用をやめました
+time=23:16:58.601 level=INFO msg=5.7%のライドは椅子がマッチされるまでの時間、70.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、50.4%のライドは椅子の実移動時間に不満がありました
+time=23:16:58.603 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:16:58.606 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:16:58.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:16:58.718 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:16:58.720 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:00.401 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=600
+time=23:17:00.401 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=165 score="[8 47 41 53 16]" criteria="[150 51 102 49]"
+time=23:17:00.407 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:17:00.414 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:00.451 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:00.459 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=3
+time=23:17:02.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=660
+time=23:17:02.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=189 score="[10 54 50 59 16]" criteria="[172 64 107 52]"
+time=23:17:02.236 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:02.266 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:02.296 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:02.317 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:04.001 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=720
+time=23:17:04.002 level=INFO msg=これまでに地域内の評判によって42人、既存ユーザーの招待経由で75人が新規登録しました
+time=23:17:04.002 level=INFO msg=これまでに低評価なライドによって31人が利用をやめました
+time=23:17:04.002 level=INFO msg=8.4%のライドは椅子がマッチされるまでの時間、64.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、61.6%のライドは椅子の実移動時間に不満がありました
+time=23:17:04.002 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=215 score="[11 67 56 65 16]" criteria="[197 76 111 54]"
+time=23:17:04.076 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=3
+time=23:17:04.113 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:04.118 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=3
+time=23:17:04.169 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:05.801 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=780
+time=23:17:05.801 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=253 score="[12 83 69 72 17]" criteria="[234 97 118 56]"
+time=23:17:05.870 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=4
+time=23:17:05.877 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:05.888 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:05.911 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:05.985 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:07.602 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=840
+time=23:17:07.602 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=281 score="[12 93 84 75 17]" criteria="[262 115 120 57]"
+time=23:17:07.685 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:07.691 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:07.763 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:07.768 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:17:07.778 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:09.401 level=INFO msg=これまでに地域内の評判によって54人、既存ユーザーの招待経由で89人が新規登録しました
+time=23:17:09.401 level=INFO msg=これまでに低評価なライドによって43人が利用をやめました
+time=23:17:09.401 level=INFO msg=6.2%のライドは椅子がマッチされるまでの時間、55.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、71.1%のライドは椅子の実移動時間に不満がありました
+time=23:17:09.401 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=900
+time=23:17:09.401 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=322 score="[13 106 102 84 17]" criteria="[302 142 128 58]"
+time=23:17:09.472 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:17:09.590 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:09.617 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:09.624 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=3
+time=23:17:09.654 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:09.675 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:17:11.201 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=960
+time=23:17:11.202 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=354 score="[13 116 120 88 17]" criteria="[334 164 132 58]"
+time=23:17:11.259 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:11.313 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:11.370 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:11.410 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:11.480 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:13.001 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1020
+time=23:17:13.001 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=388 score="[13 126 139 93 17]" criteria="[368 188 136 59]"
+time=23:17:13.087 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:17:13.089 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=3
+time=23:17:13.104 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:13.108 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:13.137 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:17:14.801 level=INFO msg=これまでに地域内の評判によって66人、既存ユーザーの招待経由で102人が新規登録しました
+time=23:17:14.801 level=INFO msg=これまでに低評価なライドによって48人が利用をやめました
+time=23:17:14.801 level=INFO msg=4.8%のライドは椅子がマッチされるまでの時間、48.5%のライドはマッチされた椅子が乗車地点までに掛かる時間、76.1%のライドは椅子の実移動時間に不満がありました
+time=23:17:14.801 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1080
+time=23:17:14.801 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=421 score="[13 130 162 99 17]" criteria="[401 217 140 61]"
+time=23:17:15.180 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:15.300 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:15.476 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:15.477 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:15.620 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:16.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1140
+time=23:17:16.601 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=439 score="[13 134 173 102 17]" criteria="[419 230 141 64]"
+time=23:17:16.767 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:16.773 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:17.791 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:18.701 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1200
+time=23:17:18.701 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=455 score="[13 138 183 104 17]" criteria="[435 242 143 64]"
+time=23:17:18.843 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:18.857 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:19.192 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:20.502 level=INFO msg=これまでに地域内の評判によって78人、既存ユーザーの招待経由で111人が新規登録しました
+time=23:17:20.502 level=INFO msg=これまでに低評価なライドによって50人が利用をやめました
+time=23:17:20.502 level=INFO msg=4.2%のライドは椅子がマッチされるまでの時間、45.8%のライドはマッチされた椅子が乗車地点までに掛かる時間、78.3%のライドは椅子の実移動時間に不満がありました
+time=23:17:20.502 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1260
+time=23:17:20.502 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=480 score="[13 145 200 105 17]" criteria="[460 260 143 65]"
+time=23:17:21.001 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:21.004 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:21.082 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:21.196 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:21.198 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:22.301 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1320
+time=23:17:22.301 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=499 score="[13 149 214 106 17]" criteria="[476 278 143 66]"
+time=23:17:23.353 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:23.372 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:23.379 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:23.936 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M4BBJX0FN6JDMT7ZZNN2M51Sの椅子は既にライド中です"
+time=23:17:24.191 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1380
+time=23:17:24.191 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=527 score="[13 154 236 107 17]" criteria="[504 301 144 66]"
+time=23:17:24.303 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M4BBJG9MPZAC85KVNPZBJ2ZVの椅子は既にライド中です"
+time=23:17:24.367 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:24.579 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:24.681 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:24.854 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:24.856 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:25.992 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1440
+time=23:17:25.992 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=552 score="[13 160 253 109 17]" criteria="[527 322 145 67]"
+time=23:17:25.992 level=INFO msg=これまでに地域内の評判によって90人、既存ユーザーの招待経由で114人が新規登録しました
+time=23:17:25.992 level=INFO msg=これまでに低評価なライドによって54人が利用をやめました
+time=23:17:25.992 level=INFO msg=4.5%のライドは椅子がマッチされるまでの時間、41.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、80.8%のライドは椅子の実移動時間に不満がありました
+time=23:17:26.186 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:26.338 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:26.395 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:26.486 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:26.490 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:27.791 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1500
+time=23:17:27.791 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=576 score="[13 164 273 109 17]" criteria="[551 342 145 67]"
+time=23:17:27.950 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:28.231 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:17:28.249 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:28.266 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:29.592 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1560
+time=23:17:29.592 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=611 score="[13 175 296 110 17]" criteria="[583 369 145 68]"
+time=23:17:29.777 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:29.838 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:17:29.935 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:29.936 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:30.184 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=3
+time=23:17:31.391 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1620
+time=23:17:31.391 level=INFO msg=これまでに地域内の評判によって102人、既存ユーザーの招待経由で116人が新規登録しました
+time=23:17:31.391 level=INFO msg=これまでに低評価なライドによって57人が利用をやめました
+time=23:17:31.391 level=INFO msg=4.7%のライドは椅子がマッチされるまでの時間、37.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、83.4%のライドは椅子の実移動時間に不満がありました
+time=23:17:31.391 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=642 score="[13 178 324 110 17]" criteria="[612 399 145 68]"
+time=23:17:31.684 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:31.688 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:17:31.738 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:31.738 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:31.776 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:33.191 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1680
+time=23:17:33.192 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=681 score="[13 184 356 111 17]" criteria="[650 433 145 69]"
+time=23:17:33.241 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=2
+time=23:17:33.490 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:33.533 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:33.533 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:34.991 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1740
+time=23:17:34.992 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=719 score="[13 190 387 112 17]" criteria="[688 465 146 69]"
+time=23:17:35.306 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:35.343 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:17:35.376 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:35.385 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:35.617 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:36.791 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1800
+time=23:17:36.791 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=757 score="[13 194 419 114 17]" criteria="[725 500 147 70]"
+time=23:17:36.791 level=INFO msg=これまでに地域内の評判によって114人、既存ユーザーの招待経由で119人が新規登録しました
+time=23:17:36.791 level=INFO msg=これまでに低評価なライドによって61人が利用をやめました
+time=23:17:36.791 level=INFO msg=4.2%のライドは椅子がマッチされるまでの時間、33.9%のライドはマッチされた椅子が乗車地点までに掛かる時間、85.7%のライドは椅子の実移動時間に不満がありました
+time=23:17:37.108 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:37.167 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:37.238 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=2
+time=23:17:37.262 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:37.336 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=2
+time=23:17:38.591 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1860
+time=23:17:38.591 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=790 score="[13 198 446 116 17]" criteria="[758 529 149 70]"
+time=23:17:38.776 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:38.813 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:38.837 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:38.864 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:38.868 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:40.393 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1920
+time=23:17:40.393 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=822 score="[13 202 471 119 17]" criteria="[790 557 151 71]"
+time=23:17:40.498 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:40.717 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=1
+time=23:17:40.718 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子工藝舎 増加数=1
+time=23:17:40.728 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:40.969 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=1
+time=23:17:42.191 level=INFO msg=これまでに地域内の評判によって126人、既存ユーザーの招待経由で124人が新規登録しました
+time=23:17:42.191 level=INFO msg=これまでに低評価なライドによって64人が利用をやめました
+time=23:17:42.191 level=INFO msg=3.8%のライドは椅子がマッチされるまでの時間、32.3%のライドはマッチされた椅子が乗車地点までに掛かる時間、86.8%のライドは椅子の実移動時間に不満がありました
+time=23:17:42.191 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=1980
+time=23:17:42.191 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=847 score="[13 211 486 120 17]" criteria="[815 573 152 71]"
+time=23:17:42.605 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=再座堂 増加数=2
+time=23:17:42.610 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="SitWell Designs" 増加数=1
+time=23:17:42.636 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=座り心地再生所 増加数=1
+time=23:17:42.651 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ComfortWorks 増加数=2
+time=23:17:47.251 level=INFO msg=最終地域情報 名前=チェアタウン ユーザー登録数=142 アクティブユーザー数=111
+time=23:17:47.251 level=INFO msg=最終地域情報 名前=コシカケシティ ユーザー登録数=123 アクティブユーザー数=90
+time=23:17:47.251 level=INFO msg=最終オーナー情報 名前=椅子工藝舎 売上=949700 椅子数=44
+time=23:17:47.251 level=INFO msg=最終オーナー情報 名前=ComfortWorks 売上=1313100 椅子数=54
+time=23:17:47.251 level=INFO msg=最終オーナー情報 名前=再座堂 売上=812100 椅子数=40
+time=23:17:47.251 level=INFO msg=最終オーナー情報 名前="SitWell Designs" 売上=993800 椅子数=45
+time=23:17:47.251 level=INFO msg=最終オーナー情報 名前=座り心地再生所 売上=921500 椅子数=43
+time=23:17:47.251 level=INFO msg=3.7%のライドは椅子がマッチされるまでの時間、31.7%のライドはマッチされた椅子が乗車地点までに掛かる時間、87.1%のライドは椅子の実移動時間に不満がありました
+time=23:17:47.251 level=INFO msg=結果 pass=true スコア=55755 種別エラー数="map[8:2 17:4 30:2]"
+time=23:17:47.251 level=INFO msg=負荷走行が終了しました

@@ -1,0 +1,26 @@
+DIGEST_TEXT	COUNT_STAR	total_seconds	average_ms	SUM_ROWS_EXAMINED	SUM_ROWS_SENT	SUM_NO_INDEX_USED
+COMMIT	119028	62.742	0.527	0	0	0
+START TRANSACTION	130952	1.832	0.014	0	0	0
+SELECT `c` . * FROM `chairs` `c` WHERE `c` . `is_active` = TRUE AND NOT EXISTS ( SELECT ? FROM `rides` `r` JOIN `ride_statuses` `rs` ON `rs` . `ride_id` = `r` . `id` WHERE `r` . `chair_id` = `c` . `id` GROUP BY `r` . `id` HAVING COUNT ( `rs` . `chair_sent_at` ) != ? ) ORDER BY `RAND` ( ) LIMIT ?	115	0.630	5.480	412540	114	115
+ROLLBACK	11926	0.233	0.020	0	0	0
+INSERT INTO `chair_locations` VALUES (...) /* , ... */	2	0.213	106.554	0	0	0
+SELECT * FROM `chairs`	194	0.148	0.761	102884	102884	194
+INSERT INTO `ride_statuses` VALUES (...) /* , ... */	1	0.111	111.252	0	0	0
+INSERT INTO `users` VALUES (...) /* , ... */	1	0.025	24.927	0	0	0
+INSERT INTO `rides` VALUES (...) /* , ... */	1	0.020	19.763	0	0	0
+DROP TABLE IF EXISTS `settings`	1	0.019	18.543	0	0	0
+CREATE TABLE `users` ( `id` VARCHARACTER (?) NOT NULL COMMENT ? , `username` VARCHARACTER (?) NOT NULL COMMENT ? , `firstname` VARCHARACTER (?) NOT NULL COMMENT ? , `lastname` VARCHARACTER (?) NOT NULL COMMENT ? , `date_of_birth` VARCHARACTER (?) NOT NULL COMMENT ? , `access_token` VARCHARACTER (?) NOT NULL COMMENT ? , `invitation_code` VARCHARACTER (?) NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , `updated_at` DATETIME (?) NOT NULL DEFAULT NOW (?) ON UPDATE NOW (?) COMMENT ? , PRIMARY KEY ( `id` ) , UNIQUE ( `username` ) , UNIQUE ( `access_token` ) , UNIQUE ( `invitation_code` ) ) COMMENT = ?	1	0.015	14.912	0	0	0
+DROP TABLE IF EXISTS `chair_locations`	1	0.015	14.791	0	0	0
+CREATE TABLE `chair_models` ( NAME VARCHARACTER (?) NOT NULL COMMENT ? , `speed` INTEGER NOT NULL COMMENT ? , PRIMARY KEY ( NAME ) ) COMMENT = ?	1	0.015	14.683	0	0	0
+CREATE TABLE `owners` ( `id` VARCHARACTER (?) NOT NULL COMMENT ? , NAME VARCHARACTER (?) NOT NULL COMMENT ? , `access_token` VARCHARACTER (?) NOT NULL COMMENT ? , `chair_register_token` VARCHARACTER (?) NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , `updated_at` DATETIME (?) NOT NULL DEFAULT NOW (?) ON UPDATE NOW (?) COMMENT ? , PRIMARY KEY ( `id` ) , UNIQUE ( NAME ) , UNIQUE ( `access_token` ) , UNIQUE ( `chair_register_token` ) ) COMMENT = ?	1	0.015	14.630	0	0	0
+SELECT * FROM `rides` WHERE `chair_id` IS NULL ORDER BY `created_at` LIMIT ?	117	0.015	0.124	115	115	0
+CREATE TABLE `chair_locations` ( `id` VARCHARACTER (?) NOT NULL , `chair_id` VARCHARACTER (?) NOT NULL COMMENT ? , `latitude` INTEGER NOT NULL COMMENT ? , `longitude` INTEGER NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , PRIMARY KEY ( `id` ) , INDEX `idx_chair_locations_chair_created` ( `chair_id` , `created_at` ) ) COMMENT = ?	1	0.013	12.849	0	0	0
+INSERT INTO `chairs` VALUES (...) /* , ... */	1	0.013	12.549	0	0	0
+CREATE TABLE `rides` ( `id` VARCHARACTER (?) NOT NULL COMMENT ? , `user_id` VARCHARACTER (?) NOT NULL COMMENT ? , `chair_id` VARCHARACTER (?) NULL COMMENT ? , `pickup_latitude` INTEGER NOT NULL COMMENT ? , `pickup_longitude` INTEGER NOT NULL COMMENT ? , `destination_latitude` INTEGER NOT NULL COMMENT ? , `destination_longitude` INTEGER NOT NULL COMMENT ? , `evaluation` INTEGER NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , `updated_at` DATETIME (?) NOT NULL DEFAULT NOW (?) ON UPDATE NOW (?) COMMENT ? , PRIMARY KEY ( `id` ) , INDEX `idx_rides_chair_created` ( `chair_id` , `created_at` ) ) COMMENT = ?	1	0.012	12.041	0	0	0
+CREATE TABLE `coupons` ( `user_id` VARCHARACTER (?) NOT NULL COMMENT ? , CODE VARCHARACTER (?) NOT NULL COMMENT ? , `discount` INTEGER NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , `used_by` VARCHARACTER (?) NULL COMMENT ? , PRIMARY KEY ( `user_id` , CODE ) ) COMMENT ?	1	0.011	11.348	0	0	0
+CREATE TABLE `ride_statuses` ( `id` VARCHARACTER (?) NOT NULL , `ride_id` VARCHARACTER (?) NOT NULL COMMENT ? , STATUS ENUM (...) NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , `app_sent_at` DATETIME (?) NULL COMMENT ? , `chair_sent_at` DATETIME (?) NULL COMMENT ? , PRIMARY KEY ( `id` ) , INDEX `idx_ride_statuses_ride_created` ( `ride_id` , `created_at` ) ) COMMENT = ?	1	0.011	11.156	0	0	0
+CREATE TABLE `chairs` ( `id` VARCHARACTER (?) NOT NULL COMMENT ? , `owner_id` VARCHARACTER (?) NOT NULL COMMENT ? , NAME VARCHARACTER (?) NOT NULL COMMENT ? , `model` TEXT NOT NULL COMMENT ? , `is_active` TINYINT (?) NOT NULL COMMENT ? , `access_token` VARCHARACTER (?) NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , `updated_at` DATETIME (?) NOT NULL DEFAULT NOW (?) ON UPDATE NOW (?) COMMENT ? , PRIMARY KEY ( `id` ) ) COMMENT = ?	1	0.011	10.703	0	0	0
+DROP TABLE IF EXISTS `ride_statuses`	1	0.010	10.366	0	0	0
+SELECT NOW (?)	194	0.010	0.051	194	194	0
+INSERT INTO `payment_tokens` VALUES (...) /* , ... */	1	0.009	9.474	0	0	0
+CREATE TABLE `payment_tokens` ( `user_id` VARCHARACTER (?) NOT NULL COMMENT ? , `token` VARCHARACTER (?) NOT NULL COMMENT ? , `created_at` DATETIME (?) NOT NULL DEFAULT NOW (?) COMMENT ? , PRIMARY KEY ( `user_id` ) ) COMMENT = ?	1	0.009	8.996	0	0	0

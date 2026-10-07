@@ -1,0 +1,64 @@
+time=23:15:02.891 level=DEBUG source=/tmp/isucon14/bench/cmd/run.go:90 msg=target targetURL=https://isuride.xiv.isucon.net targetAddr=127.0.0.1:443 benchrun.GetTargetAddress()="" paymentURL=http://127.0.0.1:12346
+time=23:15:02.892 level=INFO msg=負荷走行を開始します
+time=23:15:05.865 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=60
+time=23:15:05.865 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=4 score="[0 0 0 3 1]" criteria="[4 1 4 4]"
+time=23:15:07.641 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=23:15:07.641 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=23:15:07.664 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=120
+time=23:15:07.664 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=18 score="[0 0 0 11 7]" criteria="[18 7 18 18]"
+time=23:15:09.453 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=1
+time=23:15:09.460 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=23:15:09.460 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="ReSit & Renew" 増加数=2
+time=23:15:09.461 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=23:15:09.461 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:15:09.465 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=180
+time=23:15:09.465 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=36 score="[0 0 0 27 9]" criteria="[36 9 36 36]"
+time=23:15:09.465 level=INFO msg=これまでに地域内の評判によって7人、既存ユーザーの招待経由で35人が新規登録しました
+time=23:15:09.465 level=INFO msg=0.0%のライドは椅子がマッチされるまでの時間、75.0%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.0%のライドは椅子の実移動時間に不満がありました
+time=23:15:11.239 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=23:15:11.240 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=1
+time=23:15:11.252 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:15:11.259 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="ReSit & Renew" 増加数=1
+time=23:15:11.262 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=1
+time=23:15:11.264 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=240
+time=23:15:11.264 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=56 score="[0 0 0 42 14]" criteria="[56 14 56 56]"
+time=23:15:13.064 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=4
+time=23:15:13.064 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=1
+time=23:15:13.064 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=300
+time=23:15:13.064 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=77 score="[0 0 0 54 23]" criteria="[77 23 77 77]"
+time=23:15:13.064 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="ReSit & Renew" 増加数=1
+time=23:15:13.067 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=23:15:13.226 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:13.529 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:14.310 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:14.311 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:14.861 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="ReSit & Renew" 増加数=1
+time=23:15:14.861 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:15:14.861 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=23:15:14.864 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=360
+time=23:15:14.864 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=112 score="[0 0 0 76 36]" criteria="[111 38 112 111]"
+time=23:15:14.864 level=INFO msg=これまでに地域内の評判によって19人、既存ユーザーの招待経由で102人が新規登録しました
+time=23:15:14.864 level=INFO msg=0.9%のライドは椅子がマッチされるまでの時間、66.1%のライドはマッチされた椅子が乗車地点までに掛かる時間、0.4%のライドは椅子の実移動時間に不満がありました
+time=23:15:14.866 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=3
+time=23:15:14.877 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=23:15:15.247 level=WARN msg="取得した付近の椅子情報に不備があります (CODE=30): ID:01M4BBFGFN794086GS8HJYNZZHの椅子は既にライド中です"
+time=23:15:16.597 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:16.664 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=420
+time=23:15:16.664 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=149 score="[0 0 10 97 42]" criteria="[141 52 149 137]"
+time=23:15:16.667 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="ReSit & Renew" 増加数=3
+time=23:15:16.671 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=2
+time=23:15:16.694 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:15:16.694 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=2
+time=23:15:16.706 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=3
+time=23:15:17.024 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:17.031 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:17.554 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:18.004 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"
+time=23:15:18.464 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:315 msg=時間経過 tick=480
+time=23:15:18.464 level=DEBUG source=/tmp/isucon14/bench/benchmarker/scenario/scenario.go:317 msg=eval reqs=184 score="[0 1 23 112 48]" criteria="[159 67 184 165]"
+time=23:15:18.488 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=椅子のめぐりや 増加数=3
+time=23:15:18.500 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="LuxeLine Taxi" 増加数=3
+time=23:15:18.505 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=EcoChairs 増加数=2
+time=23:15:18.508 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前=ふたたび椅子堂 増加数=2
+time=23:15:18.509 level=INFO msg=一定の売上が立ったためオーナーの椅子が増加します 名前="ReSit & Renew" 増加数=2
+time=23:15:19.056 level=WARN msg="ユーザー登録に失敗しました (CODE=17): POST /api/app/usersへのリクエストに対して、期待されたHTTPステータスコードが確認できませんでした (expected:201, actual:500)"

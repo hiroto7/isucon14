@@ -1,0 +1,18 @@
+{
+  "stage": "baseline-repeat",
+  "started_at": "20260926T082524Z",
+  "commit": "a62f47e66f62a12fe6deded9248d84005c242ed8",
+  "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": "./bench run --addr 127.0.0.1:443 --target https://isuride.xiv.isucon.net --payment-url http://127.0.0.1:12346 --payment-bind-port 12346 -t 60",
+  "vm": "isucon14",
+  "cpus": 2,
+  "memory_gib": 4,
+  "cooldown_seconds": 20,
+  "duration_seconds": 60,
+  "status": "failed",
+  "score": null,
+  "reported_score": null,
+  "failure_stage": "setup",
+  "error": "Command '['multipass', 'exec', 'isucon14', '--', 'sudo', 'mysql', '-e', 'TRUNCATE TABLE performance_schema.events_statements_summary_by_digest']' returned non-zero exit status 2.",
+  "original_stage": "baseline"
+}
